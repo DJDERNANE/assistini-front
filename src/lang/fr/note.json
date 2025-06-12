@@ -1,0 +1,50 @@
+{
+    "general": {
+        "title": "mon equipe",
+        "all-notes": "Toutes les notes",
+        "accounts": "Comptes",
+        "notes": "Mes notes",
+        "users": "Liste des utilisateurs",
+        "see": "Consulter",
+        "search": "Rechercher",
+        "filter": "Filtrer",
+        "my-team": "Mon équipe",
+        "your-notes": "Vos notes",
+        "go-back": "précédent",
+        "exist-profiles": "Membres actifs",
+        "notes-description": "notes ....",
+        "see": "Consulter",
+        "users-description": "Utilisateurs ...",
+        "search": "Rechercher ...",
+        "all-notes": "Toutes les notes",
+        "existing-profiles": "profiles existants",
+        "": "",
+        "": ""
+    },
+    "table": {
+        "sender": "Nom de l'expéditeur",
+        "destination": "Destinataire",
+        "number": "Référence",
+        "date": "Date",
+        "results": "Résultats trouvé",
+        "": ""
+    },
+    "note": {
+        "title": "Titre",
+        "quick-note": "Note",
+        "pending": "En attente",
+        "sub-admin": "Sous-administrateur",
+        "learn-more": "En savoir plus",
+        "go-back": "précédent",
+        "": ""
+    },
+    "user": {
+        "title": "Titre",
+        "go-back": "précédent",
+        "my-team": "Mon équipe",
+        "exist-profile": "Profil existant",
+        "active": "Actif",
+        "offline": "Hors ligne",
+        "": ""
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "general_home": {
+        "title": "Prenez rendez-vous avec votre médecin rapidement !"
+    },
+    "favorite": {
+        "title": "mes favories cliniques"
+    },
+    "my-rdvs": {
+        "title": "Mes Rendez-vous",
+        "left-1": "Il vous reste",
+        "left-2": "jours",
+        "delete": "Retirer ce rendez-vous",
+        "pending": "En attente de confirmation",
+        "motif": "motif",
+        "patient": "patient",
+        "type": "type",
+        "document": "documents",
+        "heure": "heure",
+        "date": "date",
+        "status": "status"
+    },
+    "doc": {
+        "add": "Ajouter un document",
+        "name-file": "Nom du fichier (optionnel)",
+        "download": "Voir le document",
+        "": "",
+        "": "",
+        "": "",
+        "title": "mes documents"
+    },
+    "my-note": {
+        "title": "mes notes"
+    },
+    "my-patient": {
+        "title": "mes patients"
+    },
+    "request": {
+        "title": "mes demandes"
+    },
+    "profile": {
+        "title": "general inforamtion",
+        "nom": "nom",
+        "prenom": "prénom",
+        "assurance": "numero d'assurance sociale",
+        "sex": "genre",
+        "residence": "addresse complète",
+        "motif": "lien famillaile",
+        "email": "Email",
+        "birthday": "date de naissance",
+        "company": "Employeur / Organisme",
+        "phone": "numero de téléphone",
+        "create": "creer",
+        "add-new-patient": "creation dossier patient",
+        "show-patient": "information personnelles d'un patient",
+        "creer-patient": "creer le dossier patient",
+        "delete": "Retirer ce patient",
+        "": "",
+        "title": "mes patients"
+    },
+    "bar": {
+        "profile": "mon compte",
+        "logout": "deconnexion",
+        "eme": "eme",
+        "waiting-title": "votre position dans la chaine est",
+        "patient-before": "patients avant vous"
+    },
+    "filter": {
+        "search": "Rechercher"
+    },
+    "admin": {
+        "nom": "nom",
+        "prenom": "prénom",
+        "genre": "genre",
+        "addresse": "addresse complete",
+        "login": "",
+        "change-email": "changer email",
+        "change-password": "change mot de passe",
+        "nas": "numero d'assurance sociale",
+        "phone": "numero de téléphone",
+        "logo": "photo de profil",
+        "save": "sauvegarder",
+        "": "",
+        "": ""
+    }
+}

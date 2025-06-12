@@ -1,0 +1,48 @@
+{
+    "general_search": {
+        "bookRDV": "book RDV"
+    },
+    "doctor": {
+        "services": "services",
+        "expertise": "Expertise",
+        "access": "Access",
+        "info": "Information",
+        "hoursContact": "Hours and contact",
+        "prices": "Prices",
+        "spokenLang": "Spoken languages",
+        "refunds": "Refunds",
+        "transport": "Means of transport",
+        "usefulInfo": "Useful information",
+        "seeMap": "See the route with Maps",
+        "makeRDV": "Make an appointment online",
+        "option-consultation": "consultation",
+        "fillInfo": "Please fill in the following information",
+        "speciality": "Speciality",
+        "speciality_1": "medcine generalist",
+        "reasonConsultation": "Reason for consultation",
+        "choosePattern": "Choose a pattern group",
+        "chooseConsultationTime": "Choose your consultation time",
+        "nextAvailability": "Next availability",
+        "today": "Today",
+        "pation": "Pation",
+        "valid": "Valid",
+        "alert_1": "Attention, nous vous rappelons que ce motif est réservé à la patientèle connue",
+        "patient": "le pation",
+        "documents": "documents",
+        "chooseDate": "Choisissez votre heure de consultation",
+        "available": "Disponible ",
+        "date-rdv": "date de RDV",
+        "plus": "Plus de disponibilités"
+    },
+    "note": {
+        "titleIndicate": "I indicate my mutual",
+        "descriptionIndicate": "To find out how much my consultation will cost me."
+    },
+    "alert": {
+        "validation": "Validation des consignes",
+        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous: Consultation de médecine générale",
+        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d'attente et en consultation.",
+        "confirm": "confirmer"
+    },
+    "filter": {}
+}

@@ -1,0 +1,116 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "leaflet/dist/leaflet.css";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f3f3f3 !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9b9b9b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.roboto {
+    font-family: "Roboto", serif;
+}
+.responsive {
+    @apply lg:container mx-auto lg:px-20 px-4;
+}
+
+.titleFilter {
+    @apply text-stone-900 text-2xl font-semibold capitalize;
+}
+
+.swiper-pagination {
+    text-align: right !important;
+    padding-right: 80px;
+    visibility: hidden;
+}
+
+.swiper-pagination > span.swiper-pagination-bullet-active {
+    position: relative;
+}
+
+.swiper-pagination > span.swiper-pagination-bullet-active::after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2760f3;
+    border-radius: 50%;
+}
+
+/* Styles for screens larger than 768px */
+@media (min-width: 300px) {
+    .swiper-pagination {
+        padding-right: 30px;
+        visibility: visible;
+    }
+}
+@media (min-width: 1024px) {
+    .swiper-pagination {
+        padding-right: 30px;
+        visibility: visible;
+    }
+}
+@media (min-width: 1440px) {
+    .swiper-pagination {
+        padding-right: 185px;
+    }
+}
+@media (min-width: 2100px) {
+    .swiper-pagination {
+        padding-right: 230px;
+    }
+}
+
+.blueButton {
+    @apply w-full first-letter:capitalize flex items-center justify-center font-medium px-8 py-3 text-white bg-primary-100  rounded-lg;
+    /* @apply w-full capitalize flex items-center justify-center font-medium px-8 py-3 text-white bg-primary-200 shadow-[0px_4px_14px_#2760f340] rounded-lg; */
+}
+
+/* .chakra-step { */
+.chakra-step__indicator,
+.chakra-step__separator {
+    margin-left: -14px;
+}
+
+.chakra-step__indicator {
+    background-color: white;
+}
+
+td {
+    @apply !py-2;
+}

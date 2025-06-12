@@ -1,0 +1,70 @@
+{
+    "general": {
+        "title": "parametres de l'établissement",
+        "admin": "administration",
+        "accounts": "gestion des comptes",
+        "my-clinic": "mon espace sante",
+        "my-cabinet": "mon cabinet info",
+        "save": "enrigistrer les modifications",
+        "all-services": "tous les services",
+        "search": "recherche",
+
+        "": ""
+    },
+    "account": {
+        "username": "identifiant",
+        "password": "mot de passe",
+        "add-sub": "ajouter un utilisateur",
+        "existing": "profile existant",
+        "send-notes": "envoyer un message",
+        "validate": "confirmer",
+        "placeholder-note": "ecrire note",
+        "send": "envoyer",
+        "active": "actif",
+        "offline": "offline",
+        "": ""
+    },
+    "admin": {
+        "denomination": "nom de l'établissement",
+        "nom": "nom du proprietaire",
+        "agreement": "numero d'agreement professionnel",
+        "adresse": "addresse",
+        "identifiant": "numero d'idedntification fasciale",
+        "gps": "geolocalisation",
+        "type": "type d'etablissement medical",
+        "login": "identifiants de connexion",
+        "logo": "logo de l'etablissement",
+        "upload": "ajouter",
+        "delete": "supprimer",
+        "change-email": "modifier l'email",
+        "change-password": "modifier le mot de passe",
+        "": ""
+    },
+    "edit-modal": {
+        "sub-admin": "sub-admin",
+        "choose": "choisir",
+        "": "",
+        "": "",
+        "": "",
+        "": ""
+    },
+    "clinic": {
+        "nom": "nom de service",
+        "price": "prix",
+        "specialite": "specialites medicales",
+        "description": "texte",
+        "": "",
+        "": "",
+        "": ""
+    },
+    "table": {
+        "nom-analyse": "prestation medicale",
+        "price": "tarif (DA)",
+        "speciality": "specialite medicale",
+        "results": "resultats",
+        "specialite": "specialite",
+        "dzd": "da",
+        "": "",
+        "": ""
+    }
+}

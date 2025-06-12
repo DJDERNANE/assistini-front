@@ -1,0 +1,89 @@
+{
+    "general": {
+        "resultss": "patients en file d'attente",
+        "results": "patient en file d'attente",
+        "payment": "procéder au paiement",
+        "service": "service",
+        "select-service": "selectionner",
+        "result": "resultat",
+        "specialite": "specialite",
+        "partner": "partner",
+        "add-new-rdv": "Nouveau rendez-vous",
+        "request": "demander accees"
+    },
+    "list": {
+        "profile": "Profil patient",
+        "documents": "Dossier du patient",
+        "download": "telecharger",
+        "patient-info": "À propos du patient",
+        "book-rdv": "Réservation du rendez-vous",
+        "documents-shared": "Fichiers partagés avec le médecin",
+        "": "",
+        "": ""
+    },
+    "doctor": {
+        "speciality": "Spécialité",
+        "reasonConsultation": "Motif de la consultation",
+        "patient": "Patient",
+        "date-rdv": "Date du rendez-vous",
+        "option": "Sélectionner une option",
+        "": ""
+    },
+    "filter": {
+        "consultation": "Consultation"
+    },
+    "price": {
+        "discount": "remise",
+        "dz": "dz",
+        "currancy": "DZD",
+        "title": "prix total",
+        "": ""
+    },
+    "new": {
+        "firstname": "prénom",
+        "lastname": "nom",
+        "email": "email",
+        "address": "addresse",
+        "motif": "motif",
+        "phone": "numero de téléphone",
+        "company": "entreprise",
+        "sexe": "sexe",
+        "": "",
+        "": ""
+    },
+    "calendar": {
+        "title-manage": "Gérez vos disponibilités",
+        "morning-shift": "Consultations du matin",
+        "evening-shift": "Consultations de l'après-midi",
+        "schedule": "gerer mon agenda",
+        "title": "Gérer mon agenda",
+        "day": "jour",
+        "actions": "options",
+        "choose-day": "choose day",
+        "date": "date",
+        "clear": "Annuler les modifications",
+        "remove-fri": "Supprimer les vendredis",
+        "remove-sat": "Supprimer les samedis"
+    },
+    "info": {
+        "title": "Vue d’ensemble",
+        "description": "Consultez les informations liées à vos rendez-vous et patients.",
+        "rdv": "Rendez-vous",
+        "read": "Lire plus",
+        "": "Type de rendez-vous",
+        "": "",
+        "": ""
+    },
+    "card": {
+        "motif": "Motif",
+        "documents": "Documents reçus",
+        "document": "Documents reçu",
+        "type": "Type de rendez-vous",
+        "file": "Fichier joint",
+        "date": "Date",
+        "hour": "Heure",
+        "accept": "Accepter",
+        "refuse": "Refuser",
+        "reprogrammer": "Reprogrammer"
+    }
+}

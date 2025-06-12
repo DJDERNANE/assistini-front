@@ -1,0 +1,48 @@
+{
+    "general_search": {
+        "bookRDV": "Réserver votre rendez-vous!"
+    },
+    "doctor": {
+        "services": "Services",
+        "expertise": "Expertise",
+        "access": "Accès",
+        "info": "Informations",
+        "hoursContact": "Horaires et contact",
+        "prices": "Tarifs",
+        "spokenLang": "Langues parlées",
+        "refunds": "Remboursements",
+        "transport": "Moyens de transport",
+        "usefulInfo": "Informations utiles",
+        "seeMap": "Voir l'itinéraire avec Maps",
+        "makeRDV": "Prendre un rendez-vous en ligne",
+        "fillInfo": "Veuillez remplir les informations suivantes",
+        "speciality": "Spécialité",
+        "speciality_1": "Choisir specialite",
+        "consultation": "consultation",
+        "date-rdv": "date de RDV",
+        "reasonConsultation": "Motif de consultation",
+        "choosePattern": "Choisir un groupe de motifs",
+        "chooseConsultationTime": "Choisissez votre heure de consultation",
+        "nextAvailability": "Prochaine disponibilité",
+        "today": "Aujourd'hui",
+        "pation": "Patient",
+        "valid": "Valide",
+        "alert_1": "Attention, nous vous rappelons que ce motif est réservé à la patientèle connue",
+        "patient": "Le patient",
+        "documents": "Documents",
+        "chooseDate": "Choisissez votre heure de consultation",
+        "available": "Disponible",
+        "mes-documents": "Mes documents",
+        "plus": "Plus de disponibilités"
+    },
+    "note": {
+        "titleIndicate": "Je précise ma mutuelle",
+        "descriptionIndicate": "Pour savoir combien me coûtera ma consultation."
+    },
+    "alert": {
+        "validation": "Validation des consignes",
+        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous: Consultation de médecine générale",
+        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d'attente et en consultation.",
+        "confirm": "Confirmer"
+    }
+}

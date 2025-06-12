@@ -1,0 +1,27 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="users">
+<rect id="bg" opacity="0.01" width="140" height="140" fill="white"/>
+<g id="illustration">
+<g id="Oval + Combined Shape Mask">
+<circle id="Mask" cx="40" cy="50" r="24" fill="#D7DBEC"/>
+<mask id="mask0_1_8322" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="26" width="48" height="48">
+<circle id="Mask_2" cx="40" cy="50" r="24" fill="white"/>
+</mask>
+<g mask="url(#mask0_1_8322)">
+<circle id="Oval" cx="40" cy="44" r="8" fill="#131523"/>
+<path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M23.002 67.7938C25.6744 60.887 32.2782 56 40.0013 56C47.7245 56 54.3284 60.8872 57.0007 67.7942C52.6951 72.2385 46.67 75 40.0015 75C33.3328 75 27.3076 72.2384 23.002 67.7938Z" fill="#131523"/>
+</g>
+</g>
+<g id="Oval + Combined Shape Mask_2">
+<circle id="Mask_3" cx="83.5" cy="73.5" r="40.5" fill="#336DFF"/>
+<mask id="mask1_1_8322" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="43" y="33" width="81" height="81">
+<circle id="Mask_4" cx="83.5" cy="73.5" r="40.5" fill="white"/>
+</mask>
+<g mask="url(#mask1_1_8322)">
+<circle id="Oval_2" cx="83.5" cy="63.5" r="13.5" fill="#B6CBFF"/>
+<path id="Combined Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M53.8594 103.313C58.6031 91.3867 69.8635 83 82.9995 83C96.6908 83 108.345 92.1108 112.706 104.844C105.31 112.363 95.1769 117 83.999 117C72.081 117 61.3507 111.729 53.8594 103.313Z" fill="#B6CBFF"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

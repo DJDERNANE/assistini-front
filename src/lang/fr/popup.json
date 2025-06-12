@@ -1,0 +1,93 @@
+{
+    "detail-doctor": {
+        "validation": "Validation des consignes",
+        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous: Consultation de médecine générale",
+        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d'attente et en consultation.",
+        "confirm": "confirmer"
+    },
+    "confirm-service": {
+        "title": "voulez vous confirmer ?",
+        "description": "you have selected different acts",
+        "continue": "continue",
+        "cancel": "annuler",
+        "": "",
+        "confirm": "confirmer"
+    },
+    "confirm-pay": {
+        "title-patient": "Choisissez votre mode de paiement",
+        "description": "Merci de choisir une méthode de règlement pour poursuivre.",
+        "cancel": "Annuler",
+        "continue": "confirmer",
+        "download": "download",
+        "finish": "finish",
+        "pay-at-clinic": "Payer en clinic",
+        "req-distance": "Payer en distance",
+        "cash": "Payer en espèces",
+        "cib": "Payer par CIB/ EDAHABIA",
+        "req-title": "Confirmer la demande de paiement",
+        "req-description": "Êtes-vous sûr de vouloir valider cette demande de paiement ?",
+        "pay-req": "Procéder au paiement",
+        "": "",
+        "": ""
+    },
+    "confirm-logout": {
+        "title": "confirmez-vous la deconnexion",
+        "description": "vous devez saisir a nouveau vos identifiants de connexion",
+        "cancel": "annuler",
+        "continue": "confirmer",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": ""
+    },
+    "notification": {
+        "title": "notification"
+    },
+    "profil": {
+        "change-email": "changer email",
+        "change-password": "changer mot de passe",
+        "title-email": "changer email",
+        "exist-email": "exist email",
+        "new-email": "nouveau email",
+        "email-done": "sauvegarder",
+        "title-pwd": "changer mot de passe",
+        "old-pwd": "ancient mot de passe",
+        "new-pwd": "nouveau mot de passe",
+        "confirm-password": "confirmer le mot de passe",
+        "pwd-done": "sauvegarder",
+        "old-pwd-placeholder": "saisir ancient mot de passe",
+        "new-pwd-placeholder": "saisir nouveau mot de passe",
+        "confirm-pwd-placeholder": "confirmer votre mot de passe",
+        "": "",
+        "": ""
+    },
+    "note": {
+        "title": "note",
+        "sub-admin": "sous administrateur",
+        "pending": "en attente",
+        "": "",
+        "": ""
+    },
+    "delete-rdv": {
+        "title": "Annuler le rendez-vous",
+        "description": "Souhaitez-vous vraiement annuler ce rendez-vous ?",
+        "pending": "en attente",
+        "cancel": "Annuler",
+        "continue": "Supprimer"
+    },
+    "confirm-rdv-patient": {
+        "title": "Confirmation du rendez-vous",
+        "description": "Un dernier coup d'œil avant validation !",
+        "note": "Ce rendez-vous sera enregistré dans votre espace patient.",
+        "cancel": "Annuler",
+        "continue": "Confirmer"
+    },
+    "confirm-delete-sub-admin": {
+        "title": "do you wish to delete this profile",
+        "description": "you have created a new sub-admin",
+        "pending": "en attente",
+        "cancel": "annuler",
+        "continue": "supprimer"
+    }
+}
