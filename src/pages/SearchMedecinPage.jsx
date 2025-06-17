@@ -27,11 +27,13 @@ const SearchMedecinPage = () => {
     const providers = useSelector((state) => state.providers.item);
     const filters = useSelector((state) => state.filterProviders.item);
 
-    const query = new URLSearchParams(useLocation().search);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const query = new URLSearchParams(location.search);
     const searchValue = query.get("search");
 
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+    
     const handleGoMsg = () => {
         navigate("/messages");
     };
@@ -44,12 +46,39 @@ const SearchMedecinPage = () => {
         providerService?.getAllByFilter(filters)
     );
 
+    // Update URL when filters change
+    useEffect(() => {
+        if (filters) {
+            const params = new URLSearchParams();
+            
+            // Add all filter parameters to URL
+            Object.entries(filters).forEach(([key, value]) => {
+                if (value) {
+                    params.set(key, value);
+                }
+            });
+            
+            // Preserve search parameter if it exists
+            if (searchValue) {
+                params.set('search', searchValue);
+            }
+            
+            // Update URL without triggering a page reload
+            const newUrl = `${location.pathname}?${params.toString()}`;
+            if (newUrl !== location.pathname + location.search) {
+                navigate(newUrl, { replace: true });
+            }
+        }
+    }, [filters, navigate, location.pathname, searchValue]);
+
     useEffect(() => {
         const queryParams = new URLSearchParams(window.location.search);
 
         let filter = {};
         for (const [key, value] of queryParams.entries()) {
-            filter = { ...filter, [key]: value };
+            if (key !== 'search') { // Don't include search in filters
+                filter = { ...filter, [key]: value };
+            }
         }
 
         dispatch(providerFilterActions.replaceData(filter));

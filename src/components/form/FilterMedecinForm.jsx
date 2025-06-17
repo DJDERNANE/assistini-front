@@ -23,6 +23,7 @@ const FilterMedecinForm = ({ showTitle = false }) => {
 
     // states to save category
     const [category, setCategory] = useState(null);
+    const [categoryId, setCategoryId] = useState(null); // Store ID separately for API calls
     const [specialty, setSpecialty] = useState(null);
     const [location, setLocation] = useState(null);
 
@@ -32,7 +33,7 @@ const FilterMedecinForm = ({ showTitle = false }) => {
         "categories"
     );
 
-    // fetch data categories
+    // fetch data specialties using category ID
     const {
         isLoading: isLoadingSpecialite,
         data: dataSpecialite,
@@ -40,8 +41,8 @@ const FilterMedecinForm = ({ showTitle = false }) => {
         error: errorSpecialite,
         refetch: refetchSpecialite,
     } = useGetAll(
-        () => categoryService.getSpecialites(category),
-        "specialiteecialites"
+        () => categoryService.getSpecialites(categoryId),
+        "specialteecialites"
     );
 
     useEffect(() => {
@@ -55,7 +56,63 @@ const FilterMedecinForm = ({ showTitle = false }) => {
 
     useEffect(() => {
         refetchSpecialite();
-    }, [category]);
+    }, [categoryId]);
+
+    // Custom location setter that stores the name instead of ID
+    const setLocationByName = (locationId) => {
+        if (locationId === "all") {
+            setLocation(null);
+        } else if (locationId) {
+            const locationData = DataWilayas.find(item => item.id == locationId);
+            setLocation(locationData ? locationData.name : locationId);
+        } else {
+            setLocation(null);
+        }
+    };
+
+    // Custom category setter that stores the name for filters but ID for API calls
+    const setCategoryByName = (categoryId) => {
+        if (categoryId === "all") {
+            setCategory(null);
+            setCategoryId(null);
+            setSpecialty(null); // Also reset specialty when category is reset
+        } else if (categoryId) {
+            const categoryData = data?.find(item => item.id == categoryId);
+            setCategory(categoryData ? categoryData.name : categoryId);
+            setCategoryId(categoryId); // Store ID for API calls
+        } else {
+            setCategory(null);
+            setCategoryId(null);
+        }
+    };
+
+    // Custom specialty setter that stores the name instead of ID
+    const setSpecialtyByName = (specialtyId) => {
+        if (specialtyId === "all") {
+            setSpecialty(null);
+        } else if (specialtyId) {
+            const specialtyData = dataSpecialite?.find(item => item.id == specialtyId);
+            setSpecialty(specialtyData ? specialtyData.name : specialtyId);
+        } else {
+            setSpecialty(null);
+        }
+    };
+
+    // Add "All" option to data arrays
+    const locationDataWithAll = [
+        { id: "all", name: t("filter.all") || "All" },
+        ...DataWilayas
+    ];
+
+    const categoryDataWithAll = data ? [
+        { id: "all", name: t("filter.all") || "All" },
+        ...data
+    ] : [];
+
+    const specialtyDataWithAll = dataSpecialite ? [
+        { id: "all", name: t("filter.all") || "All" },
+        ...dataSpecialite
+    ] : [];
 
     useEffect(() => {
         dispatch(
@@ -73,9 +130,9 @@ const FilterMedecinForm = ({ showTitle = false }) => {
                 title={showTitle ? t("filter.area") : ""}
                 icon={Icons.Location}
                 name={"choisir une wilaya"}
-                data={DataWilayas}
-                value={location}
-                setValue={setLocation}
+                data={locationDataWithAll}
+                value={location ? DataWilayas.find(item => item.name === location)?.id : "all"}
+                setValue={setLocationByName}
             >
                 <CustomButton
                     name={t("filter.nearMe")}
@@ -83,23 +140,25 @@ const FilterMedecinForm = ({ showTitle = false }) => {
                     css="!text-sm md:!text-base"
                 />
             </DropDown>
+            
             <DropDown
                 title={showTitle ? t("filter.category") : ""}
                 icon={Icons.Category}
                 name={"choisir une categorie"}
-                data={data}
+                data={categoryDataWithAll}
                 isLoading={isLoading}
-                value={category}
-                setValue={setCategory}
+                value={category ? data?.find(item => item.name === category)?.id : "all"}
+                setValue={setCategoryByName}
             />
+            
             <DropDown
                 title={showTitle ? t("filter.specialty") : ""}
                 icon={Icons.Category}
                 name={"choisir une specialitie"}
-                data={dataSpecialite}
+                data={specialtyDataWithAll}
                 isLoading={isLoadingSpecialite}
-                value={specialty}
-                setValue={setSpecialty}
+                value={specialty ? dataSpecialite?.find(item => item.name === specialty)?.id : "all"}
+                setValue={setSpecialtyByName}
             />
         </div>
     );
