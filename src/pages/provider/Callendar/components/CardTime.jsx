@@ -43,7 +43,7 @@ const CardTime = ({ title, time1, setTime1, time2, setTime2 }) => {
                         className="flex flex-col items-center space-y-2"
                     >
                         <div className="relative flex items-center">
-                            <div className="px-4 py-2 border rounded-md font-semibold md:text-lg w-20 text-center">
+                            <div className="px-4 py-2 border rounded-md font-semibold md:text-lg w-20 text-center whitespace-nowrap min-w-[5rem]">
                                 {formatTime(time)}
                             </div>
                             <div className="flex flex-col ml-2">
