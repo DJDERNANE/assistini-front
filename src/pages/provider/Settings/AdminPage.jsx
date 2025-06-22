@@ -20,6 +20,15 @@ import ChangePwdPopUp from "./components/ChangePwdPopUp";
 import { useQuery } from "react-query";
 import axios from "axios";
 
+const clinicTypeFrToEn = {
+    "centre medical": "medical center",
+    "cabinet medical": "medical office",
+    "clinique specialisee": "specialist clinic",
+    "medical center": "medical center",
+    "medical office": "medical office",
+    "specialist clinic": "specialist clinic"
+};
+
 const AdminPage = () => {
     const { t } = useTranslation("settings");
 
@@ -44,7 +53,7 @@ const AdminPage = () => {
     const [speIds, setSpeIds] = useState("");
     const [id_fascial, setId_fascial] = useState("");
     const [argument_num, setArgument_num] = useState("");
-    const [type, setType] = useState("centre medical");
+    const [type, setType] = useState("medical center");
     const [imageSrc, setImageSrc] = useState(null);
     const [imageFile, setImageFile] = useState(null);
 
@@ -61,7 +70,7 @@ const AdminPage = () => {
         // formData.append("speIds", speIds);
         // formData.append("id_fascial", id_fascial);
         formData.append("num_arg", argument_num);
-        formData.append("type", type);
+        formData.append("clinicType", type);
         formData.append("logo", imageFile);
 
         try {
@@ -111,7 +120,7 @@ const AdminPage = () => {
             setLocalisation(data?.data?.location);
             setId_fascial(data?.data?.id_fascial);
             setArgument_num(data?.data?.num_arg);
-            setType(data?.data?.type);
+            setType(clinicTypeFrToEn[data?.data?.clinicType] || "medical center");
 
             if (data?.data?.location) setGps(1);
         }
@@ -266,6 +275,11 @@ const AdminPage = () => {
                     title={t("admin.type")}
                     type={type}
                     setType={setType}
+                    options={[
+                        { value: "medical center", label: "Centre médical" },
+                        { value: "medical office", label: "Cabinet médical" },
+                        { value: "specialist clinic", label: "Clinique spécialisée" },
+                    ]}
                 />
 
                 <CardEdit>

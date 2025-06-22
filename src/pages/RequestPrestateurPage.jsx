@@ -49,6 +49,7 @@ const RequestPrestateurPage = () => {
         address: "",
         location: "",
         desc: "",
+        clinicType: "",
         categoryId: "",
         speIds: [], // Array of selected specialite IDs
 
@@ -191,6 +192,8 @@ const RequestPrestateurPage = () => {
                 newErrors.location = "La localisation est requise";
             if (!formData.desc.trim())
                 newErrors.desc = "La description est requise";
+            if (!formData.clinicType)
+                newErrors.clinicType = "Le type de clinique est requis";
             if (!formData.categoryId)
                 newErrors.categoryId = "La catégorie est requise";
             if (formData.speIds.length === 0)
@@ -311,6 +314,7 @@ const RequestPrestateurPage = () => {
                         </Text>
 
                         <Stack spacing={6}>
+                            
                             <SimpleGrid
                                 columns={{ base: 1, md: 2 }}
                                 spacing={4}
@@ -439,7 +443,28 @@ const RequestPrestateurPage = () => {
                                     {errors.desc}
                                 </FormErrorMessage>
                             </FormControl>
-
+                            <SimpleGrid
+                                columns={{ base: 1, md: 2 }}
+                                spacing={4}
+                            >
+                                <FormControl isRequired isInvalid={errors.clinicType}>
+                                    <FormLabel>Type de clinique</FormLabel>
+                                    <Select
+                                        name="clinicType"
+                                        value={formData.clinicType}
+                                        onChange={handleChange}
+                                        placeholder="Sélectionnez le type de clinique"
+                                    >
+                                        <option value="medical center">Centre médical</option>
+                                        <option value="medical office">Cabinet médical</option>
+                                        <option value="specialist clinic">Clinique spécialisée</option>
+                                    </Select>
+                                    <FormErrorMessage>
+                                        {errors.clinicType}
+                                    </FormErrorMessage>
+                                </FormControl>
+                                <Box display={{ base: "none", md: "block" }} />
+                            </SimpleGrid>
                             <SimpleGrid
                                 columns={{ base: 1, md: 2 }}
                                 spacing={4}

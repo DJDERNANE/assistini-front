@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import icons from "../../../../constants/icons";
 import CardEdit from "./CardEdit";
 
-const CardSelect = ({ title, selected = "centre medical", type, setType }) => {
+const CardSelect = ({ title, selected = "medical center", type, setType, options }) => {
     const [selectFocused, setSelectFocused] = useState(false);
 
     const selectRef = useRef();
@@ -26,11 +26,15 @@ const CardSelect = ({ title, selected = "centre medical", type, setType }) => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
-    const selectData = [
-        "centre medical",
-        "cabinet medical",
-        "clinique specialisee",
+    // Use options prop if provided, otherwise fallback to old array
+    const selectData = options || [
+        { value: "medical center", label: "Centre médical" },
+        { value: "medical office", label: "Cabinet médical" },
+        { value: "specialist clinic", label: "Clinique spécialisée" },
     ];
+
+    // Find the label for the current value
+    const selectedLabel = selectData.find((item) => item.value === type)?.label || type;
 
     return (
         <CardEdit>
@@ -52,7 +56,7 @@ const CardSelect = ({ title, selected = "centre medical", type, setType }) => {
                         if (!selectFocused) setSelectFocused(true);
                     }}
                 >
-                    <p className="px-4 py-3 text-sm">{type}</p>
+                    <p className="px-4 py-3 text-sm">{selectedLabel}</p>
                     <img
                         src={icons.ArrowDown}
                         alt=""
@@ -62,17 +66,17 @@ const CardSelect = ({ title, selected = "centre medical", type, setType }) => {
                         <div className="absolute left-0 right-0 top-0 z-50 space-y-2">
                             {selectData.map((item, idx) => (
                                 <div
-                                    key={idx}
+                                    key={item.value}
                                     className="w-full px-4 py-3 bg-white rounded-xl text-sm relative cursor-pointer"
                                     onClick={(e) => {
-                                        setType(item);
+                                        setType(item.value);
                                         setSelectFocused(false);
                                     }}
                                 >
-                                    <p>{item}</p>
-                                    {type === item && (
+                                    <p>{item.label}</p>
+                                    {type === item.value && (
                                         <p className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-white bg-secondary-100 rounded-full w-5 h-5 flex items-center justify-center">
-                                            {/* {idx + 1} */}O
+                                            O
                                         </p>
                                     )}
                                 </div>
