@@ -19,9 +19,11 @@ import {
 import ChangePwdPopUp from "./components/ChangePwdPopUp";
 import { useQuery } from "react-query";
 import axios from "axios";
+import { useToast } from "@chakra-ui/react";
 
 const CabinetPage = () => {
     const { t } = useTranslation("settings");
+    const toast = useToast();
 
     const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -46,6 +48,8 @@ const CabinetPage = () => {
 
     const [services, setServices] = useState("");
     const [transport, setTransport] = useState("");
+    const [numArg, setNumArg] = useState("");
+    const [access, setAccess] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -60,11 +64,13 @@ const CabinetPage = () => {
         formData.append("langue", langue);
         formData.append("services", services);
         formData.append("transport", transport);
+        formData.append("num_arg", numArg);
+        formData.append("access", access);
 
         try {
             // Send data to the API
             const response = await axios.put(
-                process.env.REACT_APP_URL_API + "/providers/provider",
+                process.env.REACT_APP_URL_API + "/providers/info",
                 formData,
                 {
                     headers: {
@@ -76,8 +82,22 @@ const CabinetPage = () => {
                 }
             );
             console.log("User updated successfully", response.data);
+            toast({
+                title: t("general.save") + "!",
+                description: t("cabinet.success_message") || "Informations mises à jour avec succès.",
+                status: "success",
+                duration: 4000,
+                isClosable: true,
+            });
         } catch (error) {
             console.error("Error updating user:", error);
+            toast({
+                title: t("general.save") + "!",
+                description: t("cabinet.error_message") || "Erreur lors de la mise à jour des informations.",
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            });
         } finally {
             setLoading(false);
         }
@@ -92,6 +112,8 @@ const CabinetPage = () => {
             setLangue(data?.data?.langue);
             setServices(data?.data?.services);
             setTransport(data?.data?.transport);
+            setNumArg(data?.data?.num_arg || "");
+            setAccess(data?.data?.access || "");
         }
     }, [data]);
 
@@ -143,6 +165,18 @@ const CabinetPage = () => {
                     value={horaires}
                     title={t("cabinet.horaires")}
                     // register={register("id_fascial")}
+                />
+                <CardInput
+                    setValue={setNumArg}
+                    value={numArg}
+                    title={t("cabinet.num_arg") || "Numéro d'agrément"}
+                    // register={register("num_arg")}
+                />
+                <CardInput
+                    setValue={setAccess}
+                    value={access}
+                    title={t("cabinet.access") || "Accès"}
+                    // register={register("access")}
                 />
 
                 <div className="flex items-center justify-end w-full md:col-span-3">
