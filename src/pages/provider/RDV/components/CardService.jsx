@@ -24,7 +24,7 @@ const CardService = ({
                     {subTitle}
                 </p>
                 <ul className="h-[200px] overflow-y-auto">
-                    {items.map((item, idx) => (
+                    {items?.map((item, idx) => (
                         <Item
                             key={idx}
                             title={item.title}
