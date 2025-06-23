@@ -290,7 +290,7 @@ const RequestPrestateurPage = () => {
             toast({
                 title: "Erreur",
                 description:
-                    "Une erreur est survenue lors de l'envoi de votre demande",
+                    error,
                 status: "error",
                 duration: 3000,
                 isClosable: true,
