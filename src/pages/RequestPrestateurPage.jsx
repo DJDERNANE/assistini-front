@@ -282,6 +282,16 @@ const RequestPrestateurPage = () => {
                 setTimeout(() => {
                     navigate("/");
                 }, 2000);
+            }  else if (response.status === 400) {
+                const errorData = await response.json();
+        
+                toast({
+                    title: "Erreur de validation",
+                    description: errorData.message || "Veuillez vérifier les informations saisies.",
+                    status: "error",
+                    duration: 5000,
+                    isClosable: true,
+                });
             } else {
                 throw new Error("Erreur lors de l'envoi de la demande");
             }
