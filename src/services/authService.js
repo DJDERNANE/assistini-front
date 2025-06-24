@@ -42,6 +42,19 @@ const resetPwd = (payload) => {
   return axios.post(`${url}/users/ResetPassword`, payload);
 };
 
+// New password reset flow endpoints
+const checkEmail = (payload) => {
+  return axios.post(`${url}/users/checkEmail`, payload);
+};
+
+const confirmEmailCode = (payload) => {
+  return axios.post(`${url}/users/confrimEmail`, payload);
+};
+
+const updateResetPwd = (payload) => {
+  return axios.post(`${url}/users/ResetPassword`, payload);
+};
+
 export default {
   loginProvider,
   login,
@@ -50,4 +63,7 @@ export default {
   providerMe,
   confirmEmail,
   resetPwd,
+  checkEmail,
+  confirmEmailCode,
+  updateResetPwd,
 };

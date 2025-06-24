@@ -1,12 +1,12 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import CustomInput from "../custom/CustomInput";
 import { Icons } from "../../constants";
 import { Checkbox, CheckboxGroup, FormLabel } from "@chakra-ui/react";
 import CustomButton from "../custom/CustomButton";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ResetPwdForm from "./ResetPwdForm";
 import VerifyEmailForm from "./VerifyEmailForm";
 import ChangePwdForm from "./ChangePwdForm";
@@ -23,6 +23,7 @@ const SignInForm = ({ isMedecin = false, isSubAdmin = false }) => {
     const [step, setStep] = useState(1);
     const [isPatient, setIsPatient] = useState(true);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const {
         register,
@@ -51,6 +52,12 @@ const SignInForm = ({ isMedecin = false, isSubAdmin = false }) => {
     const handleGo = () => {
         dispatch(authActions.replaceData("sign-up"));
     };
+
+    useEffect(() => {
+        if (location.state?.step === 1) {
+            setStep(1);
+        }
+    }, [location.state]);
 
     return (
         <div>

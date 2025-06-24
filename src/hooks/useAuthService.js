@@ -144,6 +144,134 @@ export const useResetPwd = (callback = () => {}) => {
     };
 };
 
+// New password reset flow hooks
+export const useCheckEmail = (callback = () => {}) => {
+    const [loading, setLoading] = useState(false);
+    const [message, setMessage] = useState("");
+    const [error, setError] = useState("");
+
+    const { register, handleSubmit, reset, setValue, getValues, watch } =
+        useForm();
+
+    const onSubmit = (data) => {
+        setError("");
+        setMessage("");
+        setLoading(true);
+        authService
+            .checkEmail(data)
+            .then((res) => {
+                console.log("###", res.data.message);
+                setMessage(res.data.message);
+                setLoading(false);
+                callback(data.email);
+            })
+            .catch((err) => {
+                console.log("###", err);
+                setError(err.response?.data?.message || "An error occurred");
+                setLoading(false);
+            });
+    };
+
+    return {
+        register,
+        handleSubmit,
+        onSubmit,
+        loading,
+        message,
+        error,
+    };
+};
+
+export const useConfirmEmailCode = (email, callback = () => {}) => {
+    const [loading, setLoading] = useState(false);
+    const [message, setMessage] = useState("");
+    const [error, setError] = useState("");
+
+    const { register, handleSubmit, reset, setValue, getValues, watch } =
+        useForm({
+            defaultValues: {
+                code: "",
+            },
+        });
+
+    const onSubmit = (data) => {
+        setError("");
+        setMessage("");
+        setLoading(true);
+        authService
+            .confirmEmailCode({ ...data, email })
+            .then((res) => {
+                console.log("###", res.data.message);
+                setMessage(res.data.message);
+                setLoading(false);
+                callback();
+            })
+            .catch((err) => {
+                console.log("###", err);
+                setError(err.response?.data?.message || "An error occurred");
+                setLoading(false);
+            });
+    };
+
+    return {
+        register,
+        handleSubmit,
+        onSubmit,
+        loading,
+        message,
+        error,
+    };
+};
+
+export const useUpdateResetPwd = (email, callback = () => {}) => {
+    const [loading, setLoading] = useState(false);
+    const [message, setMessage] = useState("");
+    const [error, setError] = useState("");
+
+    const { register, handleSubmit, reset, setValue, getValues, watch } =
+        useForm({
+            defaultValues: {
+                password: "",
+                confirmPassword: "",
+            },
+        });
+
+    const onSubmit = (data) => {
+        setError("");
+        setMessage("");
+        setLoading(true);
+        
+        if (data.password !== data.confirmPassword) {
+            setError("Passwords do not match");
+            setLoading(false);
+            return;
+        }
+
+        authService
+            .updateResetPwd({ email, password: data.password })
+            .then((res) => {
+                console.log("###", res.data.message);
+                setMessage(res.data.message);
+                setLoading(false);
+                callback();
+            })
+            .catch((err) => {
+                console.log("###", err);
+                setError(err.response?.data?.message || "An error occurred");
+                setLoading(false);
+            });
+    };
+
+    return {
+        register,
+        handleSubmit,
+        onSubmit,
+        loading,
+        message,
+        error,
+    };
+};
+
 export const useConfrimEmail = (email, callback = () => {}) => {
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
