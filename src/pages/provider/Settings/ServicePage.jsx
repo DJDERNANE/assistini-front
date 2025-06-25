@@ -152,8 +152,7 @@ const ServicePage = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 className="grid grid-cols-1 md:grid-cols-4 gap-4"
             >
-                <CardInput title={t("clinic.nom")} register={register("nom")} />
-                <CardEdit>
+                 <CardEdit>
                     <h3 className="font-medium first-letter:capitalize mb-3 text-sm">
                         {t("clinic.categories")}
                     </h3>
@@ -257,10 +256,13 @@ const ServicePage = () => {
                         )}
                     </div>
                 </CardEdit>
+                <CardInput title={t("clinic.nom")} register={register("nom")} />
+               
                 <CardInput
                     title={t("clinic.price")}
                     type="number"
                     register={register("price")}
+                    required
                 />
 
                 <div className="md:col-span-3">

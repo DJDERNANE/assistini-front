@@ -11,6 +11,7 @@ const CardInput = ({
     register = null,
     value,
     setValue,
+    required = false
 }) => {
     const [inputFocused, setInputFocused] = useState(false);
 
@@ -46,6 +47,7 @@ const CardInput = ({
                         value={value}
                         onFocus={handleInputFocus}
                         onBlur={handleInputBlur}
+                        required={required}
                     />
                 ) : (
                     <input
@@ -57,6 +59,7 @@ const CardInput = ({
                         {...register}
                         onFocus={handleInputFocus}
                         onBlur={handleInputBlur}
+                        required={required}
                     />
                 )}
 
