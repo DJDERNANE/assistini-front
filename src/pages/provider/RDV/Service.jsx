@@ -27,49 +27,6 @@ const Service = () => {
 
     const [selectPartner, setSelectPartner] = useState(null);
 
-    const items = [
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-        {
-            title: "test",
-            description: "lorem ipsum dolor sit amet",
-        },
-    ];
-
     const navigate = useNavigate();
 
     const { isLoading, fetchData, data } = useGetDataProvider();
@@ -113,7 +70,9 @@ const Service = () => {
     }, [id]);
 
     useEffect(() => {
-        if (selectSp) fetchDataService(selectSp[0]?.id);
+        if (selectSp && selectSp.length > 0) {
+            fetchDataService(selectSp.map(sp => sp.id));
+        }
     }, [selectSp]);
 
     useEffect(() => {
@@ -157,6 +116,7 @@ const Service = () => {
                         }
                         selected={selectSp}
                         setSelected={setSelectSp}
+                        multiple
                     />
                     <CardService
                         title={t("general.service")}
