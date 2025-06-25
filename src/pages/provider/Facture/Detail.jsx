@@ -383,6 +383,7 @@ const Detail = () => {
                                     // onClick={handleDownload}
                                     href={`${process.env.REACT_APP_URL_API}${data?.data?.data?.payment?.user?.path}`}
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     {t("general.download")}
                                 </a>
