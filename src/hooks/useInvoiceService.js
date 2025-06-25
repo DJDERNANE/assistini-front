@@ -105,7 +105,11 @@ export const useCreateInvoice = (refetch = () => {}) => {
         setLoading(false);
         reset();
         refetch();
-        navigate("/prestateur/invoices/current/" + res?.data?.invoiceId);
+        if (res?.data?.invoiceId) {
+          navigate("/prestateur/invoices/current/" + res?.data?.invoiceId);
+        } else {
+          setError("Invoice ID is missing. Cannot navigate to invoice detail.");
+        }
       })
       .catch((err) => {
         setError(err.response.data.message);
