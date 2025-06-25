@@ -381,7 +381,7 @@ const Detail = () => {
                                 <a
                                     className="text-white bg-blue-600 font-semibold uppercase p-5 rounded-xl w-full block text-center"
                                     // onClick={handleDownload}
-                                    href={`${process.env.REACT_APP_URL_API}/${data?.data?.data?.payment?.user?.path}`}
+                                    href={`${process.env.REACT_APP_URL_API}${data?.data?.data?.payment?.user?.path}`}
                                     target="_blank"
                                 >
                                     {t("general.download")}
