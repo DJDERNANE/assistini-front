@@ -23,6 +23,7 @@ import WaitingBar from "../layout/WaitingBar";
 
 const SearchMedecinPage = () => {
     const [select, setSelect] = useState(0);
+    const [searchValue, setSearchValue] = useState("");
 
     const providers = useSelector((state) => state.providers.item);
     const filters = useSelector((state) => state.filterProviders.item);
@@ -30,7 +31,7 @@ const SearchMedecinPage = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const query = new URLSearchParams(location.search);
-    const searchValue = query.get("search");
+    const urlSearchValue = query.get("search");
 
     const dispatch = useDispatch();
     
@@ -45,6 +46,31 @@ const SearchMedecinPage = () => {
     const { loading, error, fetchData } = useGetAllManuel(() =>
         providerService?.getAllByFilter(filters)
     );
+
+    // Handle search change
+    const handleSearchChange = (search) => {
+        setSearchValue(search);
+        
+        // Update URL with search parameter
+        const params = new URLSearchParams(location.search);
+        if (search) {
+            params.set('search', search);
+        } else {
+            params.delete('search');
+        }
+        
+        const newUrl = `${location.pathname}?${params.toString()}`;
+        navigate(newUrl, { replace: true });
+        
+        // Update filters with search parameter (or remove it if empty)
+        const updatedFilters = { ...filters };
+        if (search) {
+            updatedFilters.search = search;
+        } else {
+            delete updatedFilters.search;
+        }
+        dispatch(providerFilterActions.replaceData(updatedFilters));
+    };
 
     // Update URL when filters change
     useEffect(() => {
@@ -76,16 +102,19 @@ const SearchMedecinPage = () => {
 
         let filter = {};
         for (const [key, value] of queryParams.entries()) {
-            if (key !== 'search') { // Don't include search in filters
-                filter = { ...filter, [key]: value };
-            }
+            filter = { ...filter, [key]: value };
+        }
+
+        // Set search value from URL
+        if (urlSearchValue) {
+            setSearchValue(urlSearchValue);
         }
 
         dispatch(providerFilterActions.replaceData(filter));
     }, []);
 
     useEffect(() => {
-        if (!searchValue && filters) fetchData();
+        if (filters) fetchData();
     }, [filters]);
 
     return (
@@ -106,7 +135,12 @@ const SearchMedecinPage = () => {
                                 className="text-zinc-600 text-sm md:text-base text-center flex items-center justify-center"
                                 padding={"3"}
                             >
-                                prenez un RDV
+                                <SearchForm 
+                                    search={searchValue}
+                                    setSearch={setSearchValue}
+                                    onSearchChange={handleSearchChange}
+                                    navigateToDoctors={false}
+                                />
                             </CardBody>
                         </Card>
                         {/* <div className="col-start-3 md:col-start-1 md:col-span-1 col-span-2"> */}
