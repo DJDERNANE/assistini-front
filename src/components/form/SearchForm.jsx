@@ -21,23 +21,33 @@ const SearchForm = ({
         const timeoutId = setTimeout(() => {
             // Always call onSearchChange, even with empty search
             onSearchChange(search);
-            
-            // Navigate to doctors page with search parameter if enabled
-            if (navigateToDoctors) {
-                if (search) {
-                    navigate(`/doctors?search=${encodeURIComponent(search)}`);
-                } else {
-                    navigate('/doctors');
-                }
-            }
         }, 500); // 500ms delay
 
         return () => clearTimeout(timeoutId);
-    }, [search, onSearchChange, navigateToDoctors, navigate]);
+    }, [search, onSearchChange]);
+
+    // Handle search button click or enter key press
+    const handleSearchSubmit = () => {
+        if (search && navigateToDoctors) {
+            navigate(`/doctors?search=${encodeURIComponent(search)}`);
+        } else if (!search && navigateToDoctors) {
+            navigate('/doctors');
+        } else {
+            // If not navigating to doctors, just call the handleSearch function
+            handleSearch();
+        }
+    };
+
+    // Handle enter key press
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleSearchSubmit();
+        }
+    };
 
     return (
         <div className="flex space-x-2 bg-gray-100 rounded-lg px-4 py-2 w-full">
-            <button onClick={handleSearch}>
+            <button onClick={handleSearchSubmit}>
                 <img
                     src={Icons.Search}
                     alt="icon search"
@@ -49,6 +59,7 @@ const SearchForm = ({
                 placeholder={t("navbar.quick_search")}
                 className="bg-transparent outline-none w-full text-sm"
                 onChange={(e) => setSearch(e.target.value)}
+                onKeyPress={handleKeyPress}
                 value={search}
             />
         </div>

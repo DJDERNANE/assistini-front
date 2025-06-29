@@ -39,6 +39,7 @@ const DashboardPage = () => {
                     setSearch={setSearch}
                     search={search}
                     handleSearch={handleSearch}
+                    navigateToDoctors={false}
                 />
             </Navbar>
             <NavbarMobile />
