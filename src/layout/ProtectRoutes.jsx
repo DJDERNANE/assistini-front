@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
         navigate(endPath === "cabinet" ? "/cabinet" : "/")
     );
 
-    console.log("####", startPath, paths, path);
+    console.log("####", mePatient);
     const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
     useEffect(() => {

@@ -355,8 +355,12 @@ export const useAuth = (
                 setMessage(res.data.message);
 
                 if (isMedecin) {
+                    localStorage.setItem('role', 'prestateur')
                     navigate("/prestateur/rdvs");
-                } else navigate("/home");
+                } else{
+                    localStorage.setItem('role', 'patient')
+                    navigate("/home");
+                } 
                 setLoading(false);
             })
             .catch((err) => {

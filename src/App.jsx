@@ -66,6 +66,9 @@ import AddDocumentPage from "./pages/AddDocumentPage";
 import RequestPage from "./pages/RequestsPage";
 import RequestPrestateurPage from "./pages/RequestPrestateurPage";
 import PatientSignPage from "./pages/PatientSignPage";
+import AuthRoute from "./components/middlware/AuthRoute";
+import GuestRoute from "./components/middlware/GuestRoute";
+import RoleRoute from "./components/middlware/RoleRoute";
 
 function App() {
     const { t } = useTranslation("popup");
@@ -108,225 +111,264 @@ function App() {
             ) : (
                 <Router>
                     {/* <ScrollToTop /> */}
-                    <ProtectedRoute>
-                        <Routes>
-                            <Route exact path="/" element={<WelcomePage />} />
+
+                    <Routes>
+                        {/* Guest routes */}
+                        <Route exact path="/" element={
+                            <GuestRoute>
+                                <WelcomePage />
+                            </GuestRoute>
+                        } />
+                        <Route
+                            exact
+                            path="/sign"
+                            element={
+                                <GuestRoute>
+                                    <PatientSignPage />
+                                </GuestRoute>
+                            }
+                        />
+                        <Route
+                            exact
+                            path="/sign-prestateur"
+                            element={
+                                <GuestRoute>
+                                    <WelcomePrestateurPage />
+                                </GuestRoute>
+                            }
+                        />
+                        <Route
+                            exact
+                            path="/request-prestateur"
+                            element={
+                                <GuestRoute>
+                                    <RequestPrestateurPage />
+                                </GuestRoute>
+                            }
+                        />
+                        <Route
+                            exact
+                            path="/sub-prestateur"
+                            element={
+                                <GuestRoute>
+                                    <SubPrestateurPage />
+                                </GuestRoute>
+                            }
+                        />
+                        
+                        {/* Provider dashboard (prestateur) */}
+                        <Route
+                            exact
+                            path="prestateur"   
+                            element={
+                                <RoleRoute allowedRoles={["prestateur"]}>
+                                    <DashboardProviderPage />
+                                </RoleRoute>
+                            }
+                        >
                             <Route
                                 exact
-                                path="/sign"
-                                element={<PatientSignPage />}
-                            />
-                            <Route
-                                exact
-                                path="/sign-prestateur"
-                                element={<WelcomePrestateurPage />}
-                            />
-                            <Route
-                                exact
-                                path="/request-prestateur"
-                                element={<RequestPrestateurPage />}
-                            />
-                            <Route
-                                exact
-                                path="/sub-prestateur"
-                                element={<SubPrestateurPage />}
-                            />
-                            {/* dashboard for providers  */}
-                            <Route
-                                exact
-                                path="prestateur"
-                                element={<DashboardProviderPage />}
+                                path="waiting-list"
+                                element={<WaitingListPage />}
                             >
-                                <Route
-                                    exact
-                                    path="waiting-list"
-                                    element={<WaitingListPage />}
-                                >
-                                    <Route
-                                        exact
-                                        path="requests"
-                                        element={<WaitingListDetailPage />}
-                                    />
-                                </Route>
-                                <Route
-                                    exact
-                                    path="patient-profile"
-                                    element={<PatientProfile />}
-                                >
-                                    <Route
-                                        exact
-                                        path="add"
-                                        element={<NewPatient />}
-                                    />
-                                    <Route
-                                        exact
-                                        path="exist"
-                                        element={<ExistPatient />}
-                                    />
-                                </Route>
-                                <Route
-                                    exact
-                                    path="settings"
-                                    element={<SettingsPage />}
-                                >
-                                    <Route
-                                        exact
-                                        path="admin"
-                                        element={<AdminPage />}
-                                    />
-                                    <Route
-                                        exact
-                                        path="accounts"
-                                        element={<AccountPage />}
-                                    />
-                                    <Route
-                                        exact
-                                        path="my-clinic"
-                                        element={<ServicePage />}
-                                    />
-                                    <Route
-                                        exact
-                                        path="my-cabinet"
-                                        element={<CabinetPage />}
-                                    />
-                                </Route>
-                                <Route
-                                    exact
-                                    path="invoices"
-                                    element={<FacturePage />}
-                                >
-                                    {/* <Route exact index element={<FactureListPage />} /> */}
-                                    <Route
-                                        exact
-                                        path=":type"
-                                        element={<FactureListPage />}
-                                    />
-                                    <Route
-                                        exact
-                                        path=":type/:id"
-                                        element={<FactureDetailPage />}
-                                    />
-                                </Route>
-                                <Route exact path="my-calendar">
-                                    <Route
-                                        exact
-                                        index
-                                        element={<MyCalendar />}
-                                    />
-                                </Route>
-                                <Route exact path="my-team">
-                                    <Route exact index element={<MyTeam />} />
-                                    <Route
-                                        exact
-                                        path="list"
-                                        element={<MyTeamList />}
-                                    />
-                                    <Route
-                                        exact
-                                        path="my-notes"
-                                        element={<MyNotes />}
-                                    />
-                                </Route>
-                                <Route exact path="rdvs" element={<Rdvs />}>
-                                    <Route exact index element={<List />} />
-                                    <Route
-                                        exact
-                                        path="add"
-                                        element={<AddRdv />}
-                                    />
-                                    <Route
-                                        exact
-                                        path="service/:id"
-                                        element={<Service />}
-                                    />
-                                    {/* <Route exact path="my-notes" element={<MyNotes />} /> */}
-                                </Route>
-                                <Route exact path="chat" element={<Chat />}>
-                                    <Route exact index element={<ListChat />} />
-                                </Route>
-                                <Route exact path="stats" element={<Stats />} />
-                            </Route>
-                            {/* dashboard for patients  */}
-                            <Route
-                                exact
-                                path="home"
-                                element={<DashboardPage />}
-                            >
-                                <Route exact index element={<HomePage />} />
-                                <Route
-                                    exact
-                                    path="messages"
-                                    element={<MessagePage />}
-                                />
-                                <Route
-                                    exact
-                                    path="favorites"
-                                    element={<FavoritePage />}
-                                />
-                                <Route
-                                    exact
-                                    path="my-rdvs"
-                                    element={<MyRDVPage />}
-                                />
-                                <Route
-                                    exact
-                                    path="documents"
-                                    element={<DocumentPage />}
-                                />
-                                <Route
-                                    exact
-                                    path="documents/add"
-                                    element={<AddDocumentPage />}
-                                />
                                 <Route
                                     exact
                                     path="requests"
-                                    element={<RequestPage />}
+                                    element={<WaitingListDetailPage />}
                                 />
+                            </Route>
+                            <Route
+                                exact
+                                path="patient-profile"
+                                element={<PatientProfile />}
+                            >
+                                <Route
+                                    exact
+                                    path="add"
+                                    element={<NewPatient />}
+                                />
+                                <Route
+                                    exact
+                                    path="exist"
+                                    element={<ExistPatient />}
+                                />
+                            </Route>
+                            <Route
+                                exact
+                                path="settings"
+                                element={<SettingsPage />}
+                            >
+                                <Route
+                                    exact
+                                    path="admin"
+                                    element={<AdminPage />}
+                                />
+                                <Route
+                                    exact
+                                    path="accounts"
+                                    element={<AccountPage />}
+                                />
+                                <Route
+                                    exact
+                                    path="my-clinic"
+                                    element={<ServicePage />}
+                                />
+                                <Route
+                                    exact
+                                    path="my-cabinet"
+                                    element={<CabinetPage />}
+                                />
+                            </Route>
+                            <Route
+                                exact
+                                path="invoices"
+                                element={<FacturePage />}
+                            >
+                                {/* <Route exact index element={<FactureListPage />} /> */}
+                                <Route
+                                    exact
+                                    path=":type"
+                                    element={<FactureListPage />}
+                                />
+                                <Route
+                                    exact
+                                    path=":type/:id"
+                                    element={<FactureDetailPage />}
+                                />
+                            </Route>
+                            <Route exact path="my-calendar">
+                                <Route
+                                    exact
+                                    index
+                                    element={<MyCalendar />}
+                                />
+                            </Route>
+                            <Route exact path="my-team">
+                                <Route exact index element={<MyTeam />} />
+                                <Route
+                                    exact
+                                    path="list"
+                                    element={<MyTeamList />}
+                                />
+                                <Route
+                                    exact
+                                    path="my-notes"
+                                    element={<MyNotes />}
+                                />
+                            </Route>
+                            <Route exact path="rdvs" element={<Rdvs />}>
+                                <Route exact index element={<List />} />
+                                <Route
+                                    exact
+                                    path="add"
+                                    element={<AddRdv />}
+                                />
+                                <Route
+                                    exact
+                                    path="service/:id"
+                                    element={<Service />}
+                                />
+                                {/* <Route exact path="my-notes" element={<MyNotes />} /> */}
+                            </Route>
+                            <Route exact path="chat" element={<Chat />}>
+                                <Route exact index element={<ListChat />} />
+                            </Route>
+                            <Route exact path="stats" element={<Stats />} />
+                        </Route>
+                        
+                        {/* Patient dashboard */}
+                        <Route
+                            exact
+                            path="home"
+                            element={
+                                <RoleRoute allowedRoles={["patient"]}>
+                                    <DashboardPage />
+                                </RoleRoute>
+                            }
+                        >
+                            <Route exact index element={<HomePage />} />
+                            <Route
+                                exact
+                                path="messages"
+                                element={<MessagePage />}
+                            />
+                            <Route
+                                exact
+                                path="favorites"
+                                element={<FavoritePage />}
+                            />
+                            <Route
+                                exact
+                                path="my-rdvs"
+                                element={<MyRDVPage />}
+                            />
+                            <Route
+                                exact
+                                path="documents"
+                                element={<DocumentPage />}
+                            />
+                            <Route
+                                exact
+                                path="documents/add"
+                                element={<AddDocumentPage />}
+                            />
+                            <Route
+                                exact
+                                path="requests"
+                                element={<RequestPage />}
+                            />
 
-                                {/* <Route exact path="my-notes" element={<MyNotePage />} /> */}
-                                <Route
-                                    exact
-                                    path="add-patient"
-                                    element={<PatientDetailPage />}
-                                />
-                                <Route
-                                    exact
-                                    path="my-patient/:id"
-                                    element={<PatientDetailPage show />}
-                                />
-                                <Route
-                                    exact
-                                    path="my-patient"
-                                    element={<MyPatientPage />}
-                                />
-                                <Route
-                                    exact
-                                    path="profile"
-                                    element={<ProfilePage />}
-                                />
-                                <Route
-                                    exact
-                                    path="notifications"
-                                    element={<NotificationPage />}
-                                />
-                            </Route>
-                            <Route exact path="make-rdv" element={<RDVPage />}>
-                                <Route index element={<MakeRdvPage />} />
-                            </Route>
-                            <Route exact path="doctors">
-                                <Route index element={<SearchMedecinPage />} />
-                                <Route
-                                    exact
-                                    path=":id"
-                                    element={<DetailsMedecinPage />}
-                                />
-                            </Route>
-                            <Route path="*" element={<NotFoundPage />} />
-                        </Routes>
-                    </ProtectedRoute>
+                            {/* <Route exact path="my-notes" element={<MyNotePage />} /> */}
+                            <Route
+                                exact
+                                path="add-patient"
+                                element={<PatientDetailPage />}
+                            />
+                            <Route
+                                exact
+                                path="my-patient/:id"
+                                element={<PatientDetailPage show />}
+                            />
+                            <Route
+                                exact
+                                path="my-patient"
+                                element={<MyPatientPage />}
+                            />
+                            <Route
+                                exact
+                                path="profile"
+                                element={<ProfilePage />}
+                            />
+                            <Route
+                                exact
+                                path="notifications"
+                                element={<NotificationPage />}
+                            />
+                        </Route>
+                        
+                        {/* Auth-protected routes for both roles */}
+                        <Route exact path="make-rdv" element={
+                            <AuthRoute>
+                                <RDVPage />
+                            </AuthRoute>
+                        }>
+                            <Route index element={<MakeRdvPage />} />
+                        </Route>
+                        
+                        <Route exact path="doctors">
+                            <Route index element={<SearchMedecinPage />} />
+                            <Route
+                                exact
+                                path=":id"
+                                element={<DetailsMedecinPage />}
+                            />
+                        </Route>
+                        
+                        <Route path="*" element={<NotFoundPage />} />
+                    </Routes>
                 </Router>
             )}
+            
             <PopUpAlert isOpen={isOpen} onClose={onClose} size={"4xl"}>
                 <p className="text-center">
                     {t("detail-doctor.validation-description")}
