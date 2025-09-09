@@ -21,29 +21,29 @@ const ExperienceSection = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-[#FCF8F3] py-20 md:py-32 responsive">
+        <div className="bg-[#FCF8F3] py-20 md:py-32">
             <div className=" relative">
                 <img
                     src={images.Experience}
                     className="!w-full h-[800px] rounded-2xl object-cover"
                 />
-                <div className="absolute bottom-12 left-12">
-                    <div className="bg-white bg-opacity-80 p-6 rounded-xl h-[90%] w-[4  00px]">
+                <div className="absolute bottom-12 md:left-12">
+                    <div className="bg-white bg-opacity-80 p-6 rounded-xl h-[90%] md:w-[400px]">
                         <div className="flex items-center space-x-2">
                             <div className="w-3 h-3 rounded-full bg-primary-200"></div>
                             <p className=" text-xs">
                                 {t("experience.sub-title")}
                             </p>
                         </div>
-                        <h3 className="text-4xl font-semibold mb-4 w-2/3 mt-4">
+                        <h3 className="text-4xl font-semibold mb-4 md:w-2/3 mt-4">
                             {t("experience.title")}
                         </h3>
-                        <div className=" border-t border-gray-400 pt-4 mt-4 space-y-6 w-[550px]">
+                        <div className=" border-t border-gray-400 pt-4 mt-4 space-y-6 md:w-[550px] overflow-hidden">
                             {Array.from({ length: 3 }).map((item, idx) => (
-                                <div className="grid grid-cols-3 gap-x-6">
+                                <div className="grid md:grid-cols-3 gap-x-6">
                                     <div className="flex items-center space-x-2">
                                         <img src={icons.Point} />
-                                        <p className="text-lg font-semibold text-blue-950 w-[200px]">
+                                        <p className="text-lg font-semibold text-blue-950 md:w-[200px]">
                                             {t(`experience.badge-${idx + 1}`)}
                                         </p>
                                     </div>

@@ -16,10 +16,10 @@ const BannerSection = () => {
             />
             <div className="absolute right-0 top-0 bottom-0 left-0 text-stone-700 text-xs md:text-sm ">
                 <div className="flex items-center justify-center h-full">
-                    <div className="responsive h-[576px] grid grid-cols-2 ">
-                        <img src={Images.Border} className="w-full h-full" />
+                    <div className="responsive h-[576px] grid md:grid-cols-2 ">
+                        <img src={Images.Border} className="md:block hidden w-full h-full " />
 
-                        <div className="h-full bg-white rounded-r-2xl flex justify-center flex-col px-10">
+                        <div className="h-full bg-white rounded-r-2xl flex justify-center flex-col px-10 w-full">
                             <div className="flex items-center space-x-2 mb-4">
                                 <div className="w-4 h-4 mt-1 rounded-full bg-primary-200"></div>
                                 <h2 className="text-2xl font-bold text-blue-950">

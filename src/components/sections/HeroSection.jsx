@@ -30,9 +30,9 @@ const HeroSection = ({ isMedecin = false, sign = false }) => {
             <img
                 src={Images.Hero}
                 alt="image hero section"
-                className="h-full w-full object-cover"
+                className="absolute h-full w-[180%] md:w-full object-cover "
             />
-            <div className="absolute right-48 top-64 z-20">
+            <div className="hidden md:absolute right-48 top-64 z-20 ">
                 <div className="w-28 h-28 backdrop-blur-lg bg-white bg-opacity-5 rounded-full p-4">
                     <img
                         src="/logo-icon.svg"
@@ -40,7 +40,7 @@ const HeroSection = ({ isMedecin = false, sign = false }) => {
                     />
                 </div>
             </div>
-            <div className="absolute right-[550px] bottom-60 z-20">
+            <div className="hidden md:absolute right-[550px] bottom-60 z-20">
                 <div className="w-28 h-28 backdrop-blur-lg bg-white bg-opacity-5 rounded-full p-4">
                     <img
                         src="/logo-icon.svg"
@@ -70,8 +70,8 @@ const HeroSection = ({ isMedecin = false, sign = false }) => {
                             </div>
                         </div>
                     ) : (
-                        <div className="col-span-6 flex flex-col justify-center">
-                            <h1 className="text-white text-4xl mb-6 font-bold w-2/3">
+                        <div className="col-span-12 md:col-span-6 flex flex-col justify-center">
+                            <h1 className="text-white text-4xl mb-6 font-bold w-full md:w-2/3 text-center">
                                 {t("hero.title")}
                             </h1>
                             <p className="text-gray-200 text-lg italic">

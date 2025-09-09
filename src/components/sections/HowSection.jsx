@@ -26,14 +26,14 @@ const HowSection = () => {
                         {t("advantage.sub-title")}
                     </h3>
                 </div>
-                <h1 className="text-blue-950 text-3xl text-center font-bold mt-2 w-1/3">
+                <h1 className="text-blue-950 text-3xl text-center font-bold mt-2 md:w-1/3">
                     {t("advantage.title")}
                 </h1>
-                <p className="text-gray-400 italic mt-6 w-2/3 text-center">
+                <p className="text-gray-400 italic mt-6 md:w-2/3 text-center">
                     {t("advantage.sub-sub-title")}
                 </p>
                 <div className="w-1/3 border-t border-gray-400 mt-10"></div>
-                <div className="grid grid-cols-3 grid-rows-3 gap-4 mt-10">
+                <div className="flex flex-col md:grid grid-cols-3 grid-rows-3 gap-4 mt-10">
                     <div className="row-span-2 rounded-xl overflow-hidden">
                         <img
                             src={Images.Diff1}

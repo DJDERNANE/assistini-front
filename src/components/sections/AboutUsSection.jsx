@@ -17,23 +17,28 @@ const AboutUsSection = () => {
                             {t("whySection.sub-title")}
                         </h3>
                     </div>
-                    <div className="col-span-2 flex items-end h-full border-b-2 border-gray-200 pb-14">
+                    <div className="hidden md:block col-span-2 flex items-end h-full border-b-2 border-gray-200 pb-14">
                         <h1 className="text-stone-700 text-xl font-normal italic">
                             {t("whySection.title")}
                         </h1>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-x-10 pt-10">
+                <div className="md:grid md:grid-cols-3  gap-x-10 pt-10">
                     <img
                         src={Images.About}
                         className="w-[300px] object-cover"
                     />
-                    <div className="col-span-2 flex items-center justify-between">
-                        <div className="mx-auto  md:mx-0 w-2/3 text-justify md:text-left">
+                    <div className="block  md:hidden col-span-2 flex items-end h-full border-b-2 border-gray-200 py-8">
+                        <h1 className="text-stone-700 text-xl font-normal italic">
+                            {t("whySection.title")}
+                        </h1>
+                    </div>
+                    <div className="col-span-12 md:col-span-2 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div className="mx-auto  md:mx-0 w-[80%] md:w-2/3 text-justify md:text-left py-4">
                             <div className="w-8 h-8 bg-blue-950 rounded-full flex items-center justify-center">
                                 <img src={Icons.Why1} />
                             </div>
-                            <p className="text-blue-950 font-semibold text-sm md:text-base mb-3 mt-1">
+                            <p className="text-blue-950 font-semibold text-sm md:text-base mb-3 mt-1 ">
                                 {t("whySection.card-title-1")}
                             </p>
                             <p className="text-stone-700 text-sm">
@@ -41,7 +46,7 @@ const AboutUsSection = () => {
                             </p>
                         </div>
 
-                        <div className="mx-auto  md:mx-0 w-2/3 text-justify md:text-left">
+                        <div className="mx-auto  md:mx-0 w-[80%] md:w-2/3 text-justify md:text-left py-4">
                             <div className="w-8 h-8 bg-blue-950 rounded-full flex items-center justify-center">
                                 <img src={Icons.Why2} />
                             </div>
