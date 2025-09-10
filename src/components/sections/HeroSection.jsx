@@ -71,7 +71,7 @@ const HeroSection = ({ isMedecin = false, sign = false }) => {
                         </div>
                     ) : (
                         <div className="col-span-12 md:col-span-6 flex flex-col justify-center">
-                            <h1 className="text-white text-4xl mb-6 font-bold w-full md:w-2/3 text-center">
+                            <h1 className="text-white  text-4xl mb-6 font-bold w-full md:w-2/3  md:text-left text-center">
                                 {t("hero.title")}
                             </h1>
                             <p className="text-gray-200 text-lg italic">

@@ -22,13 +22,13 @@ const ExperienceSection = () => {
 
     return (
         <div className="bg-[#FCF8F3] py-20 md:py-32">
-            <div className=" relative">
+            <div className=" relative h-[800px] w-full md:w-[80%] mx-auto rounded-[0px] md:rounded">
                 <img
                     src={images.Experience}
-                    className="!w-full h-[800px] rounded-2xl object-cover"
+                    className="mx-auto  absolute w-[100%] md:w-full h-full"
                 />
-                <div className="absolute bottom-12 md:left-12">
-                    <div className="bg-white bg-opacity-80 p-6 rounded-xl h-[90%] md:w-[400px]">
+                <div className="absolute bottom-12 md:left-[20px] left-1/2 transform -translate-x-1/2  md:-translate-x-0 w-[95%] md:w-[600px]">
+                    <div className="bg-white bg-opacity-80 p-6 rounded-xl h-[90%] ">
                         <div className="flex items-center space-x-2">
                             <div className="w-3 h-3 rounded-full bg-primary-200"></div>
                             <p className=" text-xs">

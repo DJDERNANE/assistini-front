@@ -29,11 +29,11 @@ const UnlockSection = () => {
                 <h1 className="text-blue-950 text-3xl text-center font-bold mt-2">
                     {t("unlock.title")}
                 </h1>
-                <p className="text-gray-400 italic mt-6 w-1/3 text-center">
+                <p className="text-gray-400 italic mt-6 md:w-1/3 text-center">
                     {t("unlock.sub-sub-title")}
                 </p>
                 <div className="w-1/3 border-t border-gray-400 mt-10"></div>
-                <div className="grid grid-cols-3 grid-rows-3 gap-4 mt-10 h-[500px]">
+                <div className="flex flex-col md:grid grid-cols-3 grid-rows-3 gap-4 mt-10 md:h-[500px]">
                     <div className="row-span-3 rounded-xl overflow-hidden bg-[#0D0D39] relative">
                         <img
                             src={Images.Unlock1}

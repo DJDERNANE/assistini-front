@@ -20,7 +20,7 @@ const QuestionSection = () => {
 
     return (
         <div className="bg-[#FCF8F3] pt-20 md:pt-32">
-            <div className="responsive grid grid-cols-2">
+            <div className="responsive grid md:grid-cols-2">
                 <div className="flex flex-col justify-center">
                     <div className="flex items-start space-x-2">
                         <div className="w-3 h-3 rounded-full bg-primary-200 mt-0.5"></div>
@@ -28,10 +28,10 @@ const QuestionSection = () => {
                             {t("question.sub-title")}
                         </h3>
                     </div>
-                    <h1 className="text-blue-950 text-3xl font-bold mt-2 w-[200px]">
+                    <h1 className="text-blue-950 text-3xl font-bold mt-2 md:w-[200px]">
                         {t("question.title")}
                     </h1>
-                    <p className="text-gray-400 italic mt-6 w-2/3">
+                    <p className="text-gray-400 italic mt-6 md:w-2/3">
                         {t("question.sub-sub-title")}
                     </p>
                     <div className="w-1/3 border-t border-gray-400 mt-10"></div>

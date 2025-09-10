@@ -15,7 +15,7 @@ const EffortSection = () => {
             <img
                 src={Images.Effort}
                 alt="image banner welcome"
-                className="w-full h-[850px] object-cover"
+                className="w-full h-[2150px] md:h-[850px] object-cover"
             />
             <div className="absolute right-0 top-0 bottom-0 left-0">
                 <div className="responsive py-20">
@@ -25,15 +25,15 @@ const EffortSection = () => {
                             {t("effort.sub-title")}
                         </h3>
                     </div>
-                    <div className="flex justify-between items-end">
-                        <h3 className="mt-6 text-white font-bold text-3xl w-[350px]">
+                    <div className="flex flex-col md:flex-row justify-between items-end">
+                        <h3 className="mt-6 text-white font-bold text-3xl md:w-[350px]">
                             {t("effort.sub-sub-title")}
                         </h3>
                         <div className="w-2/3 border-t border-gray-400 mt-10"></div>
                     </div>
                 </div>
 
-                <div className="responsive grid grid-cols-4 gap-6">
+                <div className="responsive grid md:grid-cols-4 gap-6">
                     {Array.from({ length: 4 }).map((item, idx) => (
                         <div className="flex flex-col justify-between p-6 bg-primary-100 bg-opacity-10 h-[400px] rounded-xl">
                             <div>
