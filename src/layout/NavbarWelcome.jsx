@@ -22,7 +22,7 @@ const NavbarWelcome = ({ hide = false }) => {
     return (
         <>
             <div className={`bg-transparent !h-[82px]`}>
-                <div className="grid-cols-12 responsive py-4 h-full !w-full md:grid flex justify-between">
+                <div className="grid-cols-12 responsive md:py-4 py-[30px] h-full !w-full md:grid flex justify-between">
                     <Link
                         to={"/"}
                         className="col-span-3 flex items-center -mt-4"
