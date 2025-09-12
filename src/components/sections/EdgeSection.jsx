@@ -37,25 +37,25 @@ const EdgeSection = () => {
                 </div>
                 <div className="grid md:grid-cols-2 gap-10 mt-10">
                     <div className="flex items-center justify-center">
-                        <div className="row-span-1 bg-[#0D0D39] rounded-xl p-4 flex flex-col shadow-2xl justify-between w-[200px] h-[200px] border-r-8 border-primary-200">
+                        <div className="row-span-1 bg-[#0D0D39] rounded-xl p-4 flex flex-col shadow-2xl justify-between md:w-[200px] h-[200px] border-r-8 border-primary-200">
                             <p className="text-white font-bold text-3xl">
                                 250+
                             </p>
-                            <p className="text-xs text-white uppercase font-light">
+                            <p className="md:text-xs text-[16px] text-white uppercase font-light">
                                 {t("edge.diff-desp-1")}
                             </p>
                         </div>
                     </div>
                     <div className="space-y-6 mx-auto">
-                        <div className="row-span-1 bg-[#0D0D39] rounded-xl p-4 flex flex-col shadow-2xl justify-between w-[200px] h-[200px] border-r-8 border-primary-200">
+                        <div className="row-span-1 bg-[#0D0D39] rounded-xl p-4 flex flex-col shadow-2xl justify-between md:w-[200px] h-[200px] border-r-8 border-primary-200">
                             <p className="text-white font-bold text-3xl">60+</p>
-                            <p className="text-xs text-white uppercase font-light">
+                            <p className="md:text-xs text-[16px] text-white uppercase font-light">
                                 {t("edge.diff-desp-2")}
                             </p>
                         </div>
-                        <div className="row-span-1 bg-[#0D0D39] rounded-xl p-4 flex flex-col shadow-2xl justify-between w-[200px] h-[200px] border-r-8 border-primary-200">
+                        <div className="row-span-1 bg-[#0D0D39] rounded-xl p-4 flex flex-col shadow-2xl justify-between md:w-[200px] h-[200px] border-r-8 border-primary-200">
                             <p className="text-white font-bold text-3xl">25+</p>
-                            <p className="text-xs text-white uppercase font-light">
+                            <p className="md:text-xs text-[16px] text-white uppercase font-light">
                                 {t("edge.diff-desp-3")}
                             </p>
                         </div>
