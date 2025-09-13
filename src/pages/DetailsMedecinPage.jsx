@@ -57,13 +57,32 @@ const DetailsMedecinPage = () => {
     const navigate = useNavigate();
     const { id } = useParams();
 
-    const { isOpen, onOpen, onClose } = useDisclosure();
+    // Modal for login prompt
+    const { isOpen: isLoginModalOpen, onOpen: onLoginModalOpen, onClose: onLoginModalClose } = useDisclosure();
+    
+    // Modal for RDV form on mobile
+    const { isOpen: isRDVModalOpen, onOpen: onRDVModalOpen, onClose: onRDVModalClose } = useDisclosure();
 
     const { isLoading, fetchData, data } = useGetProviderDetail();
+
+    const isLoggedIn = !!localStorage.getItem("accessToken");
 
     useEffect(() => {
         fetchData(id);
     }, []);
+
+    const handleBookRDV = () => {
+        if (!isLoggedIn) {
+            onLoginModalOpen();
+        } else {
+            // On desktop, the form is already visible in the sidebar
+            // On mobile, open the modal
+            const isMobile = window.innerWidth < 768; // md breakpoint
+            if (isMobile) {
+                onRDVModalOpen();
+            }
+        }
+    };
 
     return (
         <div>
@@ -75,9 +94,7 @@ const DetailsMedecinPage = () => {
             <div className="responsive">
                 <div
                     className={`mt-4 mb-10 grid ${
-                        localStorage.getItem("accessToken")
-                            ? "md:grid-cols-6"
-                            : "grid-cols-4"
+                        isLoggedIn ? "md:grid-cols-6" : "grid-cols-4"
                     } gap-x-8 2xl:gap-x-16`}
                 >
                     <div className="col-span-4 w-full">
@@ -93,19 +110,9 @@ const DetailsMedecinPage = () => {
                                     <div className="mt-4 flex items-center space-x-1 md:space-x-4">
                                         <div className="md:w-[300px]">
                                             <CustomButton
-                                                name={t(
-                                                    "general_search.bookRDV"
-                                                )}
+                                                name={t("general_search.bookRDV")}
                                                 css="text-xs md:text-base !px-2 md:!px-4"
-                                                onClick={() => {
-                                                    if (
-                                                        !localStorage.getItem(
-                                                            "accessToken"
-                                                        )
-                                                    ) {
-                                                        onOpen();
-                                                    }
-                                                }}
+                                                onClick={handleBookRDV}
                                             />
                                         </div>
                                         <div className="w-14 md:w-16">
@@ -128,8 +135,8 @@ const DetailsMedecinPage = () => {
                                         data?.expertises?.length > 0 &&
                                         data?.expertises
                                             ?.split(",")
-                                            .map((item) => (
-                                                <p className="mr-2 mb-2 inline-block text-zinc-600 text-sm font-normal leading-tight bg-gray-200 w-fit rounded px-2 py-1">
+                                            .map((item, index) => (
+                                                <p key={index} className="mr-2 mb-2 inline-block text-zinc-600 text-sm font-normal leading-tight bg-gray-200 w-fit rounded px-2 py-1">
                                                     {item}
                                                 </p>
                                             ))}
@@ -208,9 +215,7 @@ const DetailsMedecinPage = () => {
                                                 </h4>
                                                 <div className="flex items-center justify-between mt-2 text-xs md:text-base">
                                                     <p>
-                                                        {t(
-                                                            "note.descriptionIndicate"
-                                                        )}
+                                                        {t("note.descriptionIndicate")}
                                                     </p>
                                                     <img
                                                         src={Icons.RightArrow}
@@ -276,13 +281,13 @@ const DetailsMedecinPage = () => {
                                     {t("doctor.prices")}
                                 </h5>
                                 <p>
-                                    Le centre n’a malheureusement pas renseigné
+                                    Le centre n'a malheureusement pas renseigné
                                     ses tarifs.
                                 </p>
                             </InfoSection>
                         </div>
                     </div>
-                    {localStorage.getItem("accessToken") && (
+                    {isLoggedIn && (
                         <div className="col-span-2 hidden md:block">
                             <Card borderRadius={"xl"}>
                                 <CardHeader className="bg-blue-600 text-white text-center rounded-t-lg">
@@ -304,11 +309,10 @@ const DetailsMedecinPage = () => {
 
             <Footer />
 
+            {/* Login Modal */}
             <Modal
-                isOpen={isOpen}
-                onClose={() => {
-                    onClose();
-                }}
+                isOpen={isLoginModalOpen}
+                onClose={onLoginModalClose}
                 size={"md"}
                 isCentered
             >
@@ -327,7 +331,7 @@ const DetailsMedecinPage = () => {
                         <div className="mt-4 flex items-center space-x-2">
                             <button
                                 className="border rounded-lg border-gray-500 text-white mx-auto bg-gray-500 w-[150px] py-2 font-medium text-sm flex items-center justify-center space-x-2"
-                                onClick={onClose}
+                                onClick={onLoginModalClose}
                             >
                                 <p>{t("confirm.cancel")}</p>
                             </button>
@@ -343,6 +347,34 @@ const DetailsMedecinPage = () => {
                     </ModalBody>
                 </ModalContent>
             </Modal>
+
+            {/* RDV Form Modal for Mobile */}
+            {isLoggedIn && (
+                <Modal
+                    isOpen={isRDVModalOpen}
+                    onClose={onRDVModalClose}
+                    size={"full"}
+                    isCentered
+                >
+                    <ModalOverlay />
+                    <ModalContent borderRadius={"0"} height="100vh">
+                        <ModalHeader className="bg-blue-600 text-white text-center">
+                            <h3 className="font-bold text-base">
+                                {t("doctor.makeRDV")}
+                            </h3>
+                            <p className="font-medium text-sm">
+                                {t("doctor.fillInfo")}
+                            </p>
+                        </ModalHeader>
+                        <ModalCloseButton color="white" />
+                        <ModalBody padding={0} overflowY="auto">
+                            <div className="p-4">
+                                <MakeRDVForm data={data ?? {}} />
+                            </div>
+                        </ModalBody>
+                    </ModalContent>
+                </Modal>
+            )}
         </div>
     );
 };
