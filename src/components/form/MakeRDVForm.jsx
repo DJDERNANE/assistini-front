@@ -44,6 +44,9 @@ const MakeRDVForm = ({ data = {} }) => {
         count: 5,
     });
 
+    console.log("data on makee rdv form ::: ")
+    console.log(data)
+
     // states
     const [sp, setSp] = useState(null);
     // const [patient, setPatient] = useState(null);
