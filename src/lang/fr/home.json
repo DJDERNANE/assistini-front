@@ -11,13 +11,14 @@
         "left-2": "jours",
         "delete": "Retirer ce rendez-vous",
         "pending": "En attente de confirmation",
-        "motif": "motif",
+        "motif": "Motif de consultation",
         "patient": "patient",
         "type": "type",
         "document": "documents",
         "heure": "heure",
         "date": "date",
         "status": "status"
+        
     },
     "doc": {
         "add": "Ajouter un document",

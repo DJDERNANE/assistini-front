@@ -1,6 +1,6 @@
 {
-    "general_search": {
-        "bookRDV": "book RDV"
+    "search": {
+        "bookRDV": "Book"
     },
     "doctor": {
         "services": "services",

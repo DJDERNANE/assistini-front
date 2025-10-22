@@ -16,8 +16,9 @@ const CustomButton = ({
         return (
             <button
                 onClick={onClick}
-                className={`blueButton space-x-4 ${css} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`blueButton  space-x-4 ${css} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
                 type={type}
+
                 disabled={disabled}
             >
                 {icon && (

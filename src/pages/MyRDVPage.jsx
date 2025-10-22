@@ -107,7 +107,7 @@ const MyRDVPage = () => {
                             <div className="grid md:grid-cols-2">
                                 <div className="md:space-y-2 grid grid-cols-2 md:block">
                                     <h3 className="text-sm md:text-lg font-bold first-letter:capitalize">
-                                        {t("rdvs.motif")}:
+                                        {t("my-rdvs.motif")}:
                                     </h3>
                                     <p className="font-light first-letter:capitalize text-sm md:text-base">
                                         {item?.motif}

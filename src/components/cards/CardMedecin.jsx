@@ -107,7 +107,7 @@ const CardMedecin = ({
                             </p>
                             <div className="hidden md:block">
                                 <CustomButton
-                                    name={t("search:bookRDV")}
+                                    name={t("search.bookRDV")}
                                     onClick={handleRdv}
                                     css="w-full hidden md:block"
                                 />

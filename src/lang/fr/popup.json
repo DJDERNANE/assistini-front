@@ -52,15 +52,13 @@
         "new-email": "nouveau email",
         "email-done": "sauvegarder",
         "title-pwd": "changer mot de passe",
-        "old-pwd": "ancient mot de passe",
+        "old-pwd": "Ancien mot de passe",
         "new-pwd": "nouveau mot de passe",
         "confirm-password": "confirmer le mot de passe",
         "pwd-done": "sauvegarder",
-        "old-pwd-placeholder": "saisir ancient mot de passe",
+        "old-pwd-placeholder": "saisir Ancien mot de passe",
         "new-pwd-placeholder": "saisir nouveau mot de passe",
-        "confirm-pwd-placeholder": "confirmer votre mot de passe",
-        "": "",
-        "": ""
+        "confirm-pwd-placeholder": "confirmer votre mot de passe"
     },
     "note": {
         "title": "note",
