@@ -1,70 +1,57 @@
 {
     "general": {
-        "title": "parametres de l'établissement",
-        "admin": "administration",
-        "accounts": "gestion des comptes",
-        "my-clinic": "mon espace sante",
-        "my-cabinet": "mon cabinet info",
-        "save": "enrigistrer les modifications",
-        "all-services": "tous les services",
-        "search": "Recherche",
-
-        "": ""
+        "title": "Paramètres de l'établissement",
+        "admin": "Administration",
+        "accounts": "Gestion des comptes",
+        "my-clinic": "Mon espace santé",
+        "my-cabinet": "Informations de mon cabinet",
+        "save": "Enregistrer les modifications",
+        "all-services": "Tous les services",
+        "search": "Recherche"
     },
     "account": {
-        "username": "identifiant",
-        "password": "mot de passe",
-        "add-sub": "ajouter un utilisateur",
-        "existing": "profile existant",
-        "send-notes": "envoyer un message",
-        "validate": "confirmer",
-        "placeholder-note": "ecrire note",
-        "send": "envoyer",
-        "active": "actif",
-        "offline": "offline",
-        "": ""
+        "username": "Identifiant",
+        "password": "Mot de passe",
+        "add-sub": "Ajouter un utilisateur",
+        "existing": "Profil existant",
+        "send-notes": "Envoyer un message",
+        "validate": "Confirmer",
+        "placeholder-note": "Écrire une note",
+        "send": "Envoyer",
+        "active": "Actif",
+        "offline": "Hors ligne"
     },
     "admin": {
-        "denomination": "nom de l'établissement",
-        "nom": "nom du proprietaire",
-        "agreement": "numero d'agreement professionnel",
-        "adresse": "addresse",
-        "identifiant": "numero d'idedntification fasciale",
-        "gps": "geolocalisation",
-        "type": "type d'etablissement medical",
-        "login": "identifiants de connexion",
-        "logo": "logo de l'etablissement",
-        "upload": "ajouter",
-        "delete": "supprimer",
-        "change-email": "modifier l'email",
-        "change-password": "modifier le mot de passe",
-        "": ""
+        "denomination": "Nom de l'établissement",
+        "nom": "Nom du propriétaire",
+        "agreement": "Numéro d'agrément professionnel",
+        "adresse": "Adresse",
+        "identifiant": "Numéro d'identification fiscale",
+        "gps": "Géolocalisation",
+        "type": "Type d'établissement médical",
+        "login": "Identifiants de connexion",
+        "logo": "Logo de l'établissement",
+        "upload": "Ajouter",
+        "delete": "Supprimer",
+        "change-email": "Modifier l'e-mail",
+        "change-password": "Modifier le mot de passe"
     },
     "edit-modal": {
-        "sub-admin": "sub-admin",
-        "choose": "choisir",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "sub-admin": "Sous-administrateur",
+        "choose": "Choisir"
     },
     "clinic": {
-        "nom": "nom de service",
-        "price": "prix",
-        "specialite": "specialites medicales",
-        "description": "texte",
-        "": "",
-        "": "",
-        "": ""
+        "nom": "Nom du service",
+        "price": "Prix",
+        "specialite": "Spécialités médicales",
+        "description": "Description"
     },
     "table": {
-        "nom-analyse": "prestation medicale",
-        "price": "tarif (DA)",
-        "speciality": "specialite medicale",
-        "results": "resultats",
-        "specialite": "specialite",
-        "dzd": "da",
-        "": "",
-        "": ""
+        "nom-analyse": "Prestation médicale",
+        "price": "Tarif (DA)",
+        "speciality": "Spécialité médicale",
+        "results": "Résultats",
+        "specialite": "Spécialité",
+        "dzd": "DA"
     }
 }

@@ -1,0 +1,81 @@
+{
+    "general": {
+        "resultss": "patients in the waiting line",
+        "results": "patient in the waiting line",
+        "payment": "Proceed to payment",
+        "service": "Service",
+        "select-service": "Select a service",
+        "result": "Result",
+        "specialite": "Specialty",
+        "partner": "Partner",
+        "add-new-rdv": "New appointment",
+        "request": "Request access"
+    },
+    "list": {
+        "profile": "Patient profile",
+        "documents": "Patient file",
+        "download": "Download",
+        "patient-info": "About the patient",
+        "book-rdv": "Appointment booking",
+        "documents-shared": "Files shared with the doctor"
+    },
+    "doctor": {
+        "speciality": "Specialty",
+        "reasonConsultation": "Reason for consultation",
+        "patient": "Patient",
+        "date-rdv": "Appointment date",
+        "option": "Select an option"
+    },
+    "filter": {
+        "consultation": "Consultation"
+    },
+    "price": {
+        "discount": "Discount",
+        "dz": "DA",
+        "currancy": "DZD",
+        "title": "Total price"
+    },
+    "new": {
+        "firstname": "First name",
+        "lastname": "Last name",
+        "email": "Email",
+        "address": "Address",
+        "motif": "Reason",
+        "phone": "Phone number",
+        "company": "Company",
+        "sexe": "Gender"
+    },
+    "calendar": {
+        "title-manage": "Manage your availability",
+        "morning-shift": "Morning consultations",
+        "evening-shift": "Afternoon consultations",
+        "schedule": "Manage my schedule",
+        "title": "Manage my schedule",
+        "day": "Day",
+        "actions": "Options",
+        "choose-day": "Choose a day",
+        "date": "Date",
+        "clear": "Cancel changes",
+        "remove-fri": "Remove Fridays",
+        "remove-sat": "Remove Saturdays"
+    },
+    "info": {
+        "title": "Overview",
+        "description": "View information related to your appointments and patients.",
+        "rdv": "Appointments",
+        "read": "Read more",
+        "type": "Type of appointment"
+    },
+    "card": {
+        "motif": "Reason",
+        "documents": "Documents received",
+        "document": "Document received",
+        "type": "Type of appointment",
+        "file": "Attached file",
+        "date": "Date",
+        "hour": "Time",
+        "accept": "Accept",
+        "refuse": "Refuse",
+        "reprogrammer": "Reschedule"
+    }
+}

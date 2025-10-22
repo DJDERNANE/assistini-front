@@ -1,0 +1,57 @@
+{
+    "general": {
+        "title": "Facility settings",
+        "admin": "Administration",
+        "accounts": "Account management",
+        "my-clinic": "My health space",
+        "my-cabinet": "My clinic information",
+        "save": "Save changes",
+        "all-services": "All services",
+        "search": "Search"
+    },
+    "account": {
+        "username": "Username",
+        "password": "Password",
+        "add-sub": "Add user",
+        "existing": "Existing profile",
+        "send-notes": "Send message",
+        "validate": "Confirm",
+        "placeholder-note": "Write a note",
+        "send": "Send",
+        "active": "Active",
+        "offline": "Offline"
+    },
+    "admin": {
+        "denomination": "Facility name",
+        "nom": "Owner’s name",
+        "agreement": "Professional license number",
+        "adresse": "Address",
+        "identifiant": "Tax identification number",
+        "gps": "Geolocation",
+        "type": "Type of medical facility",
+        "login": "Login credentials",
+        "logo": "Facility logo",
+        "upload": "Upload",
+        "delete": "Delete",
+        "change-email": "Change email",
+        "change-password": "Change password"
+    },
+    "edit-modal": {
+        "sub-admin": "Sub-admin",
+        "choose": "Choose"
+    },
+    "clinic": {
+        "nom": "Service name",
+        "price": "Price",
+        "specialite": "Medical specialties",
+        "description": "Description"
+    },
+    "table": {
+        "nom-analyse": "Medical service",
+        "price": "Fee (DA)",
+        "speciality": "Medical specialty",
+        "results": "Results",
+        "specialite": "Specialty",
+        "dzd": "DA"
+    }
+}

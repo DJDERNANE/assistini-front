@@ -1,0 +1,63 @@
+{
+    "general": {
+        "invoice": "facture",
+        "billed-to": "billet le",
+        "invoice-no": "facture num",
+        "issued-on": "issued on",
+        "payment-due": "paiement due",
+        "qnt": "qunatite",
+        "price": "price",
+        "total": "total",
+        "compte-rendu": "compte rendu medical",
+        "indication": "motif de l'examen",
+        "result": "resultat de l'examen",
+        "conclusion": "conclusion",
+        "services": "services",
+        "dzd": "DA",
+        "control-your-doc": "control your document",
+        "download": "telechargement le document",
+        "share": "partager le document",
+        "finish": "terminer",
+        "scanner": "type d'examen",
+        "partner": "partner",
+        "": "",
+        "": ""
+    },
+    "exist": {
+        "patient-name": "patient",
+        "birth": "date de naissance",
+        "location": "localisation",
+        "abonement": "abonement",
+        "date_create": "date de facture",
+        "provider": "prestataire",
+        "price": "montant",
+        "status": "status",
+        "": "",
+        "": ""
+    },
+    "payment": {
+        "title": "paiement",
+        "cash": "cash",
+        "": "",
+        "": "",
+        "": "",
+        "": ""
+    },
+    "invoice": {
+        "dzd": "DA",
+        "total": "total",
+        "": "",
+        "": "",
+        "": "",
+        "": ""
+    },
+    "filter": {
+        "current": "en cours",
+        "paid": "impayé",
+        "favorite": "payé",
+        "deleted": "annulation",
+        "wilaya": "wilaya",
+        "pending": "en attente",
+        "": ""
+    }
+}

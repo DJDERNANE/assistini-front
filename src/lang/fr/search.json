@@ -1,6 +1,6 @@
 {
     "general_search": {
-        "bookRDV": "Réserver votre rendez-vous!"
+        "bookRDV": "Réservez votre rendez-vous !"
     },
     "search": {
         "bookRDV": "Réserver"
@@ -16,21 +16,21 @@
         "refunds": "Remboursements",
         "transport": "Moyens de transport",
         "usefulInfo": "Informations utiles",
-        "seeMap": "Voir l'itinéraire avec Maps",
+        "seeMap": "Voir l’itinéraire avec Maps",
         "makeRDV": "Prendre un rendez-vous en ligne",
         "fillInfo": "Veuillez remplir les informations suivantes",
         "speciality": "Spécialité",
-        "speciality_1": "Choisir specialite",
-        "consultation": "consultation",
-        "date-rdv": "date de RDV",
+        "speciality_1": "Choisir une spécialité",
+        "consultation": "Consultation",
+        "date-rdv": "Date du rendez-vous",
         "reasonConsultation": "Motif de consultation",
         "choosePattern": "Choisir un groupe de motifs",
         "chooseConsultationTime": "Choisissez votre heure de consultation",
         "nextAvailability": "Prochaine disponibilité",
-        "today": "Aujourd'hui",
+        "today": "Aujourd’hui",
         "pation": "Patient",
-        "valid": "Valide",
-        "alert_1": "Attention, nous vous rappelons que ce motif est réservé à la patientèle connue",
+        "valid": "Valider",
+        "alert_1": "Attention, ce motif est réservé aux patients déjà connus du cabinet.",
         "patient": "Le patient",
         "documents": "Documents",
         "chooseDate": "Choisissez votre heure de consultation",
@@ -44,8 +44,8 @@
     },
     "alert": {
         "validation": "Validation des consignes",
-        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous: Consultation de médecine générale",
-        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d'attente et en consultation.",
+        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous : Consultation de médecine générale.",
+        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d’attente et durant la consultation.",
         "confirm": "Confirmer"
     }
 }
