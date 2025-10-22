@@ -13,6 +13,7 @@ import CardEdit from "./provider/Settings/components/CardEdit";
 import authProviderService from "../services/authProviderService";
 import { useQuery } from "react-query";
 import CardInput from "./provider/Settings/components/CardInput";
+import CardSelect from "./provider/Settings/components/CardSelect";
 import axios from "axios";
 import authService from "../services/authService";
 
@@ -59,26 +60,28 @@ const ProfilePage = ({ show = false }) => {
         formData.append("codePostal", "16150");
         formData.append("logo", imageFile);
 
-        try {
-            // Send data to the API
-            const response = await axios.put(
-                process.env.REACT_APP_URL_API + "/users",
-                formData,
-                {
-                    headers: {
-                        "Content-Type": "multipart/form-data",
-                        Authorization: `Bearer ${localStorage.getItem(
-                            "accessToken"
-                        )}`,
-                    },
-                }
-            );
-            console.log("User updated successfully", response.data);
-        } catch (error) {
-            console.error("Error updating user:", error);
-        } finally {
-            setLoading(false);
-        }
+        console.log("Form Data:", Array.from(formData.entries()));
+
+        // try {
+        //     // Send data to the API
+        //     const response = await axios.put(
+        //         process.env.REACT_APP_URL_API + "/users",
+        //         formData,
+        //         {
+        //             headers: {
+        //                 "Content-Type": "multipart/form-data",
+        //                 Authorization: `Bearer ${localStorage.getItem(
+        //                     "accessToken"
+        //                 )}`,
+        //             },
+        //         }
+        //     );
+        //     console.log("User updated successfully", response.data);
+        // } catch (error) {
+        //     console.error("Error updating user:", error);
+        // } finally {
+        //     setLoading(false);
+        // }
     };
 
     const {
@@ -123,10 +126,14 @@ const ProfilePage = ({ show = false }) => {
                     value={prenom}
                     title={t("admin.prenom")}
                 />
-                <CardInput
-                    setValue={setSexe}
-                    value={sexe}
-                    title={t("admin.genre")}
+                <CardSelect
+                    title={"Sexe"}
+                    type={sexe}
+                    setType={setSexe}
+                    options={[
+                        { value: "male", label: t("admin.sexe.male") },
+                        { value: "female", label: t("admin.sexe.femelle") },
+                    ]}
                 />
                 <CardInput
                     setValue={setSsnum}

@@ -49,10 +49,10 @@
         "birthday": "date de naissance",
         "company": "Employeur / Organisme",
         "phone": "numero de téléphone",
-        "create": "creer",
+        "create": "créer",
         "add-new-patient": "creation dossier patient",
         "show-patient": "information personnelles d'un patient",
-        "creer-patient": "creer le dossier patient",
+        "creer-patient": "créer le dossier patient",
         "delete": "Retirer ce patient",
         "": "",
         "title": "mes patients"
@@ -79,7 +79,9 @@
         "phone": "numero de téléphone",
         "logo": "photo de profil",
         "save": "sauvegarder",
-        "": "",
-        "": ""
+        "sexe": {
+            "male": "Mâle",
+            "femelle": "Femelle"
+        }
     }
 }

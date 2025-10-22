@@ -159,7 +159,7 @@ const MakeRDVForm = ({ data = {} }) => {
                 {activeStep > 0 && <Step2 value={motif} setValue={setMotif} />}
                 {/* {activeStep > 1 && <Step3 />} */}
                 {activeStep > 1 && (
-                    <Step4 value={patientName} setValue={setPatientName} />
+                    <Step4 value={patientName} setValue={setPatientName}  />
                 )}
                 {activeStep > 2 && <Step5 value={files} setValue={setFiles} />}
                 {activeStep > 3 && (

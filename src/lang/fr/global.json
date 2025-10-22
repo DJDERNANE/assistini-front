@@ -5,7 +5,7 @@
         "": ""
     },
     "navbar": {
-        "quick_search": "recherche un medecin, ...",
+        "quick_search": "Recherche un medecin, ...",
         "notification": "notification",
         "my-rdvs": "agenda",
         "chat": "messagerie",
@@ -39,7 +39,7 @@
         "filter": "filtre",
         "all": "Tous",
         "In the immediate": "A proximité immédiate",
-        "search": "recherche",
+        "search": "Recherche",
         "consultation": "type de rendez-vous ",
         "video": "teleconsultation",
         "office": "consultation au cabinet",

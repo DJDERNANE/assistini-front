@@ -30,15 +30,6 @@ const CardLogo = ({
         }
     };
 
-    // const handleDelete = () => {
-    // setImageSrc(null);
-    // };
-
-    // console.log("####", image, "@@@", imageSrc);
-
-    // useEffect(() => {
-    //     if (image) setImageSrc(`${process.env.REACT_APP_URL_API}/${image}`);
-    // }, [image]);
 
     return (
         <CardEdit>
