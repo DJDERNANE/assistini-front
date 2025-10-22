@@ -83,7 +83,7 @@ const ChangeEmailPopUp = ({ isOpen, onClose }) => {
                 <input
                   type="text"
                   className="border border-gray-300 rounded-xl pl-10 pr-4 py-3 outline-none w-full bg-gray-50"
-                  placeholder={t("profil.current-email")}
+                  placeholder={t("profil.exist-email")}
                   required
                   {...register("existingEmail")}
                 />
