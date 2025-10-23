@@ -1,46 +1,46 @@
 {
   "detail-doctor": {
-      "validation": "Validation of Instructions",
-      "validation-description": "Please take these instructions into account to confirm your appointment: General medicine consultation",
-      "validation-indice": "If you are sick (cold, fever, cough), please wear a mask in the waiting room and during consultation.",
+      "validation": "Instruction Validation",
+      "validation-description": "Please review the following instructions to confirm your appointment: General medicine consultation.",
+      "validation-indice": "If you are sick (cold, fever, cough), please wear a mask in the waiting room and during the consultation.",
       "confirm": "Confirm"
   },
   "confirm-service": {
       "title": "Do you want to confirm?",
-      "description": "You have selected different procedures",
+      "description": "You have selected different services.",
       "continue": "Continue",
       "cancel": "Cancel",
       "confirm": "Confirm"
   },
   "confirm-pay": {
       "title-patient": "Choose your payment method",
-      "description": "Please choose a payment method to continue.",
+      "description": "Please select a payment method to proceed.",
       "cancel": "Cancel",
       "continue": "Confirm",
       "download": "Download",
       "finish": "Finish",
-      "pay-at-clinic": "Pay at clinic",
+      "pay-at-clinic": "Pay at the clinic",
       "req-distance": "Pay remotely",
       "cash": "Pay in cash",
-      "cib": "Pay by CIB/EDAHABIA",
+      "cib": "Pay by CIB / EDAHABIA card",
       "req-title": "Confirm payment request",
       "req-description": "Are you sure you want to validate this payment request?",
       "pay-req": "Proceed to payment"
   },
   "confirm-logout": {
-      "title": "Confirm logout",
-      "description": "You will need to enter your login credentials again",
+      "title": "Do you confirm logout?",
+      "description": "You will need to re-enter your login credentials.",
       "cancel": "Cancel",
       "continue": "Confirm"
   },
   "notification": {
-      "title": "Notification"
+      "title": "Notifications"
   },
   "profil": {
       "change-email": "Change email",
       "change-password": "Change password",
-      "title-email": "Change email",
-      "exist-email": "Existing email",
+      "title-email": "Change email address",
+      "exist-email": "Current email",
       "new-email": "New email",
       "email-done": "Save",
       "title-pwd": "Change password",
@@ -66,14 +66,14 @@
   },
   "confirm-rdv-patient": {
       "title": "Appointment confirmation",
-      "description": "One last look before validation!",
-      "note": "This appointment will be recorded in your patient space.",
+      "description": "A final review before validation!",
+      "note": "This appointment will be saved in your patient space.",
       "cancel": "Cancel",
       "continue": "Confirm"
   },
   "confirm-delete-sub-admin": {
-      "title": "Do you wish to delete this profile",
-      "description": "You have created a new sub-administrator",
+      "title": "Do you want to delete this profile?",
+      "description": "You have created a new sub-administrator.",
       "pending": "Pending",
       "cancel": "Cancel",
       "continue": "Delete"

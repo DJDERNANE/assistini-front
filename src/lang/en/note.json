@@ -1,43 +1,50 @@
 {
     "general": {
-        "title": "My Team",
-        "all-notes": "All Notes",
-        "accounts": "Accounts",
-        "notes": "My Notes",
-        "users": "User List",
-        "see": "Consult",
-        "search": "Search",
-        "filter": "Filter",
-        "my-team": "My Team",
-        "your-notes": "Your Notes",
-        "go-back": "Previous",
-        "exist-profiles": "Active Members",
-        "notes-description": "Notes ...",
-        "users-description": "Users ...",
-        "search-placeholder": "Search ...",
-        "existing-profiles": "Existing Profiles"
+        "title": "mon equipe",
+        "all-notes": "Toutes les notes",
+        "accounts": "Comptes",
+        "notes": "Mes notes",
+        "users": "Liste des utilisateurs",
+        "see": "Consulter",
+        "search": "Rechercher",
+        "filter": "Filtrer",
+        "my-team": "Mon équipe",
+        "your-notes": "Vos notes",
+        "go-back": "précédent",
+        "exist-profiles": "Membres actifs",
+        "notes-description": "notes ....",
+        "see": "Consulter",
+        "users-description": "Utilisateurs ...",
+        "search": "Rechercher ...",
+        "all-notes": "Toutes les notes",
+        "existing-profiles": "profiles existants",
+        "": "",
+        "": ""
     },
     "table": {
-        "sender": "Sender Name",
-        "destination": "Recipient",
-        "number": "Reference",
+        "sender": "Nom de l'expéditeur",
+        "destination": "Destinataire",
+        "number": "Référence",
         "date": "Date",
-        "results": "Results Found"
+        "results": "Résultats trouvé",
+        "": ""
     },
     "note": {
-        "title": "Title",
+        "title": "Titre",
         "quick-note": "Note",
-        "pending": "Pending",
-        "sub-admin": "Sub-administrator",
-        "learn-more": "Learn More",
-        "go-back": "Previous"
+        "pending": "En attente",
+        "sub-admin": "Sous-administrateur",
+        "learn-more": "En savoir plus",
+        "go-back": "précédent",
+        "": ""
     },
     "user": {
-        "title": "Title",
-        "go-back": "Previous",
-        "my-team": "My Team",
-        "exist-profile": "Existing Profile",
-        "active": "Active",
-        "offline": "Offline"
+        "title": "Titre",
+        "go-back": "précédent",
+        "my-team": "Mon équipe",
+        "exist-profile": "Profil existant",
+        "active": "Actif",
+        "offline": "Hors ligne",
+        "": ""
     }
 }

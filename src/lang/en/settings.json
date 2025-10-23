@@ -1,57 +1,57 @@
 {
     "general": {
-        "title": "Establishment Settings",
+        "title": "Facility settings",
         "admin": "Administration",
-        "accounts": "Account Management",
-        "my-clinic": "My Health Space",
-        "my-cabinet": "My Practice Info",
-        "save": "Save Changes",
-        "all-services": "All Services",
+        "accounts": "Account management",
+        "my-clinic": "My health space",
+        "my-cabinet": "My clinic information",
+        "save": "Save changes",
+        "all-services": "All services",
         "search": "Search"
     },
     "account": {
         "username": "Username",
         "password": "Password",
-        "add-sub": "Add User",
-        "existing": "Existing Profile",
-        "send-notes": "Send Message",
+        "add-sub": "Add user",
+        "existing": "Existing profile",
+        "send-notes": "Send message",
         "validate": "Confirm",
-        "placeholder-note": "Write note",
+        "placeholder-note": "Write a note",
         "send": "Send",
         "active": "Active",
         "offline": "Offline"
     },
     "admin": {
-        "denomination": "Establishment Name",
-        "nom": "Owner Name",
-        "agreement": "Professional License Number",
+        "denomination": "Facility name",
+        "nom": "Owner’s name",
+        "agreement": "Professional license number",
         "adresse": "Address",
-        "identifiant": "Tax Identification Number",
+        "identifiant": "Tax identification number",
         "gps": "Geolocation",
-        "type": "Medical Establishment Type",
-        "login": "Login Credentials",
-        "logo": "Establishment Logo",
-        "upload": "Add",
+        "type": "Type of medical facility",
+        "login": "Login credentials",
+        "logo": "Facility logo",
+        "upload": "Upload",
         "delete": "Delete",
-        "change-email": "Change Email",
-        "change-password": "Change Password"
+        "change-email": "Change email",
+        "change-password": "Change password"
     },
     "edit-modal": {
         "sub-admin": "Sub-admin",
         "choose": "Choose"
     },
     "clinic": {
-        "nom": "Service Name",
+        "nom": "Service name",
         "price": "Price",
-        "specialite": "Medical Specialties",
-        "description": "Text"
+        "specialite": "Medical specialties",
+        "description": "Description"
     },
     "table": {
-        "nom-analyse": "Medical Service",
-        "price": "Rate (DZD)",
-        "speciality": "Medical Specialty",
+        "nom-analyse": "Medical service",
+        "price": "Fee (DA)",
+        "speciality": "Medical specialty",
         "results": "Results",
         "specialite": "Specialty",
-        "dzd": "DZD"
+        "dzd": "DA"
     }
 }

@@ -1,12 +1,12 @@
 {
   "general": {
-      "name-web": "Assistini.",
+      "name-web": "assistini.",
       "my-account": "My Account"
   },
   "navbar": {
       "quick_search": "Search for a doctor, ...",
-      "notification": "Notification",
-      "my-rdvs": "Agenda",
+      "notification": "Notifications",
+      "my-rdvs": "Schedule",
       "chat": "Messaging",
       "my-team": "My Team",
       "stats": "Dashboard",
@@ -14,7 +14,7 @@
       "invoice": "Billing",
       "setting": "Settings",
       "logout": "Logout",
-      "my-work-calendar": "Personal Agenda",
+      "my-work-calendar": "Personal Calendar",
       "waiting-list": "Requests"
   },
   "sidebar": {
@@ -24,9 +24,9 @@
       "requests": "My Requests",
       "my_notes": "My Notes",
       "my_patient": "My Family",
-      "message": "Message",
+      "message": "Messages",
       "my_msg": "Medical Messaging",
-      "typeHere": "Type here.."
+      "typeHere": "Type here..."
   },
   "filter": {
       "area": "Location",
@@ -34,7 +34,7 @@
       "specialty": "Specialty",
       "filter": "Filter",
       "all": "All",
-      "In the immediate": "Immediate Proximity",
+      "In the immediate": "Nearby",
       "search": "Search",
       "consultation": "Appointment Type",
       "video": "Teleconsultation",
@@ -44,19 +44,19 @@
       "today": "Today",
       "tomorrow": "Tomorrow",
       "before": "Other Dates",
-      "isOpen": "Accepts New Patients",
-      "timetables": "Hours and Prices",
-      "timetable_1": "Strict Time Adherence",
-      "timetable_2": "Emergency Consultations Possible",
-      "timetable_3": "Third-Party Payment Accepted",
-      "timetable_4": "Open to All Patients",
-      "reset": "Clear Filters",
-      "showPractitioners": "Show Available Patients",
-      "nearMe": "Immediate Proximity"
+      "isOpen": "Accepting New Patients",
+      "timetables": "Schedules and Fees",
+      "timetable_1": "Strict schedule adherence",
+      "timetable_2": "Urgent consultations available",
+      "timetable_3": "Third-party payment accepted",
+      "timetable_4": "Open to all patients",
+      "reset": "Clear filters",
+      "showPractitioners": "Show available practitioners",
+      "nearMe": "Nearby"
   },
   "footer": {
-      "assistini": "Assistini.",
-      "description": "An innovative platform to transform healthcare service management. Designed to simplify and optimize the experience for patients and professionals, it offers comprehensive and tailored solutions.",
+      "assistini": "assistini.",
+      "description": "An innovative platform designed to transform healthcare service management. Built to simplify and optimize the experience of both patients and professionals, it offers complete and tailored solutions.",
       "menu": "Menu",
       "products": "Our Products",
       "rooms": "Rooms",
@@ -76,13 +76,13 @@
       "enterEmail": "Enter your email",
       "algiersAlgeria": "Algiers, Algeria",
       "highQuality": "High Quality",
-      "crafted": "Made from superior quality materials",
+      "crafted": "Crafted from premium materials",
       "warranyProtection": "Warranty",
-      "over": "2 Years",
+      "over": "2 years",
       "support": "24/7 Support",
-      "dedicatedSupport": "Dedicated Support",
+      "dedicatedSupport": "Dedicated Assistance",
       "poweredBy": "Powered by the Assistini Team",
-      "allRight": "All Rights Reserved 2024, Inc."
+      "allRight": "All rights reserved © 2024, Inc."
   },
   "notification": {
       "title": "Notifications"

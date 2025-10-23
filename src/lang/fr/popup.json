@@ -1,56 +1,56 @@
 {
     "detail-doctor": {
         "validation": "Validation des consignes",
-        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous : Consultation de médecine générale",
-        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d'attente et en consultation.",
+        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous : Consultation de médecine générale.",
+        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d’attente et durant la consultation.",
         "confirm": "Confirmer"
     },
     "confirm-service": {
-        "title": "Voulez-vous confirmer ?",
-        "description": "Vous avez sélectionné différents actes",
+        "title": "Souhaitez-vous confirmer ?",
+        "description": "Vous avez sélectionné différents actes.",
         "continue": "Continuer",
         "cancel": "Annuler",
         "confirm": "Confirmer"
     },
     "confirm-pay": {
         "title-patient": "Choisissez votre mode de paiement",
-        "description": "Merci de choisir une méthode de règlement pour poursuivre.",
+        "description": "Merci de choisir une méthode de paiement pour poursuivre.",
         "cancel": "Annuler",
         "continue": "Confirmer",
         "download": "Télécharger",
         "finish": "Terminer",
-        "pay-at-clinic": "Payer en clinique",
+        "pay-at-clinic": "Payer à la clinique",
         "req-distance": "Payer à distance",
         "cash": "Payer en espèces",
-        "cib": "Payer par CIB/EDAHABIA",
+        "cib": "Payer par carte CIB / EDAHABIA",
         "req-title": "Confirmer la demande de paiement",
         "req-description": "Êtes-vous sûr de vouloir valider cette demande de paiement ?",
         "pay-req": "Procéder au paiement"
     },
     "confirm-logout": {
-        "title": "Confirmez-vous la déconnexion",
-        "description": "Vous devez saisir à nouveau vos identifiants de connexion",
+        "title": "Confirmez-vous la déconnexion ?",
+        "description": "Vous devrez saisir à nouveau vos identifiants de connexion.",
         "cancel": "Annuler",
         "continue": "Confirmer"
     },
     "notification": {
-        "title": "Notification"
+        "title": "Notifications"
     },
     "profil": {
-        "change-email": "Changer email",
-        "change-password": "Changer mot de passe",
-        "title-email": "Changer email",
-        "exist-email": "Email existant",
+        "change-email": "Changer d’email",
+        "change-password": "Changer de mot de passe",
+        "title-email": "Modifier l’adresse email",
+        "exist-email": "Email actuel",
         "new-email": "Nouvel email",
         "email-done": "Sauvegarder",
-        "title-pwd": "Changer mot de passe",
+        "title-pwd": "Modifier le mot de passe",
         "old-pwd": "Ancien mot de passe",
         "new-pwd": "Nouveau mot de passe",
         "confirm-password": "Confirmer le mot de passe",
         "pwd-done": "Sauvegarder",
-        "old-pwd-placeholder": "Saisir ancien mot de passe",
-        "new-pwd-placeholder": "Saisir nouveau mot de passe",
-        "confirm-pwd-placeholder": "Confirmer votre mot de passe"
+        "old-pwd-placeholder": "Saisissez l’ancien mot de passe",
+        "new-pwd-placeholder": "Saisissez le nouveau mot de passe",
+        "confirm-pwd-placeholder": "Confirmez votre mot de passe"
     },
     "note": {
         "title": "Note",
@@ -66,14 +66,14 @@
     },
     "confirm-rdv-patient": {
         "title": "Confirmation du rendez-vous",
-        "description": "Un dernier coup d'œil avant validation !",
+        "description": "Un dernier coup d’œil avant validation !",
         "note": "Ce rendez-vous sera enregistré dans votre espace patient.",
         "cancel": "Annuler",
         "continue": "Confirmer"
     },
     "confirm-delete-sub-admin": {
-        "title": "Souhaitez-vous supprimer ce profil",
-        "description": "Vous avez créé un nouveau sous-administrateur",
+        "title": "Souhaitez-vous supprimer ce profil ?",
+        "description": "Vous avez créé un nouveau sous-administrateur.",
         "pending": "En attente",
         "cancel": "Annuler",
         "continue": "Supprimer"

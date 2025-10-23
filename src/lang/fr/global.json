@@ -1,11 +1,11 @@
 {
     "general": {
-        "name-web": "Assistini.",
+        "name-web": "assistini.",
         "my-account": "Mon compte"
     },
     "navbar": {
         "quick_search": "Rechercher un médecin, ...",
-        "notification": "Notification",
+        "notification": "Notifications",
         "my-rdvs": "Agenda",
         "chat": "Messagerie",
         "my-team": "Mon équipe",
@@ -21,12 +21,12 @@
         "my_RDV": "Mes rendez-vous",
         "my_fav": "Mes médecins favoris",
         "my_documents": "Mes documents",
-        "requests": "Mes Demandes",
+        "requests": "Mes demandes",
         "my_notes": "Mes notes",
         "my_patient": "Ma famille",
-        "message": "Message",
+        "message": "Messages",
         "my_msg": "Messagerie médicale",
-        "typeHere": "Tapez ici.."
+        "typeHere": "Tapez ici..."
     },
     "filter": {
         "area": "Localisation",
@@ -35,7 +35,7 @@
         "filter": "Filtre",
         "all": "Tous",
         "In the immediate": "À proximité immédiate",
-        "search": "Recherche",
+        "search": "Rechercher",
         "consultation": "Type de rendez-vous",
         "video": "Téléconsultation",
         "office": "Consultation au cabinet",
@@ -44,18 +44,18 @@
         "today": "Aujourd'hui",
         "tomorrow": "Demain",
         "before": "Autres dates",
-        "isOpen": "Accepte les nouveaux patients",
-        "timetables": "Horaires et prix",
+        "isOpen": "Accepte de nouveaux patients",
+        "timetables": "Horaires et tarifs",
         "timetable_1": "Respect strict des horaires",
         "timetable_2": "Consultations urgentes possibles",
         "timetable_3": "Tiers payant accepté",
         "timetable_4": "Ouvert à toute patientèle",
         "reset": "Effacer les filtres",
-        "showPractitioners": "Afficher les patients disponibles",
+        "showPractitioners": "Afficher les praticiens disponibles",
         "nearMe": "À proximité immédiate"
     },
     "footer": {
-        "assistini": "Assistini.",
+        "assistini": "assistini.",
         "description": "Une plateforme innovante pour transformer la gestion des services de santé. Conçue pour simplifier et optimiser l'expérience des patients et des professionnels, elle propose des solutions complètes et adaptées.",
         "menu": "Menu",
         "products": "Nos produits",
@@ -64,7 +64,7 @@
         "aboutUs": "Qui sommes-nous",
         "termsPolicy": "Conditions et politique",
         "myAccount": "Mon compte",
-        "checkout": "Vérifier",
+        "checkout": "Paiement",
         "myCart": "Mon panier",
         "myCatalog": "Mon catalogue",
         "account": "Compte",
@@ -82,7 +82,7 @@
         "support": "Assistance 24h/24 et 7j/7",
         "dedicatedSupport": "Support dédié",
         "poweredBy": "Propulsé par l'équipe Assistini",
-        "allRight": "Tous droits réservés 2024, Inc."
+        "allRight": "Tous droits réservés © 2024, Inc."
     },
     "notification": {
         "title": "Notifications"
