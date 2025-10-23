@@ -8,7 +8,7 @@ import SearchForm from "../components/form/SearchForm";
 import { useTranslation } from "react-i18next";
 import NotificationBox from "./NotificationBox";
 import icons from "../constants/icons";
-import { Search } from 'lucide-react';
+import { Search, LogOut  } from 'lucide-react';
 
 const Navbar = ({ children = null }) => {
     const { t } = useTranslation("global");
@@ -21,6 +21,11 @@ const Navbar = ({ children = null }) => {
 
     const toggleSearch = () => {
         setShowSearch(!showSearch);
+    };
+
+    const logout = () => {
+        localStorage.clear();
+        navigate("/");
     };
 
     return (
@@ -104,6 +109,9 @@ const Navbar = ({ children = null }) => {
                         />
                         <button onClick={toggleSearch} className="p-2">
                             <Search />
+                        </button>
+                        <button onClick={logout} className="p-2">
+                        <LogOut />
                         </button>
                     </div>
                 </div>
