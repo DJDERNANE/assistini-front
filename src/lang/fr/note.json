@@ -1,6 +1,6 @@
 {
     "general": {
-        "title": "mon equipe",
+        "title": "Mon équipe",
         "all-notes": "Toutes les notes",
         "accounts": "Comptes",
         "notes": "Mes notes",
@@ -10,24 +10,19 @@
         "filter": "Filtrer",
         "my-team": "Mon équipe",
         "your-notes": "Vos notes",
-        "go-back": "précédent",
+        "go-back": "Précédent",
         "exist-profiles": "Membres actifs",
-        "notes-description": "notes ....",
-        "see": "Consulter",
+        "notes-description": "Notes ...",
         "users-description": "Utilisateurs ...",
-        "search": "Rechercher ...",
-        "all-notes": "Toutes les notes",
-        "existing-profiles": "profiles existants",
-        "": "",
-        "": ""
+        "search-placeholder": "Rechercher ...",
+        "existing-profiles": "Profiles existants"
     },
     "table": {
         "sender": "Nom de l'expéditeur",
         "destination": "Destinataire",
         "number": "Référence",
         "date": "Date",
-        "results": "Résultats trouvé",
-        "": ""
+        "results": "Résultats trouvés"
     },
     "note": {
         "title": "Titre",
@@ -35,16 +30,14 @@
         "pending": "En attente",
         "sub-admin": "Sous-administrateur",
         "learn-more": "En savoir plus",
-        "go-back": "précédent",
-        "": ""
+        "go-back": "Précédent"
     },
     "user": {
         "title": "Titre",
-        "go-back": "précédent",
+        "go-back": "Précédent",
         "my-team": "Mon équipe",
         "exist-profile": "Profil existant",
         "active": "Actif",
-        "offline": "Hors ligne",
-        "": ""
+        "offline": "Hors ligne"
     }
 }

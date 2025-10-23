@@ -27,7 +27,7 @@
         "option": "Sélectionner une option"
     },
     "filter": {
-        "consultation": "Consultation"
+      "consultation": "Consultation"
     },
     "price": {
         "discount": "Remise",
@@ -78,4 +78,4 @@
         "refuse": "Refuser",
         "reprogrammer": "Reprogrammer"
     }
-}
+  }
