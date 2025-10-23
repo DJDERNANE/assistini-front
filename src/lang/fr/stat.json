@@ -17,16 +17,13 @@
         "consultations": "consultations",
         "examens": "test",
         "nbr-rdv": "nombre de rendez-vous",
-        "title": "tableau de bord analytique",
-        "": "",
-        "": ""
+        "title": "tableau de bord analytique"
     },
     "box": {
         "visits": "visites",
         "patients": "patients",
         "treated": "traies",
         "views": "voir",
-        "wilaya": "wilaya",
-        "": ""
+        "wilaya": "wilaya"
     }
 }

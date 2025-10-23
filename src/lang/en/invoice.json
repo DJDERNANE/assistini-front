@@ -1,0 +1,50 @@
+{
+    "general": {
+        "invoice": "Invoice",
+        "billed-to": "Billed To",
+        "invoice-no": "Invoice No",
+        "issued-on": "Issued On",
+        "payment-due": "Payment Due",
+        "qnt": "Quantity",
+        "price": "Price",
+        "total": "Total",
+        "compte-rendu": "Medical Report",
+        "indication": "Examination Reason",
+        "result": "Examination Result",
+        "conclusion": "Conclusion",
+        "services": "Services",
+        "dzd": "DZD",
+        "control-your-doc": "Control Your Document",
+        "download": "Download Document",
+        "share": "Share Document",
+        "finish": "Finish",
+        "scanner": "Examination Type",
+        "partner": "Partner"
+    },
+    "exist": {
+        "patient-name": "Patient",
+        "birth": "Date of Birth",
+        "location": "Location",
+        "abonement": "Subscription",
+        "date_create": "Invoice Date",
+        "provider": "Provider",
+        "price": "Amount",
+        "status": "Status"
+    },
+    "payment": {
+        "title": "Payment",
+        "cash": "Cash"
+    },
+    "invoice": {
+        "dzd": "DZD",
+        "total": "Total"
+    },
+    "filter": {
+        "current": "In Progress",
+        "paid": "Unpaid",
+        "favorite": "Paid",
+        "deleted": "Cancellation",
+        "wilaya": "Wilaya",
+        "pending": "Pending"
+    }
+}

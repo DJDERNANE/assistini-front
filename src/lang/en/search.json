@@ -1,9 +1,12 @@
 {
+    "general_search": {
+        "bookRDV": "Book your appointment!"
+    },
     "search": {
         "bookRDV": "Book"
     },
     "doctor": {
-        "services": "services",
+        "services": "Services",
         "expertise": "Expertise",
         "access": "Access",
         "info": "Information",
@@ -11,38 +14,38 @@
         "prices": "Prices",
         "spokenLang": "Spoken languages",
         "refunds": "Refunds",
-        "transport": "Means of transport",
+        "transport": "Transportation",
         "usefulInfo": "Useful information",
-        "seeMap": "See the route with Maps",
-        "makeRDV": "Make an appointment online",
-        "option-consultation": "consultation",
+        "seeMap": "Get directions with Maps",
+        "makeRDV": "Book an online appointment",
         "fillInfo": "Please fill in the following information",
-        "speciality": "Speciality",
-        "speciality_1": "medcine generalist",
+        "speciality": "Specialty",
+        "speciality_1": "Choose specialty",
+        "consultation": "Consultation",
+        "date-rdv": "Appointment date",
         "reasonConsultation": "Reason for consultation",
-        "choosePattern": "Choose a pattern group",
+        "choosePattern": "Choose a reason group",
         "chooseConsultationTime": "Choose your consultation time",
         "nextAvailability": "Next availability",
         "today": "Today",
-        "pation": "Pation",
+        "pation": "Patient",
         "valid": "Valid",
-        "alert_1": "Attention, nous vous rappelons que ce motif est réservé à la patientèle connue",
-        "patient": "le pation",
-        "documents": "documents",
-        "chooseDate": "Choisissez votre heure de consultation",
-        "available": "Disponible ",
-        "date-rdv": "date de RDV",
-        "plus": "Plus de disponibilités"
+        "alert_1": "Warning, we remind you that this reason is reserved for known patients",
+        "patient": "The patient",
+        "documents": "Documents",
+        "chooseDate": "Choose your consultation time",
+        "available": "Available",
+        "mes-documents": "My documents",
+        "plus": "More availabilities"
     },
     "note": {
-        "titleIndicate": "I indicate my mutual",
-        "descriptionIndicate": "To find out how much my consultation will cost me."
+        "titleIndicate": "I specify my health insurance",
+        "descriptionIndicate": "To know how much my consultation will cost."
     },
     "alert": {
-        "validation": "Validation des consignes",
-        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous: Consultation de médecine générale",
-        "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d'attente et en consultation.",
-        "confirm": "confirmer"
-    },
-    "filter": {}
+        "validation": "Validation of instructions",
+        "validation-description": "Please take these instructions into account to confirm your appointment: General medicine consultation",
+        "validation-indice": "If you are sick (cold, fever, cough), please wear a mask in the waiting room and during consultation.",
+        "confirm": "Confirm"
+    }
 }

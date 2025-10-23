@@ -3,7 +3,7 @@
         "title": "Prenez rendez-vous avec votre médecin rapidement !"
     },
     "favorite": {
-        "title": "mes favories cliniques"
+        "title": "Mes favoris cliniques"
     },
     "my-rdvs": {
         "title": "Mes Rendez-vous",
@@ -12,74 +12,69 @@
         "delete": "Retirer ce rendez-vous",
         "pending": "En attente de confirmation",
         "motif": "Motif de consultation",
-        "patient": "patient",
-        "type": "type",
-        "document": "documents",
-        "heure": "heure",
-        "date": "date",
-        "status": "status"
-        
+        "patient": "Patient",
+        "type": "Type",
+        "document": "Documents",
+        "heure": "Heure",
+        "date": "Date",
+        "status": "Statut"
     },
     "doc": {
         "add": "Ajouter un document",
         "name-file": "Nom du fichier (optionnel)",
         "download": "Voir le document",
-        "": "",
-        "": "",
-        "": "",
-        "title": "mes documents"
+        "title": "Mes documents"
     },
     "my-note": {
-        "title": "mes notes"
+        "title": "Mes notes"
     },
     "my-patient": {
-        "title": "mes patients"
+        "title": "Mes patients"
     },
     "request": {
-        "title": "mes demandes"
+        "title": "Mes demandes"
     },
     "profile": {
-        "title": "general inforamtion",
-        "nom": "nom",
-        "prenom": "prénom",
-        "assurance": "numero d'assurance sociale",
-        "sex": "genre",
-        "residence": "addresse complète",
-        "motif": "lien famillaile",
+        "title": "Informations générales",
+        "nom": "Nom",
+        "prenom": "Prénom",
+        "assurance": "Numéro d'assurance sociale",
+        "sex": "Genre",
+        "residence": "Adresse complète",
+        "motif": "Lien familial",
         "email": "Email",
-        "birthday": "date de naissance",
+        "birthday": "Date de naissance",
         "company": "Employeur / Organisme",
-        "phone": "numero de téléphone",
-        "create": "créer",
-        "add-new-patient": "creation dossier patient",
-        "show-patient": "information personnelles d'un patient",
-        "creer-patient": "créer le dossier patient",
+        "phone": "Numéro de téléphone",
+        "create": "Créer",
+        "add-new-patient": "Création dossier patient",
+        "show-patient": "Informations personnelles d'un patient",
+        "creer-patient": "Créer le dossier patient",
         "delete": "Retirer ce patient",
-        "": "",
-        "title": "mes patients"
+        "title": "Mes patients"
     },
     "bar": {
-        "profile": "mon compte",
-        "logout": "deconnexion",
-        "eme": "eme",
-        "waiting-title": "votre position dans la chaine est",
+        "profile": "Mon compte",
+        "logout": "Déconnexion",
+        "eme": "Urgence",
+        "waiting-title": "Votre position dans la chaîne est",
         "patient-before": "patients avant vous"
     },
     "filter": {
         "search": "Rechercher"
     },
     "admin": {
-        "nom": "nom",
-        "prenom": "prénom",
-        "genre": "genre",
-        "addresse": "addresse complete",
-        "login": "",
-        "change-email": "changer email",
-        "change-password": "change mot de passe",
-        "nas": "numero d'assurance sociale",
-        "phone": "numero de téléphone",
-        "logo": "photo de profil",
-        "save": "sauvegarder",
+        "nom": "Nom",
+        "prenom": "Prénom",
+        "genre": "Genre",
+        "addresse": "Adresse complète",
+        "login": "Login",
+        "change-email": "Changer email",
+        "change-password": "Changer mot de passe",
+        "nas": "Numéro d'assurance sociale",
+        "phone": "Numéro de téléphone",
+        "logo": "Photo de profil",
+        "save": "Sauvegarder",
         "sexe": {
             "male": "Mâle",
             "femelle": "Femelle"

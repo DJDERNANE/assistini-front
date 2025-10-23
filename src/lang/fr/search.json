@@ -1,6 +1,6 @@
 {
     "general_search": {
-        "bookRDV": "Réserver votre rendez-vous!"
+        "bookRDV": "Réserver votre rendez-vous !"
     },
     "search": {
         "bookRDV": "Réserver"
@@ -20,9 +20,9 @@
         "makeRDV": "Prendre un rendez-vous en ligne",
         "fillInfo": "Veuillez remplir les informations suivantes",
         "speciality": "Spécialité",
-        "speciality_1": "Choisir specialite",
-        "consultation": "consultation",
-        "date-rdv": "date de RDV",
+        "speciality_1": "Choisir une spécialité",
+        "consultation": "Consultation",
+        "date-rdv": "Date de RDV",
         "reasonConsultation": "Motif de consultation",
         "choosePattern": "Choisir un groupe de motifs",
         "chooseConsultationTime": "Choisissez votre heure de consultation",
@@ -44,7 +44,7 @@
     },
     "alert": {
         "validation": "Validation des consignes",
-        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous: Consultation de médecine générale",
+        "validation-description": "Merci de prendre en compte ces consignes pour confirmer votre rendez-vous : Consultation de médecine générale",
         "validation-indice": "Si vous êtes malade (rhume, fièvre, toux), merci de porter un masque en salle d'attente et en consultation.",
         "confirm": "Confirmer"
     }

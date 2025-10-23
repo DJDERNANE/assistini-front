@@ -1,0 +1,43 @@
+{
+    "general": {
+        "title": "My Team",
+        "all-notes": "All Notes",
+        "accounts": "Accounts",
+        "notes": "My Notes",
+        "users": "User List",
+        "see": "Consult",
+        "search": "Search",
+        "filter": "Filter",
+        "my-team": "My Team",
+        "your-notes": "Your Notes",
+        "go-back": "Previous",
+        "exist-profiles": "Active Members",
+        "notes-description": "Notes ...",
+        "users-description": "Users ...",
+        "search-placeholder": "Search ...",
+        "existing-profiles": "Existing Profiles"
+    },
+    "table": {
+        "sender": "Sender Name",
+        "destination": "Recipient",
+        "number": "Reference",
+        "date": "Date",
+        "results": "Results Found"
+    },
+    "note": {
+        "title": "Title",
+        "quick-note": "Note",
+        "pending": "Pending",
+        "sub-admin": "Sub-administrator",
+        "learn-more": "Learn More",
+        "go-back": "Previous"
+    },
+    "user": {
+        "title": "Title",
+        "go-back": "Previous",
+        "my-team": "My Team",
+        "exist-profile": "Existing Profile",
+        "active": "Active",
+        "offline": "Offline"
+    }
+}

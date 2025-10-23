@@ -1,82 +1,83 @@
 {
-  "general_home": {
-      "title": "Book an appointment with your doctor quickly!"
-  },
-  "favorite": {
-      "title": "My favorite clinics"
-  },
-  "my-rdvs": {
-      "title": "My Appointments",
-      "left-1": "You have",
-      "left-2": "days left",
-      "delete": "Remove this appointment",
-      "pending": "Awaiting confirmation",
-      "motif": "Reason for consultation",
-      "patient": "patient",
-      "type": "type",
-      "document": "documents",
-      "heure": "time",
-      "date": "date",
-      "status": "status"
-  },
-  "doc": {
-      "add": "Add a document",
-      "name-file": "File name (optional)",
-      "download": "View document",
-      "title": "My documents"
-  },
-  "my-note": {
-      "title": "My notes"
-  },
-  "my-patient": {
-      "title": "My patients"
-  },
-  "request": {
-      "title": "My requests"
-  },
-  "profile": {
-      "title": "General information",
-      "nom": "last name",
-      "prenom": "first name",
-      "assurance": "social insurance number",
-      "sex": "gender",
-      "residence": "full address",
-      "motif": "family relationship",
-      "email": "email",
-      "birthday": "date of birth",
-      "company": "Employer / Organization",
-      "phone": "phone number",
-      "create": "create",
-      "add-new-patient": "create patient file",
-      "show-patient": "patient personal information",
-      "creer-patient": "create patient record",
-      "delete": "Remove this patient"
-  },
-  "bar": {
-      "profile": "my account",
-      "logout": "logout",
-      "eme": "th",
-      "waiting-title": "your position in the queue is",
-      "patient-before": "patients before you"
-  },
-  "filter": {
-      "search": "Search"
-  },
-  "admin": {
-      "nom": "last name",
-      "prenom": "first name",
-      "genre": "gender",
-      "addresse": "full address",
-      "login": "login",
-      "change-email": "change email",
-      "change-password": "change password",
-      "nas": "social insurance number",
-      "phone": "phone number",
-      "logo": "profile picture",
-      "save": "save",
-      "sexe": {
-          "male": "Male",
-          "femelle": "Female"
-      }
-  }
+    "general_home": {
+        "title": "Book an appointment with your doctor quickly!"
+    },
+    "favorite": {
+        "title": "My favorite clinics"
+    },
+    "my-rdvs": {
+        "title": "My Appointments",
+        "left-1": "You have",
+        "left-2": "days left",
+        "delete": "Remove this appointment",
+        "pending": "Pending confirmation",
+        "motif": "Reason for consultation",
+        "patient": "Patient",
+        "type": "Type",
+        "document": "Documents",
+        "heure": "Time",
+        "date": "Date",
+        "status": "Status"
+    },
+    "doc": {
+        "add": "Add a document",
+        "name-file": "File name (optional)",
+        "download": "View document",
+        "title": "My documents"
+    },
+    "my-note": {
+        "title": "My notes"
+    },
+    "my-patient": {
+        "title": "My patients"
+    },
+    "request": {
+        "title": "My requests"
+    },
+    "profile": {
+        "title": "General information",
+        "nom": "Last name",
+        "prenom": "First name",
+        "assurance": "Social insurance number",
+        "sex": "Gender",
+        "residence": "Complete address",
+        "motif": "Family relationship",
+        "email": "Email",
+        "birthday": "Date of birth",
+        "company": "Employer / Organization",
+        "phone": "Phone number",
+        "create": "Create",
+        "add-new-patient": "Create patient file",
+        "show-patient": "Patient's personal information",
+        "creer-patient": "Create patient file",
+        "delete": "Remove this patient",
+        "title": "My patients"
+    },
+    "bar": {
+        "profile": "My account",
+        "logout": "Logout",
+        "eme": "Emergency",
+        "waiting-title": "Your position in the queue is",
+        "patient-before": "patients before you"
+    },
+    "filter": {
+        "search": "Search"
+    },
+    "admin": {
+        "nom": "Last name",
+        "prenom": "First name",
+        "genre": "Gender",
+        "addresse": "Complete address",
+        "login": "Login",
+        "change-email": "Change email",
+        "change-password": "Change password",
+        "nas": "Social insurance number",
+        "phone": "Phone number",
+        "logo": "Profile picture",
+        "save": "Save",
+        "sexe": {
+            "male": "Male",
+            "femelle": "Female"
+        }
+    }
 }

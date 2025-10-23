@@ -1,0 +1,57 @@
+{
+    "general": {
+        "title": "Establishment Settings",
+        "admin": "Administration",
+        "accounts": "Account Management",
+        "my-clinic": "My Health Space",
+        "my-cabinet": "My Practice Info",
+        "save": "Save Changes",
+        "all-services": "All Services",
+        "search": "Search"
+    },
+    "account": {
+        "username": "Username",
+        "password": "Password",
+        "add-sub": "Add User",
+        "existing": "Existing Profile",
+        "send-notes": "Send Message",
+        "validate": "Confirm",
+        "placeholder-note": "Write note",
+        "send": "Send",
+        "active": "Active",
+        "offline": "Offline"
+    },
+    "admin": {
+        "denomination": "Establishment Name",
+        "nom": "Owner Name",
+        "agreement": "Professional License Number",
+        "adresse": "Address",
+        "identifiant": "Tax Identification Number",
+        "gps": "Geolocation",
+        "type": "Medical Establishment Type",
+        "login": "Login Credentials",
+        "logo": "Establishment Logo",
+        "upload": "Add",
+        "delete": "Delete",
+        "change-email": "Change Email",
+        "change-password": "Change Password"
+    },
+    "edit-modal": {
+        "sub-admin": "Sub-admin",
+        "choose": "Choose"
+    },
+    "clinic": {
+        "nom": "Service Name",
+        "price": "Price",
+        "specialite": "Medical Specialties",
+        "description": "Text"
+    },
+    "table": {
+        "nom-analyse": "Medical Service",
+        "price": "Rate (DZD)",
+        "speciality": "Medical Specialty",
+        "results": "Results",
+        "specialite": "Specialty",
+        "dzd": "DZD"
+    }
+}

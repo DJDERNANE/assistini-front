@@ -1,23 +1,23 @@
 {
     "general": {
-        "clinic": "clinic",
-        "signup": "Registration",
-        "continue": "Continue",
+        "clinic": "clinique",
+        "signup": "Inscription",
+        "continue": "Continuer",
         "passer": "passer",
         "signin": "Se connecter",
         "email": "E-mail",
-        "create": "Creer un compte",
-        "email_placeholder": "enter your email",
+        "create": "Créer un compte",
+        "email_placeholder": "entrez votre e-mail",
         "password": "Mot de passe",
-        "password_placeholder": "Saisir votre mot de passe",
+        "password_placeholder": "Entrez votre mot de passe",
         "remember_me": "se souvenir de moi",
-        "forgetPassword": "Mot de passe oublié?",
+        "forgetPassword": "Mot de passe oublié ?",
         "connect": "Se connecter",
-        "signGoogle": "Sign in with Google",
-        "or": "or",
+        "signGoogle": "Se connecter avec Google",
+        "or": "ou",
         "name": "nom complet",
         "nom": "Nom",
-        "prenom": "prénom",
+        "prenom": "Prénom",
         "birthday": "date de naissance",
         "sexe": "Genre",
         "adresse": "E-mail",
@@ -25,19 +25,19 @@
         "zip": "Code postal",
         "cnas": "Numéro d'assurance",
         "title_convention": "Détails de la convention :",
-        "description_convention": "Obligatoire pour le client et ce pour bénéficier des remises de l'application. Vous avez la possibilité de passer cette étape",
+        "description_convention": "Obligatoire pour le client afin de bénéficier des remises de l'application. Vous avez la possibilité de passer cette étape",
         "company_name": "nom de l'entreprise",
         "matricule": "matricule",
-        "nameAssurance": "nom de la campagnie d'assurance",
-        "numAssurance": "numero d'assurance",
+        "nameAssurance": "nom de la compagnie d'assurance",
+        "numAssurance": "numéro d'assurance",
         "forgetPassword2": "Mot de passe oublié",
-        "forgetPassword2_description": "Enter your registered email below to receive password reset instructions",
-        "send": "send",
+        "forgetPassword2_description": "Entrez votre e-mail enregistré ci-dessous pour recevoir les instructions de réinitialisation du mot de passe",
+        "send": "envoyer",
         "sending": "envoi en cours...",
-        "verifyEmail": "Verify email",
-        "verifyEmail_description": "A verification code has been sent to you. Enter code below",
+        "verifyEmail": "Vérifier l'e-mail",
+        "verifyEmail_description": "Un code de vérification vous a été envoyé. Entrez le code ci-dessous",
         "verifyCode": "Vérifier le code",
-        "verifyCode_description": "Entrez le code de vérification envoyé à votre email",
+        "verifyCode_description": "Entrez le code de vérification envoyé à votre e-mail",
         "verificationCode": "Code de vérification",
         "code_placeholder": "Entrez le code à 4 chiffres",
         "verifying": "vérification...",
@@ -55,18 +55,14 @@
         "err-pwd-2": "Au moins une lettre majuscule requise",
         "err-pwd-3": "Au moins une lettre minuscule requise",
         "err-pwd-4": "Au moins un caractère spécial requis : ! @ # $ % & *",
-        "err-pwd-5": "Au moins un chiffre requis",
-        "": "",
-        "": ""
+        "err-pwd-5": "Au moins un chiffre requis"
     },
     "hero_section": {
         "title": "Prenez un rendez-vous avec votre médecin",
         "description": "Sélectionnez votre médecin, choisissez la date et l'heure de votre rendez-vous et recevez votre notification.",
-        "clinic": "clinic",
+        "clinic": "clinique",
         "title_step2": "Bienvenue sur Assistini plus.",
-        "subtitle_step2": "Accédez à votre espace personnel",
-        "": "",
-        "": ""
+        "subtitle_step2": "Accédez à votre espace personnel"
     },
     "whySection": {
         "title": "Notre mission est de simplifier la gestion des soins de santé. Nous pensons que la prise de rendez-vous médicaux doit être simple, sécurisée et accessible à tous.",
@@ -74,46 +70,25 @@
         "card-title-1": "Fiabilité",
         "card-title-2": "Qualité",
         "card-description-1": "ASSISTINI vous connecte à des médecins vérifiés dans votre région, garantissant une prise en charge rapide et fiable. Qu'il s'agisse d'un contrôle de routine ou d'une urgence, nous sommes là pour vous. Votre santé est notre priorité.",
-        "card-description-2": "Nous collaborons avec des médecins agréés et expérimentés, répondant à des normes strictes. Grâce à des profils détaillés et des avis patients, vous pouvez faire confiance à ASSISTINI pour vous offrir les meilleurs soins.",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "card-description-2": "Nous collaborons avec des médecins agréés et expérimentés, répondant à des normes strictes. Grâce à des profils détaillés et des avis patients, vous pouvez faire confiance à ASSISTINI pour vous offrir les meilleurs soins."
     },
     "banner_section": {
-        "sub_title": "Streamlining Your Path to Wellness.",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "sub_title": "Simplifiez votre parcours vers le bien-être."
     },
     "rdv_section": {
-        "title": "Pourquoi prendre rendez-vous avec nous?",
+        "title": "Pourquoi prendre rendez-vous avec nous ?",
         "description": "Avec Assistini, prenez rendez-vous en ligne avec votre médecin autrement",
-        "explore": "Explore More",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "explore": "Explorer plus"
     },
     "partner_section": {
-        "title": "Our parteners",
-        "description": "Some of the latest and greatest projects from us here at assistini.",
+        "title": "Nos partenaires",
+        "description": "Quelques-uns des derniers et meilleurs projets de chez Assistini.",
         "seeMore": "voir plus",
-        "seeAll": "view all clinics",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "seeAll": "voir toutes les cliniques"
     },
     "navbar": {
-        "home": "acceuil",
-        "about": "a propos de nous",
+        "home": "accueil",
+        "about": "à propos de nous",
         "news": "Nos prestations",
         "team": "actualités",
         "contact": "contactez-nous",
@@ -131,12 +106,7 @@
         "opt-3": "Avis patients vérifiés",
         "opt-desp-3": "Lisez les retours d'expérience pour faire le bon choix.",
         "opt-4": "Urgence ? On est là.",
-        "opt-desp-4": "Une urgence ? ASSISTINI vous guide vers l'aide la plus proche.",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "opt-desp-4": "Une urgence ? ASSISTINI vous guide vers l'aide la plus proche."
     },
     "advantage": {
         "title": "Des soins accessibles. Pour tous. Partout.",
@@ -146,9 +116,7 @@
         "diff-desp-2": "Cliniques",
         "diff-title-2": "Nous vous mettons en relation avec plus de 3 000 établissements fiables. Qu'il s'agisse d'un contrôle de routine ou d'une urgence, votre santé est notre priorité.",
         "diff-title-1": "d'avis positifs",
-        "diff-title-3": "de disponibilité",
-        "": "",
-        "": ""
+        "diff-title-3": "de disponibilité"
     },
     "edge": {
         "diff-desp-1": "Une plateforme dynamique utilisée par des milliers de patients quotidiennement.",
@@ -156,10 +124,7 @@
         "diff-desp-3": "Un savoir-faire solide porté par des professionnels de santé expérimentés.",
         "title": "L'excellence, notre engagement",
         "sub-sub-title": "ASSISTINI se distingue par un réseau de médecins vérifiés, une prise de rendez-vous fluide et des fonctionnalités pensées pour les patients. Notre technologie de pointe garantit des résultats en temps réel, précis et adaptés à vos besoins. L'excellence est notre norme — car votre santé mérite ce qu'il y a de mieux.",
-        "sub-title": "Nos chiffres parlent pour nous",
-        "": "",
-        "": "",
-        "": ""
+        "sub-title": "Nos chiffres parlent pour nous"
     },
     "experience": {
         "sub-title": "Nos solutions clés",
@@ -170,9 +135,7 @@
         "badge-2": "Une expérience fluide",
         "badge-desp-2": "De la recherche à la prise de rendez-vous, tout est pensé pour être simple, rapide et sans friction.",
         "badge-3": "Des professionnels vérifiés",
-        "badge-desp-3": "Chaque médecin sur ASSISTINI est rigoureusement sélectionné pour ses qualifications et son expérience.",
-        "": "",
-        "": ""
+        "badge-desp-3": "Chaque médecin sur ASSISTINI est rigoureusement sélectionné pour ses qualifications et son expérience."
     },
     "effort": {
         "sub-title": "4 étapes simples",
@@ -184,11 +147,7 @@
         "card-title-1": "Rechercher",
         "card-title-2": "Sélectionner",
         "card-title-3": "Réserver",
-        "card-title-4": "Consulter",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "card-title-4": "Consulter"
     },
     "unlock": {
         "title": "Vos soins, en mieux.",
@@ -198,26 +157,16 @@
         "box-desp-1": "Fini les attentes interminables ou les formulaires compliqués.",
         "box-title-4": "Assistance 24/7",
         "box-desp-2": "Des retours patients authentiques. Prenez vos décisions en toute confiance grâce à des avis clairs et fiables.",
-        "box-desp-3": "Un paiement fluide, sans stress. Profitez d'une expérience de paiement rapide, protégée et sans tracas.",
-        "": ""
+        "box-desp-3": "Un paiement fluide, sans stress. Profitez d'une expérience de paiement rapide, protégée et sans tracas."
     },
     "app": {
-        "title": "Disponible prochainement sur Android et iOS. Reply",
+        "title": "Disponible prochainement sur Android et iOS. Réponse",
         "sub-title": "L'appli ASSISTINI arrive bientôt !",
-        "sub-sub-title": "Prenez rendez-vous, consultez vos médecins et gérez votre santé directement depuis votre smartphone.",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "sub-sub-title": "Prenez rendez-vous, consultez vos médecins et gérez votre santé directement depuis votre smartphone."
     },
     "feedback": {
         "title": "Retours d'expérience réels de nos abonnés",
-        "sub-title": "Des histoires vraies, des réussites concrètes.",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "sub-title": "Des histoires vraies, des réussites concrètes."
     },
     "question": {
         "title": "Nous avons les réponses",
@@ -228,24 +177,18 @@
         "acc-title-3": "Puis-je annuler ou modifier mon rendez-vous ?",
         "acc-title-4": "Est-ce que mes données sont protégées ?",
         "acc-title-5": "Comment recevoir ma facture ou mon justificatif ?",
-        "acc-desp-1": "Sélectionnez la spécialité souhaitée, choisissez un créneau disponible et confirmez. Vous recevrez un rappel par SMS ou email.",
+        "acc-desp-1": "Sélectionnez la spécialité souhaitée, choisissez un créneau disponible et confirmez. Vous recevrez un rappel par SMS ou e-mail.",
         "acc-desp-2": "Une fois le rendez-vous confirmé, un lien sécurisé vous sera envoyé. Connectez-vous à l'heure prévue depuis votre téléphone ou ordinateur.",
         "acc-desp-3": "Oui, depuis votre espace personnel, vous pouvez reprogrammer ou annuler un rendez-vous en quelques clics.",
         "acc-desp-4": "Absolument. Toutes vos informations sont cryptées et sécurisées, conformément aux normes médicales en vigueur.",
-        "acc-desp-5": "Après chaque consultation, vous recevez automatiquement une facture ou un justificatif par email et dans votre espace utilisateur.",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "acc-desp-5": "Après chaque consultation, vous recevez automatiquement une facture ou un justificatif par e-mail et dans votre espace utilisateur."
     },
     "hero": {
         "title": "Trouvez un médecin de confiance, en quelques clics.",
         "desp": "Avec ASSISTINI, accédez facilement à un réseau de professionnels de santé qualifiés, disponibles à tout moment, où que vous soyez.",
         "find": "Prendre rendez-vous",
-        "become": "Vous etes un partenaire ?",
-        "stat": "2 500+ médecins certifiés",
-        "": "",
-        "": ""
+        "become": "Vous êtes un partenaire ?",
+        "stat": "2 500+ médecins certifiés"
     },
     "offer": {
         "title": "Profitez de notre offre exclusive santé",
@@ -253,8 +196,6 @@
         "badge-1": "de remise",
         "badge-2": "Livraison gratuite",
         "join": "Profiter de l'offre",
-        "desp": "Rejoignez-nous et bénéficiez d'un parcours simplifié, d'un service de qualité et d'économies concrètes. Ne manquez pas cette opportunité de bien démarrer l'année.",
-        "": "",
-        "": ""
+        "desp": "Rejoignez-nous et bénéficiez d'un parcours simplifié, d'un service de qualité et d'économies concrètes. Ne manquez pas cette opportunité de bien démarrer l'année."
     }
 }
