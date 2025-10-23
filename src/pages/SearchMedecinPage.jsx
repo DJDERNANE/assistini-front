@@ -107,9 +107,7 @@ const SearchMedecinPage = () => {
     if (loading) {
         return (
             <div>
-                <Navbar>
-                    <FilterMedecinForm />
-                </Navbar>
+                
                 <NavbarMobile />
                 <div className="responsive mt-4 mb-10">
                     <div className="flex justify-center items-center py-20">
@@ -155,7 +153,10 @@ const SearchMedecinPage = () => {
     return (
         <div>
             <Navbar>
-                <FilterMedecinForm />
+                <div className="hidden md:block">
+                    <FilterMedecinForm />
+                </div>
+                
             </Navbar>
             <NavbarMobile />
 

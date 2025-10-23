@@ -8,13 +8,19 @@ import SearchForm from "../components/form/SearchForm";
 import { useTranslation } from "react-i18next";
 import NotificationBox from "./NotificationBox";
 import icons from "../constants/icons";
+import { Search } from 'lucide-react';
 
 const Navbar = ({ children = null }) => {
     const { t } = useTranslation("global");
-
+    const [showSearch, setShowSearch] = useState(false);
     const navigate = useNavigate();
+
     const handleGoMsg = () => {
         navigate("/home/messages");
+    };
+
+    const toggleSearch = () => {
+        setShowSearch(!showSearch);
     };
 
     return (
@@ -33,14 +39,7 @@ const Navbar = ({ children = null }) => {
                     </Link>
                     <div className="col-span-9 md:grid grid-cols-12 ">
                         <div className="col-span-8 flex items-center  justify-between  w-full ">
-                            {localStorage.getItem("accessToken") && (
-                                <div
-                                    onClick={() => navigate("/home")}
-                                    className="cursor-pointer ml-2 mr-6"
-                                >
-                                    <img src={icons.Home} alt="" />
-                                </div>
-                            )}
+                           
                             {children}
                         </div>
                         {localStorage.getItem("accessToken") && (
@@ -77,24 +76,45 @@ const Navbar = ({ children = null }) => {
                 </div>
 
                 {/* this navbar for mobile devices */}
-                <div className="grid grid-cols-7 gap-x-3 responsive py-4 h-full !w-full md:hidden">
-                    <Link to={"/"} className="col-span-2 flex items-center">
-                        <h1 className="text-stone-900 font-medium text-lg md:text-2xl capitalize">
-                            {t("general.name")}
-                        </h1>
+                <div className="flex justify-between grid-cols-7 gap-x-3 responsive py-4 h-full !w-full md:hidden">
+                    <Link
+                        to={"/home"}
+                        className="col-span-3 flex items-center -mt-4"
+                    >
+                        <img
+                            src={"/logo.svg"}
+                            alt=""
+                            className="w-[100px] object-cover"
+                        />
                     </Link>
-                    <div className="col-span-4 w-full flex items-center">
-                        <SearchForm />
-                    </div>
-                    <div className="flex items-center justify-end">
+
+                    <div className="flex items-center gap-4 ">
                         <CircleButton
                             icon={Icons.Chat}
                             name={"icon chat"}
                             onClick={handleGoMsg}
                         />
+                        <CircleButton
+                            icon={Icons.Profile}
+                            name={"icon profile"}
+                            bg="flex"
+                            onClick={() => {
+                                navigate("/home/profile");
+                            }}
+                        />
+                        <button onClick={toggleSearch} className="p-2">
+                            <Search />
+                        </button>
                     </div>
                 </div>
             </div>
+
+            {/* Search bar that appears below navbar on mobile */}
+            {showSearch && (
+                <div className="col-span-8 flex items-center  justify-between  w-full bg-white p-4 border-b">
+                    {children}
+                </div>
+            )}
         </>
     );
 };
