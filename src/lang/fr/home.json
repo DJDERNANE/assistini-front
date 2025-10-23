@@ -1,15 +1,15 @@
 {
     "general_home": {
-        "title": "Prenez rendez-vous rapidement avec votre médecin !"
+        "title": "Prenez rendez-vous avec votre médecin rapidement !"
     },
     "favorite": {
-        "title": "Mes cliniques favorites"
+        "title": "Mes favoris cliniques"
     },
     "my-rdvs": {
-        "title": "Mes rendez-vous",
+        "title": "Mes Rendez-vous",
         "left-1": "Il vous reste",
         "left-2": "jours",
-        "delete": "Annuler ce rendez-vous",
+        "delete": "Retirer ce rendez-vous",
         "pending": "En attente de confirmation",
         "motif": "Motif de consultation",
         "patient": "Patient",
@@ -38,26 +38,27 @@
         "title": "Informations générales",
         "nom": "Nom",
         "prenom": "Prénom",
-        "assurance": "Numéro d’assurance sociale",
+        "assurance": "Numéro d'assurance sociale",
         "sex": "Genre",
         "residence": "Adresse complète",
         "motif": "Lien familial",
-        "email": "Adresse e-mail",
+        "email": "Email",
         "birthday": "Date de naissance",
         "company": "Employeur / Organisme",
         "phone": "Numéro de téléphone",
         "create": "Créer",
-        "add-new-patient": "Création d’un dossier patient",
-        "show-patient": "Informations personnelles du patient",
+        "add-new-patient": "Création dossier patient",
+        "show-patient": "Informations personnelles d'un patient",
         "creer-patient": "Créer le dossier patient",
-        "delete": "Supprimer ce patient"
+        "delete": "Retirer ce patient",
+        "title": "Mes patients"
     },
     "bar": {
         "profile": "Mon compte",
         "logout": "Déconnexion",
-        "eme": "ème",
-        "waiting-title": "Votre position dans la file est",
-        "patient-before": "Patients avant vous"
+        "eme": "Urgence",
+        "waiting-title": "Votre position dans la chaîne est",
+        "patient-before": "patients avant vous"
     },
     "filter": {
         "search": "Rechercher"
@@ -67,16 +68,16 @@
         "prenom": "Prénom",
         "genre": "Genre",
         "addresse": "Adresse complète",
-        "login": "Connexion",
-        "change-email": "Changer l’adresse e-mail",
-        "change-password": "Changer le mot de passe",
-        "nas": "Numéro d’assurance sociale",
+        "login": "Login",
+        "change-email": "Changer email",
+        "change-password": "Changer mot de passe",
+        "nas": "Numéro d'assurance sociale",
         "phone": "Numéro de téléphone",
         "logo": "Photo de profil",
         "save": "Sauvegarder",
         "sexe": {
-            "male": "Homme",
-            "femelle": "Femme"
+            "male": "Mâle",
+            "femelle": "Femelle"
         }
     }
 }

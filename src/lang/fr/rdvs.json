@@ -1,81 +1,80 @@
 {
     "general": {
-        "resultss": "patients en file d'attente",
-        "results": "patient en file d'attente",
-        "payment": "Procéder au paiement",
-        "service": "Service",
-        "select-service": "Sélectionner un service",
-        "result": "Résultat",
-        "specialite": "Spécialité",
-        "partner": "Partenaire",
-        "add-new-rdv": "Nouveau rendez-vous",
-        "request": "Demander un accès"
+      "resultss": "Patients en file d'attente",
+      "results": "Patient en file d'attente",
+      "payment": "Procéder au paiement",
+      "service": "Service",
+      "select-service": "Sélectionner",
+      "result": "Résultat",
+      "specialite": "Spécialité",
+      "partner": "Partenaire",
+      "add-new-rdv": "Nouveau rendez-vous",
+      "request": "Demander accès"
     },
     "list": {
-        "profile": "Profil du patient",
-        "documents": "Dossier du patient",
-        "download": "Télécharger",
-        "patient-info": "À propos du patient",
-        "book-rdv": "Réservation du rendez-vous",
-        "documents-shared": "Fichiers partagés avec le médecin"
+      "profile": "Profil patient",
+      "documents": "Dossier du patient",
+      "download": "Télécharger",
+      "patient-info": "À propos du patient",
+      "book-rdv": "Réservation du rendez-vous",
+      "documents-shared": "Fichiers partagés avec le médecin"
     },
     "doctor": {
-        "speciality": "Spécialité",
-        "reasonConsultation": "Motif de la consultation",
-        "patient": "Patient",
-        "date-rdv": "Date du rendez-vous",
-        "option": "Sélectionner une option"
+      "speciality": "Spécialité",
+      "reasonConsultation": "Motif de la consultation",
+      "patient": "Patient",
+      "date-rdv": "Date du rendez-vous",
+      "option": "Sélectionner une option"
     },
     "filter": {
       "consultation": "Consultation"
     },
     "price": {
-        "discount": "Remise",
-        "dz": "DA",
-        "currancy": "DZD",
-        "title": "Prix total"
+      "discount": "Remise",
+      "dz": "DZ",
+      "currancy": "DZD",
+      "title": "Prix total"
     },
     "new": {
-        "firstname": "Prénom",
-        "lastname": "Nom",
-        "email": "Email",
-        "address": "Adresse",
-        "motif": "Motif",
-        "phone": "Numéro de téléphone",
-        "company": "Entreprise",
-        "sexe": "Sexe"
+      "firstname": "Prénom",
+      "lastname": "Nom",
+      "email": "Email",
+      "address": "Adresse",
+      "motif": "Motif",
+      "phone": "Numéro de téléphone",
+      "company": "Entreprise",
+      "sexe": "Sexe"
     },
     "calendar": {
-        "title-manage": "Gérez vos disponibilités",
-        "morning-shift": "Consultations du matin",
-        "evening-shift": "Consultations de l'après-midi",
-        "schedule": "Gérer mon agenda",
-        "title": "Gérer mon agenda",
-        "day": "Jour",
-        "actions": "Options",
-        "choose-day": "Choisir un jour",
-        "date": "Date",
-        "clear": "Annuler les modifications",
-        "remove-fri": "Supprimer les vendredis",
-        "remove-sat": "Supprimer les samedis"
+      "title-manage": "Gérez vos disponibilités",
+      "morning-shift": "Consultations du matin",
+      "evening-shift": "Consultations de l'après-midi",
+      "schedule": "Gérer mon agenda",
+      "title": "Gérer mon agenda",
+      "day": "Jour",
+      "actions": "Options",
+      "choose-day": "Choisir le jour",
+      "date": "Date",
+      "clear": "Annuler les modifications",
+      "remove-fri": "Supprimer les vendredis",
+      "remove-sat": "Supprimer les samedis"
     },
     "info": {
-        "title": "Vue d’ensemble",
-        "description": "Consultez les informations liées à vos rendez-vous et à vos patients.",
-        "rdv": "Rendez-vous",
-        "read": "Lire plus",
-        "type": "Type de rendez-vous"
+      "title": "Vue d'ensemble",
+      "description": "Consultez les informations liées à vos rendez-vous et patients.",
+      "rdv": "Rendez-vous",
+      "read": "Lire plus"
     },
     "card": {
-        "motif": "Motif",
-        "documents": "Documents reçus",
-        "document": "Document reçu",
-        "type": "Type de rendez-vous",
-        "file": "Fichier joint",
-        "date": "Date",
-        "hour": "Heure",
-        "accept": "Accepter",
-        "refuse": "Refuser",
-        "reprogrammer": "Reprogrammer"
+      "motif": "Motif",
+      "documents": "Documents reçus",
+      "document": "Document reçu",
+      "type": "Type de rendez-vous",
+      "file": "Fichier joint",
+      "date": "Date",
+      "hour": "Heure",
+      "accept": "Accepter",
+      "refuse": "Refuser",
+      "reprogrammer": "Reprogrammer"
     }
   }

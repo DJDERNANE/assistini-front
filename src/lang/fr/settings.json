@@ -4,7 +4,7 @@
         "admin": "Administration",
         "accounts": "Gestion des comptes",
         "my-clinic": "Mon espace santé",
-        "my-cabinet": "Informations de mon cabinet",
+        "my-cabinet": "Mon cabinet info",
         "save": "Enregistrer les modifications",
         "all-services": "Tous les services",
         "search": "Recherche"
@@ -16,7 +16,7 @@
         "existing": "Profil existant",
         "send-notes": "Envoyer un message",
         "validate": "Confirmer",
-        "placeholder-note": "Écrire une note",
+        "placeholder-note": "Écrire note",
         "send": "Envoyer",
         "active": "Actif",
         "offline": "Hors ligne"
@@ -33,18 +33,18 @@
         "logo": "Logo de l'établissement",
         "upload": "Ajouter",
         "delete": "Supprimer",
-        "change-email": "Modifier l'e-mail",
+        "change-email": "Modifier l'email",
         "change-password": "Modifier le mot de passe"
     },
     "edit-modal": {
-        "sub-admin": "Sous-administrateur",
+        "sub-admin": "Sous-admin",
         "choose": "Choisir"
     },
     "clinic": {
-        "nom": "Nom du service",
+        "nom": "Nom de service",
         "price": "Prix",
         "specialite": "Spécialités médicales",
-        "description": "Description"
+        "description": "Texte"
     },
     "table": {
         "nom-analyse": "Prestation médicale",

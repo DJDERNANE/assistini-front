@@ -1,81 +1,162 @@
 {
-    "general": {
-        "resultss": "patients in the waiting line",
-        "results": "patient in the waiting line",
-        "payment": "Proceed to payment",
+    "french": {
+      "general": {
+        "resultss": "Patients en file d'attente",
+        "results": "Patient en file d'attente",
+        "payment": "Procéder au paiement",
         "service": "Service",
-        "select-service": "Select a service",
+        "select-service": "Sélectionner",
+        "result": "Résultat",
+        "specialite": "Spécialité",
+        "partner": "Partenaire",
+        "add-new-rdv": "Nouveau rendez-vous",
+        "request": "Demander accès"
+      },
+      "list": {
+        "profile": "Profil patient",
+        "documents": "Dossier du patient",
+        "download": "Télécharger",
+        "patient-info": "À propos du patient",
+        "book-rdv": "Réservation du rendez-vous",
+        "documents-shared": "Fichiers partagés avec le médecin"
+      },
+      "doctor": {
+        "speciality": "Spécialité",
+        "reasonConsultation": "Motif de la consultation",
+        "patient": "Patient",
+        "date-rdv": "Date du rendez-vous",
+        "option": "Sélectionner une option"
+      },
+      "filter": {
+        "consultation": "Consultation"
+      },
+      "price": {
+        "discount": "Remise",
+        "dz": "DZ",
+        "currancy": "DZD",
+        "title": "Prix total"
+      },
+      "new": {
+        "firstname": "Prénom",
+        "lastname": "Nom",
+        "email": "Email",
+        "address": "Adresse",
+        "motif": "Motif",
+        "phone": "Numéro de téléphone",
+        "company": "Entreprise",
+        "sexe": "Sexe"
+      },
+      "calendar": {
+        "title-manage": "Gérez vos disponibilités",
+        "morning-shift": "Consultations du matin",
+        "evening-shift": "Consultations de l'après-midi",
+        "schedule": "Gérer mon agenda",
+        "title": "Gérer mon agenda",
+        "day": "Jour",
+        "actions": "Options",
+        "choose-day": "Choisir le jour",
+        "date": "Date",
+        "clear": "Annuler les modifications",
+        "remove-fri": "Supprimer les vendredis",
+        "remove-sat": "Supprimer les samedis"
+      },
+      "info": {
+        "title": "Vue d'ensemble",
+        "description": "Consultez les informations liées à vos rendez-vous et patients.",
+        "rdv": "Rendez-vous",
+        "read": "Lire plus"
+      },
+      "card": {
+        "motif": "Motif",
+        "documents": "Documents reçus",
+        "document": "Document reçu",
+        "type": "Type de rendez-vous",
+        "file": "Fichier joint",
+        "date": "Date",
+        "hour": "Heure",
+        "accept": "Accepter",
+        "refuse": "Refuser",
+        "reprogrammer": "Reprogrammer"
+      }
+    },
+    "english": {
+      "general": {
+        "resultss": "Patients In Queue",
+        "results": "Patient In Queue",
+        "payment": "Proceed To Payment",
+        "service": "Service",
+        "select-service": "Select",
         "result": "Result",
         "specialite": "Specialty",
         "partner": "Partner",
-        "add-new-rdv": "New appointment",
-        "request": "Request access"
-    },
-    "list": {
-        "profile": "Patient profile",
-        "documents": "Patient file",
+        "add-new-rdv": "New Appointment",
+        "request": "Request Access"
+      },
+      "list": {
+        "profile": "Patient Profile",
+        "documents": "Patient File",
         "download": "Download",
-        "patient-info": "About the patient",
-        "book-rdv": "Appointment booking",
-        "documents-shared": "Files shared with the doctor"
-    },
-    "doctor": {
+        "patient-info": "About The Patient",
+        "book-rdv": "Appointment Booking",
+        "documents-shared": "Files Shared With The Doctor"
+      },
+      "doctor": {
         "speciality": "Specialty",
-        "reasonConsultation": "Reason for consultation",
+        "reasonConsultation": "Reason For Consultation",
         "patient": "Patient",
-        "date-rdv": "Appointment date",
-        "option": "Select an option"
-    },
-    "filter": {
+        "date-rdv": "Appointment Date",
+        "option": "Select An Option"
+      },
+      "filter": {
         "consultation": "Consultation"
-    },
-    "price": {
+      },
+      "price": {
         "discount": "Discount",
-        "dz": "DA",
+        "dz": "DZ",
         "currancy": "DZD",
-        "title": "Total price"
-    },
-    "new": {
-        "firstname": "First name",
-        "lastname": "Last name",
+        "title": "Total Price"
+      },
+      "new": {
+        "firstname": "First Name",
+        "lastname": "Last Name",
         "email": "Email",
         "address": "Address",
         "motif": "Reason",
-        "phone": "Phone number",
+        "phone": "Phone Number",
         "company": "Company",
         "sexe": "Gender"
-    },
-    "calendar": {
-        "title-manage": "Manage your availability",
-        "morning-shift": "Morning consultations",
-        "evening-shift": "Afternoon consultations",
-        "schedule": "Manage my schedule",
-        "title": "Manage my schedule",
+      },
+      "calendar": {
+        "title-manage": "Manage Your Availability",
+        "morning-shift": "Morning Consultations",
+        "evening-shift": "Afternoon Consultations",
+        "schedule": "Manage My Schedule",
+        "title": "Manage My Schedule",
         "day": "Day",
         "actions": "Options",
-        "choose-day": "Choose a day",
+        "choose-day": "Choose Day",
         "date": "Date",
-        "clear": "Cancel changes",
+        "clear": "Cancel Modifications",
         "remove-fri": "Remove Fridays",
         "remove-sat": "Remove Saturdays"
-    },
-    "info": {
+      },
+      "info": {
         "title": "Overview",
-        "description": "View information related to your appointments and patients.",
-        "rdv": "Appointments",
-        "read": "Read more",
-        "type": "Type of appointment"
-    },
-    "card": {
+        "description": "View Information Related To Your Appointments And Patients.",
+        "rdv": "Appointment",
+        "read": "Read More"
+      },
+      "card": {
         "motif": "Reason",
-        "documents": "Documents received",
-        "document": "Document received",
-        "type": "Type of appointment",
-        "file": "Attached file",
+        "documents": "Documents Received",
+        "document": "Document Received",
+        "type": "Appointment Type",
+        "file": "Attached File",
         "date": "Date",
         "hour": "Time",
         "accept": "Accept",
         "refuse": "Refuse",
         "reprogrammer": "Reschedule"
+      }
     }
-}
+  }

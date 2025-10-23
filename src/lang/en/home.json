@@ -1,96 +1,83 @@
 {
-    "general": {
-        "clinic": "Clinic",
-        "signup": "Create an account",
-        "continue": "Continue",
-        "passer": "Skip",
-        "signin": "Sign in",
-        "email": "Email address",
-        "email_placeholder": "Enter your email",
-        "password": "Password",
-        "password_placeholder": "Enter your password",
-        "remember_me": "Remember me",
-        "forgetPassword": "Forgot password?",
-        "connect": "Sign in",
-        "signGoogle": "Sign in with Google",
-        "or": "or",
-        "name": "Full name",
+    "general_home": {
+        "title": "Book an appointment with your doctor quickly!"
+    },
+    "favorite": {
+        "title": "My favorite clinics"
+    },
+    "my-rdvs": {
+        "title": "My Appointments",
+        "left-1": "You have",
+        "left-2": "days left",
+        "delete": "Remove this appointment",
+        "pending": "Pending confirmation",
+        "motif": "Reason for consultation",
+        "patient": "Patient",
+        "type": "Type",
+        "document": "Documents",
+        "heure": "Time",
+        "date": "Date",
+        "status": "Status"
+    },
+    "doc": {
+        "add": "Add a document",
+        "name-file": "File name (optional)",
+        "download": "View document",
+        "title": "My documents"
+    },
+    "my-note": {
+        "title": "My notes"
+    },
+    "my-patient": {
+        "title": "My patients"
+    },
+    "request": {
+        "title": "My requests"
+    },
+    "profile": {
+        "title": "General information",
+        "nom": "Last name",
+        "prenom": "First name",
+        "assurance": "Social insurance number",
+        "sex": "Gender",
+        "residence": "Complete address",
+        "motif": "Family relationship",
+        "email": "Email",
         "birthday": "Date of birth",
-        "sexe": "Gender",
-        "adresse": "Email address",
+        "company": "Employer / Organization",
         "phone": "Phone number",
-        "zip": "Postal address",
-        "cnas": "Insurance number",
-        "title_convention": "Convention details:",
-        "description_convention": "Required for clients to benefit from the app’s discounts. You can skip this step if you prefer.",
-        "company_name": "Company name",
-        "matricule": "Registration number",
-        "nameAssurance": "Insurance company name",
-        "numAssurance": "Insurance number",
-        "forgetPassword2": "Forgot password",
-        "forgetPassword2_description": "Enter your registered email below to receive password reset instructions.",
-        "send": "Send",
-        "sending": "Sending...",
-        "verifyEmail": "Verify email",
-        "verifyEmail_description": "A verification code has been sent to your email. Please enter it below.",
-        "verifyCode": "Verify code",
-        "verifyCode_description": "Enter the verification code sent to your email.",
-        "verificationCode": "Verification code",
-        "code_placeholder": "Enter 4-digit code",
-        "verifying": "Verifying...",
-        "verify": "Verify",
-        "newPassword": "New password",
-        "newPassword_description": "Enter your new password below.",
-        "newPassword_placeholder": "Enter new password",
-        "confirmPassword": "Confirm password",
-        "confirmPassword_placeholder": "Confirm your new password",
-        "updating": "Updating...",
-        "updatePassword": "Update password",
-        "back": "Back",
-        "pwd_title": "Choose a new password",
-        "pwd_description": "Almost done! Enter your new password and you’re all set.",
-        "newPwd": "New password",
-        "confirmPwd": "Confirm new password",
-        "backLogin": "Back to login",
-        "confirm": "Confirm",
-        "resetComplete": "Reset complete!",
-        "resetComplete_description": "All done!",
-        "returnLogin": "Return to login",
-        "name-web": "Assistini"
+        "create": "Create",
+        "add-new-patient": "Create patient file",
+        "show-patient": "Patient's personal information",
+        "creer-patient": "Create patient file",
+        "delete": "Remove this patient",
+        "title": "My patients"
     },
-    "hero_section": {
-        "title": "Book an appointment quickly with a healthcare professional",
-        "description": "Select your doctor, choose your appointment date and time, and receive a confirmation by SMS or email.",
-        "clinic": "Clinic",
-        "title_step2": "Welcome to Assistini",
-        "subtitle_step2": "Sign in to your personal space"
+    "bar": {
+        "profile": "My account",
+        "logout": "Logout",
+        "eme": "Emergency",
+        "waiting-title": "Your position in the queue is",
+        "patient-before": "patients before you"
     },
-    "whySection": {
-        "title": "Why choose Assistini?",
-        "title2": "Our mission",
-        "description_1": "Assistini is an innovative platform that revolutionizes how you manage your medical appointments. In a world where time is precious, we simplify your healthcare experience by offering a unified and intuitive solution.",
-        "description_2": "Our mission is to make managing your health simpler and more accessible. Assistini is not just a scheduling tool — it’s your personal health assistant, guiding you throughout your care journey."
+    "filter": {
+        "search": "Search"
     },
-    "banner_section": {
-        "sub_title": "Streamlining your path to wellness."
-    },
-    "rdv_section": {
-        "title": "Why book an appointment with us?",
-        "description": "With Assistini, book your doctor’s appointment online — simply and efficiently.",
-        "explore": "Explore more"
-    },
-    "partner_section": {
-        "title": "Our partners",
-        "description": "Some of the latest and greatest collaborations from us here at Assistini.",
-        "seeMore": "See more",
-        "seeAll": "View all clinics"
-    },
-    "navbar": {
-        "home": "Home",
-        "about": "About",
-        "news": "News",
-        "team": "Team",
-        "contact": "Contact",
-        "signIn": "Sign in"
+    "admin": {
+        "nom": "Last name",
+        "prenom": "First name",
+        "genre": "Gender",
+        "addresse": "Complete address",
+        "login": "Login",
+        "change-email": "Change email",
+        "change-password": "Change password",
+        "nas": "Social insurance number",
+        "phone": "Phone number",
+        "logo": "Profile picture",
+        "save": "Save",
+        "sexe": {
+            "male": "Male",
+            "femelle": "Female"
+        }
     }
 }
