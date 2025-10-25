@@ -8,7 +8,8 @@ import SearchForm from "../components/form/SearchForm";
 import { useTranslation } from "react-i18next";
 import NotificationBox from "./NotificationBox";
 import icons from "../constants/icons";
-import { Search, LogOut  } from 'lucide-react';
+import { Search, LogOut } from 'lucide-react';
+
 
 const Navbar = ({ children = null }) => {
     const { t } = useTranslation("global");
@@ -27,6 +28,8 @@ const Navbar = ({ children = null }) => {
         localStorage.clear();
         navigate("/");
     };
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
     return (
         <>
@@ -44,7 +47,7 @@ const Navbar = ({ children = null }) => {
                     </Link>
                     <div className="col-span-9 md:grid grid-cols-12 ">
                         <div className="col-span-8 flex items-center  justify-between  w-full ">
-                           
+
                             {children}
                         </div>
                         {localStorage.getItem("accessToken") && (
@@ -81,10 +84,10 @@ const Navbar = ({ children = null }) => {
                 </div>
 
                 {/* this navbar for mobile devices */}
-                <div className="flex justify-between grid-cols-7 gap-x-3 responsive py-4 h-full !w-full md:hidden">
+                <div className="flex justify-between items-center py-4 h-full !w-full md:hidden">
                     <Link
                         to={"/home"}
-                        className="col-span-3 flex items-center -mt-4"
+                        className="flex items-center"
                     >
                         <img
                             src={"/logo.svg"}
@@ -93,26 +96,70 @@ const Navbar = ({ children = null }) => {
                         />
                     </Link>
 
-                    <div className="flex items-center gap-4 ">
-                        <CircleButton
-                            icon={Icons.Chat}
-                            name={"icon chat"}
-                            onClick={handleGoMsg}
-                        />
-                        <CircleButton
-                            icon={Icons.Profile}
-                            name={"icon profile"}
-                            bg="flex"
-                            onClick={() => {
-                                navigate("/home/profile");
-                            }}
-                        />
+                    <div className="flex items-center gap-4">
+                        {/* Search Icon */}
                         <button onClick={toggleSearch} className="p-2">
                             <Search />
                         </button>
-                        <button onClick={logout} className="p-2">
-                        <LogOut />
-                        </button>
+
+                        {/* Hamburger Menu */}
+                        <div className="relative">
+                            <button
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                className="p-2 focus:outline-none"
+                            >
+                                {/* Hamburger Icon */}
+                                <div className="space-y-1">
+                                    <div className="w-6 h-0.5 bg-gray-600"></div>
+                                    <div className="w-6 h-0.5 bg-gray-600"></div>
+                                    <div className="w-6 h-0.5 bg-gray-600"></div>
+                                </div>
+                            </button>
+
+                            {/* Dropdown Menu */}
+                            {isMenuOpen && (
+                                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                                     <button
+                                        onClick={() => {
+                                            navigate("/home/messages");
+                                            setIsMenuOpen(false);
+                                        }}
+                                        className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                    >
+                                        <img
+                                            src={Icons.Chat}
+                                            alt={`icon `}
+                                            className={`w-4 h-4 mr-2`}
+                                        />
+                                        Messages
+                                    </button>
+                                    <button
+                                        onClick={() => {
+                                            navigate("/home/profile");
+                                            setIsMenuOpen(false);
+                                        }}
+                                        className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                    >
+                                        <img
+                                            src={Icons.Profile}
+                                            alt={`icon `}
+                                            className={`w-4 h-4 mr-2`}
+                                        />
+                                        Mon Compte
+                                    </button>
+                                    <button
+                                        onClick={() => {
+                                            logout();
+                                            setIsMenuOpen(false);
+                                        }}
+                                        className="flex items-center w-full px-4 py-2 text-sm text-red-600 hover:bg-gray-100"
+                                    >
+                                        <LogOut className="w-4 h-4 mr-2" />
+                                        Déconnecter
+                                    </button>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

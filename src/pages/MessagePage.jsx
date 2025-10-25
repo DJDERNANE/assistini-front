@@ -69,11 +69,12 @@ const MessagePage = () => {
     // If no conversation is selected, show all conversations
     if (!selectedConversation) {
         return (
-            <div className="bg-[#f5f9fe] rounded p-4 h-full">
-                <div className="bg-white rounded-xl p-6 h-full">
+            <div className="bg-[#f5f9fe] rounded p-0 
+             h-full">
+                <div className="bg-white rounded-xl p-4 md:p-6 min-h-[80vh] h-full">
                     <div className="flex items-center justify-between mb-6">
                         <h1 className="text-2xl font-bold text-gray-800 capitalize">
-                            {t("msg.title") || "Messages"}
+                            {t("message.title") || "Messages"}
                         </h1>
                     </div>
                     
@@ -118,7 +119,7 @@ const MessagePage = () => {
 
     // If a conversation is selected, show the chat interface
     return (
-        <div className="bg-[#f5f9fe] rounded p-4 h-full">
+        <div className="bg-[#f5f9fe] rounded p-0 min-h-[80vh] h-full">
             <div className="bg-white rounded-xl h-full flex flex-col">
                 {/* Chat Header */}
                 <div className="flex items-center space-x-4 border-b-2 border-blue-500/30 p-4">
@@ -149,7 +150,7 @@ const MessagePage = () => {
                 </div>
 
                 {/* Messages Area */}
-                <div className="flex-1 p-4 space-y-4 overflow-y-auto max-h-[400px]">
+                <div className="flex-1 p-4 space-y-4 overflow-y-auto ">
                     {isLoadingDetail ? (
                         <div className="w-full flex items-center justify-center h-32">
                             <Spinner
