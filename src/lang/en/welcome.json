@@ -55,7 +55,13 @@
         "err-pwd-2": "At least one uppercase letter required",
         "err-pwd-3": "At least one lowercase letter required",
         "err-pwd-4": "At least one special character required: ! @ # $ % & *",
-        "err-pwd-5": "At least one digit required"
+        "err-pwd-5": "At least one digit required",
+        "nom_placeholder": "Enter your last name",
+    "prenom_placeholder": "Enter your first name",
+    "location_placeholder": "Enter your address or city",
+    "sexe_placeholder": "Select your gender",
+    "male": "Male",
+    "femelle": "Female"
     },
     "hero_section": {
         "title": "Book an appointment with your doctor",

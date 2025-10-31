@@ -13,6 +13,7 @@ import { Spinner } from "@chakra-ui/react";
 import VerifyEmailForm from "../form/VerifyEmailForm";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "../../store/ui/auth-slice";
+import { Male, Female } from "lucide-react";
 
 const SignUpForm = () => {
     const { t } = useTranslation("welcome");
@@ -253,11 +254,22 @@ const Step1 = ({ first, emailErr, register }) => {
                         {t("general.sexe")}
                     </label>
                 </div>
-                <CustomInput
-                    placeholder={t("general.sexe_placeholder")}
-                    icon={Icons.Sexe}
-                    register={register("sexe", { require: true })}
-                />
+                <div className="relative">
+                    <img
+                        src={Icons.User}
+                        alt="icon input"
+                        className="w-5 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"
+                    />
+                    <select
+                        className="!text-neutral-700 pl-10 !text-xs !py-3 !w-full !bg-white !placeholder:text-[#CED2FA] !border-[#D3E1FF] !rounded-lg appearance-none"
+                        name="sexe"
+                    >
+                        <option value="">{t("general.sexe_placeholder")}</option>
+                        <option value="male">{t("general.male")}</option>
+                        <option value="femelle">{t("general.femelle")}</option>
+                    </select>
+                </div>
+
             </div>
             <div>
                 <div className="text-sm mb-1">
@@ -370,62 +382,52 @@ const Step3 = ({ register, watchValues, error = "" }) => {
             {first && (
                 <ul className="text-xs pt-4 grid grid-cols-1 gap-x-4 gap-y-2">
                     <li
-                        className={`${
-                            lowerCaseErr ? "text-green-500" : "text-red-600"
-                        } flex items-center space-x-2`}
+                        className={`${lowerCaseErr ? "text-green-500" : "text-red-600"
+                            } flex items-center space-x-2`}
                     >
                         <div
-                            className={`${
-                                lowerCaseErr ? "bg-green-500" : "bg-red-600"
-                            } rounded-full w-3 h-3 mt-px`}
+                            className={`${lowerCaseErr ? "bg-green-500" : "bg-red-600"
+                                } rounded-full w-3 h-3 mt-px`}
                         ></div>
                         <p>{t("general.err-pwd-3")}</p>
                     </li>
                     <li
-                        className={`${
-                            oneSpecialChar ? "text-green-500" : "text-red-600"
-                        } flex items-center space-x-2`}
+                        className={`${oneSpecialChar ? "text-green-500" : "text-red-600"
+                            } flex items-center space-x-2`}
                     >
                         <div
-                            className={`${
-                                oneSpecialChar ? "bg-green-500" : "bg-red-600"
-                            } rounded-full w-3 h-3 mt-px`}
+                            className={`${oneSpecialChar ? "bg-green-500" : "bg-red-600"
+                                } rounded-full w-3 h-3 mt-px`}
                         ></div>
                         <p>{t("general.err-pwd-4")}</p>
                     </li>
                     <li
-                        className={`${
-                            upperCase ? "text-green-500" : "text-red-600"
-                        } flex items-center space-x-2`}
+                        className={`${upperCase ? "text-green-500" : "text-red-600"
+                            } flex items-center space-x-2`}
                     >
                         <div
-                            className={`${
-                                upperCase ? "bg-green-500" : "bg-red-600"
-                            } rounded-full w-3 h-3 mt-px`}
+                            className={`${upperCase ? "bg-green-500" : "bg-red-600"
+                                } rounded-full w-3 h-3 mt-px`}
                         ></div>
                         <p>{t("general.err-pwd-2")}</p>
                     </li>
                     <li
-                        className={`${
-                            lengthMin ? "text-green-500" : "text-red-600"
-                        } flex items-center space-x-2`}
+                        className={`${lengthMin ? "text-green-500" : "text-red-600"
+                            } flex items-center space-x-2`}
                     >
                         <div
-                            className={`${
-                                lengthMin ? "bg-green-500" : "bg-red-600"
-                            } rounded-full w-3 h-3 mt-px`}
+                            className={`${lengthMin ? "bg-green-500" : "bg-red-600"
+                                } rounded-full w-3 h-3 mt-px`}
                         ></div>
                         <p>{t("general.err-pwd-1")}</p>
                     </li>
                     <li
-                        className={`${
-                            oneNumber ? "text-green-500" : "text-red-600"
-                        } flex items-center space-x-2`}
+                        className={`${oneNumber ? "text-green-500" : "text-red-600"
+                            } flex items-center space-x-2`}
                     >
                         <div
-                            className={`${
-                                oneNumber ? "bg-green-500" : "bg-red-600"
-                            } rounded-full w-3 h-3 mt-px`}
+                            className={`${oneNumber ? "bg-green-500" : "bg-red-600"
+                                } rounded-full w-3 h-3 mt-px`}
                         ></div>
                         <p>{t("general.err-pwd-5")}</p>
                     </li>
