@@ -3,21 +3,21 @@
 import React, { useState } from "react";
 import { Icons } from "../../constants";
 
-const SelectPatientBox = ({ data, selected, setSelected,  }) => {
+const SelectPatientBox = ({ data, selected, setSelected  }) => {
     return (
         <div className="bg-gray-100 rounded-md p-4 flex flex-wrap">
             {data?.length === 0 && "(vide)"}
             {data.map((patient) => (
                 <div
-                    onClick={() => setSelected(patient?.id)}
+                    onClick={() => {console.log("patieeeent : ::: ", patient);setSelected(patient)}}
                     className={` ${
-                        selected === patient?.id
+                        selected?.name == patient?.name
                             ? "bg-blue-600"
                             : "bg-blue-500 cursor-pointer"
-                    }  rounded-md justify-center items-center text-white uppercase p-2 w-fit inline-block mb-2 mr-2 text-sm md:text-base`}
+                    } text-[12px] rounded-md justify-center items-center text-white uppercase p-1 w-fit inline-block m-1`}
                     key={patient?.id}
                 >
-                    {patient?.name}
+                    {patient?.name} {patient?.prenom}
                 </div>
             ))}
             {selected && (

@@ -92,7 +92,7 @@ const MakeRDVForm = ({ data = {} }) => {
         setError("");
         // Create a FormData object
         const formData = new FormData();
-        formData.append("patientName", patientName ?? "x");
+        formData.append("patientName", patientName.name + ' ' + patientName.prenom ?? "x");
         formData.append("motif", motif);
         formData.append("specialtyId", speId);
         formData.append("type", type);
@@ -141,6 +141,8 @@ const MakeRDVForm = ({ data = {} }) => {
             setLoading(false);
         }
     };
+
+    console.log("pattttttient",patientName)
 
     return (
         <div>
@@ -360,6 +362,7 @@ const Step4 = ({ value, setValue }) => {
             <div className="w-full">
                 <StepTitle>{t("doctor.patient")}</StepTitle>
                 <div className="mt-2"></div>
+               
                 <SelectPatientBox
                     data={data ?? []}
                     selected={value}
