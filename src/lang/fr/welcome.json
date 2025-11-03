@@ -61,7 +61,9 @@
     "location_placeholder": "Entrez votre adresse ou votre ville",
     "sexe_placeholder": "Sélectionnez votre sexe",
     "male": "Homme",
-    "femelle": "Femme"
+    "femelle": "Femme",
+    "location": "Localisation",
+        "you-have-account": "Vous avez déjà un compte ?"
   },
   "hero_section": {
     "title": "Prenez un rendez-vous avec votre médecin",

@@ -61,7 +61,9 @@
     "location_placeholder": "Enter your address or city",
     "sexe_placeholder": "Select your gender",
     "male": "Male",
-    "femelle": "Female"
+    "femelle": "Female",
+     "location": "Location",
+        "you-have-account": "Already have an account?"
     },
     "hero_section": {
         "title": "Book an appointment with your doctor",
