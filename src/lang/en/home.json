@@ -21,15 +21,18 @@
     },
     "doc": {
         "add": "Add a document",
-        "name-file": "File name (optional)",
+        "name-file": "File name ",
         "download": "View document",
-        "title": "My documents"
+        "title": "My documents",
+        "error-no-file": "Please select a file to upload",
+        "error-no-name": "Please enter a document name",
+        "error-upload-failed": "Failed to upload document. Please try again."
     },
     "my-note": {
         "title": "My notes"
     },
     "my-patient": {
-        "title": "My patients"
+        "title": "My Family"
     },
     "request": {
         "title": "My requests"

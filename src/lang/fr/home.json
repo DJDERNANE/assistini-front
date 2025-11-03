@@ -21,15 +21,18 @@
     },
     "doc": {
         "add": "Ajouter un document",
-        "name-file": "Nom du fichier (optionnel)",
+        "name-file": "Nom du fichier ",
         "download": "Voir le document",
-        "title": "Mes documents"
+        "title": "Mes documents",
+        "error-no-file": "Veuillez sélectionner un fichier à télécharger",
+    "error-no-name": "Veuillez entrer un nom de document",
+    "error-upload-failed": "Échec du téléchargement du document. Veuillez réessayer."
     },
     "my-note": {
         "title": "Mes notes"
     },
     "my-patient": {
-        "title": "Mes patients"
+        "title": "Ma Famille"
     },
     "request": {
         "title": "Mes demandes"
