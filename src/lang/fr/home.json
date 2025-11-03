@@ -54,7 +54,8 @@
         "show-patient": "Informations personnelles d'un patient",
         "creer-patient": "Créer le dossier patient",
         "delete": "Retirer ce patient",
-        "title": "Mes patients"
+        "location": "Localisation",
+        "you-have-account": "Vous avez déjà un compte ?"
     },
     "bar": {
         "profile": "Mon compte",
