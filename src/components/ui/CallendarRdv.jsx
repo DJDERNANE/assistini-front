@@ -42,7 +42,9 @@ const CallendarRdv = ({ data = [], value = null, setValue = () => {} }) => {
         morningEndTime,
         eveningStartTime,
         eveningEndTime,
-        interval
+        interval,
+        bookedSlots = [],
+        date = null
     ) => {
         // Generate morning and evening intervals
         const morningIntervals = getIntervals(
@@ -57,7 +59,23 @@ const CallendarRdv = ({ data = [], value = null, setValue = () => {} }) => {
         );
 
         // Combine both sessions' intervals
-        const allIntervals = [...morningIntervals, ...eveningIntervals];
+        let allIntervals = [...morningIntervals, ...eveningIntervals];
+
+        // Filter out booked slots
+        if (bookedSlots && bookedSlots.length > 0) {
+            allIntervals = allIntervals.filter(
+                (time) => !bookedSlots.includes(time)
+            );
+        }
+
+        // Filter out past times if it's today
+        if (date) {
+            const today = new Date().toISOString().split("T")[0];
+            if (date === today) {
+                const currentTime = new Date().toTimeString().slice(0, 5);
+                allIntervals = allIntervals.filter((time) => time > currentTime);
+            }
+        }
 
         return allIntervals;
     };
@@ -74,25 +92,34 @@ const CallendarRdv = ({ data = [], value = null, setValue = () => {} }) => {
             )}
             <div className={`col-span-8 `}>
                 <CustomSwiper slides={5} ref={swiperRef}>
-                    {[...data]?.map((item, idx) => (
-                        <SwiperSlide key={idx}>
-                            <TimeDay
-                                showAll={showAll}
-                                day={item?.date}
-                                value={value}
-                                setValue={setValue}
-                                times={
-                                    appointementIntervals(
-                                        item?.morningStartTime,
-                                        item?.morningEndTime,
-                                        item?.eveningStartTime,
-                                        item?.eveningEndTime,
-                                        item?.patientInterval
-                                    ) ?? []
-                                }
-                            />
-                        </SwiperSlide>
-                    ))}
+                    {[...data]?.map((item, idx) => {
+                        const availableTimes = appointementIntervals(
+                            item?.morningStartTime,
+                            item?.morningEndTime,
+                            item?.eveningStartTime,
+                            item?.eveningEndTime,
+                            item?.patientInterval,
+                            item?.bookedSlots || [], // Use booked slots from data
+                            item?.date
+                        );
+
+                        // Only render the slide if there are available times
+                        if (availableTimes.length === 0) {
+                            return null;
+                        }
+
+                        return (
+                            <SwiperSlide key={idx}>
+                                <TimeDay
+                                    showAll={showAll}
+                                    day={item?.date}
+                                    value={value}
+                                    setValue={setValue}
+                                    times={availableTimes}
+                                />
+                            </SwiperSlide>
+                        );
+                    })}
                 </CustomSwiper>
                 <div
                     className="flex items-center w-full justify-center space-x-2 mt-4 cursor-pointer"
@@ -131,39 +158,42 @@ const TimeDay = ({ day, times, showAll, setValue, value }) => {
                     day: "numeric",
                 })}
             </p>
-            <ul className="space-y-2">
-                {times.map((time, idx) => (
-                    <li
-                        onClick={() => {
-                            if (value !== null)
-                                setValue(
-                                    `${time}|${addMinutesToTime(
-                                        time,
-                                        30
-                                    )}|${day}
-                                    `
-                                );
-                        }}
-                        key={idx}
-                        className={`${
-                            value !== null &&
-                            "cursor-pointer hover:bg-opacity-80"
-                        } ${
-                            value?.substring(0, 22) ===
-                            `${time}|${addMinutesToTime(
-                                time,
-                                30
-                            )}|${day?.substring(0, 10)}`
-                                ? "bg-green-600"
-                                : "bg-sky-500"
-                        } rounded px-px py-2 text-xs font-medium text-white text-center`}
-                    >
-                        {time}
-                        {day.startsWith("10") &&
-                            console.log("@@@@@@@", day, value)}
-                    </li>
-                ))}
-            </ul>
+            {times.length === 0 ? (
+                <p className="text-neutral-400 text-xs text-center mt-4">
+                    No availability
+                </p>
+            ) : (
+                <ul className="space-y-2">
+                    {times.map((time, idx) => (
+                        <li
+                            onClick={() => {
+                                if (value !== null)
+                                    setValue(
+                                        `${time}|${addMinutesToTime(
+                                            time,
+                                            30
+                                        )}|${day}`
+                                    );
+                            }}
+                            key={idx}
+                            className={`${
+                                value !== null &&
+                                "cursor-pointer hover:bg-opacity-80"
+                            } ${
+                                value?.substring(0, 22) ===
+                                `${time}|${addMinutesToTime(
+                                    time,
+                                    30
+                                )}|${day?.substring(0, 10)}`
+                                    ? "bg-green-600"
+                                    : "bg-sky-500"
+                            } rounded px-px py-2 text-xs font-medium text-white text-center`}
+                        >
+                            {time}
+                        </li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 };
