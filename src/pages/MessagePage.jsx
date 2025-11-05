@@ -225,7 +225,7 @@ const ConversationItem = ({ user, onSelect }) => {
 
     const getLastMessageTime = () => {
         // This should come from your conversation list API
-        return "Just now";
+        return "";
     };
 
     return (
@@ -242,7 +242,7 @@ const ConversationItem = ({ user, onSelect }) => {
                 <div className="flex-1 min-w-0">
                     <div className="flex justify-between items-start mb-1">
                         <h4 className="font-semibold text-gray-900 truncate text-lg">
-                            {user?.nom} {user?.prenom}
+                            {user?.name}
                         </h4>
                         <span className="text-xs text-gray-500 whitespace-nowrap ml-2">
                             {getLastMessageTime()}

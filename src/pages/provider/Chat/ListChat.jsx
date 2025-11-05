@@ -231,7 +231,7 @@ const ItemMsg = ({ item }) => {
                     className="w-11 h-11 rounded-full object-cover"
                 />
 
-                <p className=" text-sm">{item?.fullName}</p>
+                <p className=" text-sm">{item?.name}</p>
             </div>
         </div>
     );
