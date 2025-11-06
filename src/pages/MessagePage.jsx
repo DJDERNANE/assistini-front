@@ -117,6 +117,8 @@ const MessagePage = () => {
         );
     }
 
+    console.log("selectedConversation:", selectedConversation);
+
     // If a conversation is selected, show the chat interface
     return (
         <div className="bg-[#f5f9fe] rounded p-0 min-h-[80vh] h-full">
@@ -140,7 +142,7 @@ const MessagePage = () => {
                     />
                     <div className="flex-1">
                         <h3 className="first-letter:capitalize font-semibold text-lg">
-                            {selectedConversation?.nom} {selectedConversation?.prenom}
+                            {selectedConversation?.name}
                         </h3>
                         <div className="flex items-center space-x-2">
                             <img src={Icons.locationBlue} alt="" className="w-4 h-4" />
