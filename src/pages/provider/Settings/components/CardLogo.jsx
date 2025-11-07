@@ -22,7 +22,7 @@ const CardLogo = ({
         const file = event.target.files[0];
         if (!file) return;
 
-        // Show preview immediately
+        // Show local preview immediately
         const localPreview = URL.createObjectURL(file);
         setImageSrc(localPreview);
         setImageFile(file);
@@ -44,11 +44,19 @@ const CardLogo = ({
             if (response.ok) {
                 console.log("✅ User updated:", data);
 
-                // If backend returns updated logo path, update the image
-                if (data?.updatedLogo || data?.logo) {
-                    const newLogoPath = data.updatedLogo || data.logo;
-                    setImageSrc(`${process.env.REACT_APP_URL_API}/${newLogoPath}`);
+                // Determine new logo path
+                const newLogoPath = data?.updatedLogo || data?.logo;
+                if (newLogoPath) {
+                    const fullLogoUrl = `${process.env.REACT_APP_URL_API}/${newLogoPath}`;
+                    setImageSrc(fullLogoUrl);
                     setValue("logo", newLogoPath);
+
+                    // 🧠 Update localStorage user data
+                    const userData = JSON.parse(localStorage.getItem("userData")) || {};
+                    userData.logo = newLogoPath; // update only logo path
+                    localStorage.setItem("userData", JSON.stringify(userData));
+
+                    console.log("🟢 LocalStorage updated:", userData);
                 }
             } else {
                 console.error("❌ Error updating user:", data);
@@ -67,7 +75,11 @@ const CardLogo = ({
                 <div className="min-w-[80px] min-h-[80px] rounded-full border border-primary-100 bg-primary-100 bg-opacity-10 flex items-center justify-center overflow-hidden">
                     {imageSrc ? (
                         <img
-                            src={imageSrc.startsWith("blob:") ? imageSrc : `${process.env.REACT_APP_URL_API}/${imageSrc}`}
+                            src={
+                                imageSrc.startsWith("blob:")
+                                    ? imageSrc
+                                    : `${process.env.REACT_APP_URL_API}/${imageSrc}`
+                            }
                             alt="Profile"
                             className="w-[80px] h-[80px] object-cover"
                         />
@@ -112,6 +124,11 @@ const CardLogo = ({
                                 setImageFile(null);
                                 setValue("logo", null);
                                 if (handleDelete) handleDelete();
+
+                                // 🧹 Clear logo in localStorage too
+                                const userData = JSON.parse(localStorage.getItem("userData")) || {};
+                                userData.logo = null;
+                                localStorage.setItem("userData", JSON.stringify(userData));
                             }}
                         >
                             <img src={icons.trash} alt="" className="w-4" />
