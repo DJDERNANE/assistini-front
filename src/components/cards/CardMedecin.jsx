@@ -48,33 +48,13 @@ const CardMedecin = ({
     } = useToggleFavorite(refetch);
 
     const handleFavorite = () => {
+        
         handleSubmit(onSubmit({ provider_id: medecin.id }));
     };
 
     return (
-        <div className="relative h-fit !w-full group" onClick={handleRdv}>
-            {/* <div className={`mb-2 w-fit ${select ? "block" : "hidden"}`}>
-        <Card borderRadius={"lg"}>
-          <CardBody className="!px-0 !py-px flex items-center !w-fit">
-            <CircleButton
-              icon={Icons.EditRectangle}
-              name={"icon edit"}
-              cssIcon="!w-[20px] !md:w-4 !h-[20px] !md:h-4"
-            />
-            <CircleButton
-              icon={Icons.Folder}
-              name={"icon folder"}
-              cssIcon="!w-[20px] md:w-4 !h-[20px] md:h-4"
-            />
-            <CircleButton
-              icon={Icons.Notification}
-              name={"icon notification"}
-              cssIcon="!w-[20px] md:w-4 !h-[20px] md:h-4"
-            />
-          </CardBody>
-        </Card>
-      </div> */}
-            <Card
+        <div className="relative h-fit !w-full group">
+            <Card  onClick={handleRdv}
                 borderRadius={"xl"}
                 className={`overflow-hidden ${
                     select && "!border-blue-500 !border"

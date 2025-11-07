@@ -58,30 +58,29 @@ const ProfilePage = ({ show = false }) => {
         formData.append("SSNum", ssnum);
         formData.append("birthday", "2024-12-12");
         formData.append("codePostal", "16150");
-        formData.append("logo", imageFile);
 
         console.log("Form Data:", Array.from(formData.entries()));
 
-        // try {
-        //     // Send data to the API
-        //     const response = await axios.put(
-        //         process.env.REACT_APP_URL_API + "/users",
-        //         formData,
-        //         {
-        //             headers: {
-        //                 "Content-Type": "multipart/form-data",
-        //                 Authorization: `Bearer ${localStorage.getItem(
-        //                     "accessToken"
-        //                 )}`,
-        //             },
-        //         }
-        //     );
-        //     console.log("User updated successfully", response.data);
-        // } catch (error) {
-        //     console.error("Error updating user:", error);
-        // } finally {
-        //     setLoading(false);
-        // }
+        try {
+            // Send data to the API
+            const response = await axios.put(
+                process.env.REACT_APP_URL_API + "/users",
+                formData,
+                {
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                        Authorization: `Bearer ${localStorage.getItem(
+                            "accessToken"
+                        )}`,
+                    },
+                }
+            );
+            console.log("User updated successfully", response.data);
+        } catch (error) {
+            console.error("Error updating user:", error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     const {
